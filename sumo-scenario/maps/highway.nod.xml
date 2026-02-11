@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Highway Network Nodes - 10km stretch with on/off ramps -->
+<nodes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/nodes_file.xsd">
+    
+    <!-- Main Highway Nodes (West to East) -->
+    <node id="hw_start" x="0.0" y="0.0" type="priority"/>
+    <node id="hw_1km" x="1000.0" y="0.0" type="priority"/>
+    <node id="hw_2km" x="2000.0" y="0.0" type="priority"/>
+    <node id="hw_3km" x="3000.0" y="0.0" type="priority"/>
+    <node id="hw_4km" x="4000.0" y="0.0" type="priority"/>
+    <node id="hw_5km" x="5000.0" y="0.0" type="priority"/>
+    <node id="hw_6km" x="6000.0" y="0.0" type="priority"/>
+    <node id="hw_7km" x="7000.0" y="0.0" type="priority"/>
+    <node id="hw_8km" x="8000.0" y="0.0" type="priority"/>
+    <node id="hw_9km" x="9000.0" y="0.0" type="priority"/>
+    <node id="hw_end" x="10000.0" y="0.0" type="priority"/>
+    
+    <!-- RSU Locations (every 2km) -->
+    <node id="rsu_0" x="0.0" y="-50.0" type="priority"/>
+    <node id="rsu_2" x="2000.0" y="-50.0" type="priority"/>
+    <node id="rsu_4" x="4000.0" y="-50.0" type="priority"/>
+    <node id="rsu_6" x="6000.0" y="-50.0" type="priority"/>
+    <node id="rsu_8" x="8000.0" y="-50.0" type="priority"/>
+    <node id="rsu_10" x="10000.0" y="-50.0" type="priority"/>
+    
+    <!-- On-Ramp Entries -->
+    <node id="onramp_2km_start" x="2000.0" y="-300.0" type="priority"/>
+    <node id="onramp_2km_merge" x="2200.0" y="-50.0" type="priority"/>
+    <node id="onramp_6km_start" x="6000.0" y="-300.0" type="priority"/>
+    <node id="onramp_6km_merge" x="6200.0" y="-50.0" type="priority"/>
+    
+    <!-- Off-Ramp Exits -->
+    <node id="offramp_4km_split" x="4000.0" y="50.0" type="priority"/>
+    <node id="offramp_4km_end" x="4200.0" y="300.0" type="priority"/>
+    <node id="offramp_8km_split" x="8000.0" y="50.0" type="priority"/>
+    <node id="offramp_8km_end" x="8200.0" y="300.0" type="priority"/>
+    
+    <!-- Urban Connection Nodes -->
+    <node id="city_west" x="0.0" y="-500.0" type="traffic_light"/>
+    <node id="city_east" x="10000.0" y="-500.0" type="traffic_light"/>
+    
+    <!-- Emergency Services Locations -->
+    <node id="police_station" x="3000.0" y="-800.0" type="priority"/>
+    <node id="hospital" x="7000.0" y="-800.0" type="priority"/>
+    <node id="traffic_control" x="5000.0" y="-800.0" type="priority"/>
+    
+</nodes>

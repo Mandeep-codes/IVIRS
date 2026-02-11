@@ -1,0 +1,11 @@
+{
+  "all_reports": [],
+  "statistics": {
+    "total_reports": 0,
+    "fake_reports": 0,
+    "real_incidents": 0,
+    "detected_fakes": 0,
+    "false_positives": 0,
+    "emergency_dispatches": 0
+  }
+}

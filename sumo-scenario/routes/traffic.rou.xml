@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    
+    <!-- Vehicle Types with Detailed Parameters -->
+    <vType id="car_normal" vClass="passenger" color="255,255,0" length="4.5" width="1.8" height="1.5" 
+           minGap="2.5" maxSpeed="55.56" accel="2.6" decel="4.5" sigma="0.5" tau="1.0" 
+           lcSpeedGain="1.0" lcCooperative="1.0" lcStrategic="1.0"/>
+    
+    <vType id="car_aggressive" vClass="passenger" color="255,100,0" length="4.5" width="1.8" height="1.5" 
+           minGap="1.5" maxSpeed="60" accel="3.5" decel="5.5" sigma="0.3" tau="0.7" 
+           lcSpeedGain="2.0" lcCooperative="0.3" lcStrategic="1.5"/>
+    
+    <vType id="car_cautious" vClass="passenger" color="100,200,255" length="4.5" width="1.8" height="1.5" 
+           minGap="3.5" maxSpeed="45" accel="2.0" decel="4.0" sigma="0.7" tau="1.5" 
+           lcSpeedGain="0.5" lcCooperative="1.5" lcStrategic="0.8"/>
+    
+    <vType id="truck_heavy" vClass="truck" color="128,128,128" length="16.5" width="2.5" height="4.0" 
+           minGap="3.5" maxSpeed="30.56" accel="1.0" decel="3.0" sigma="0.5" tau="2.0" 
+           lcSpeedGain="0.5" lcCooperative="1.2" lcStrategic="0.8"/>
+    
+    <vType id="truck_medium" vClass="delivery" color="150,150,150" length="8.0" width="2.2" height="3.0" 
+           minGap="3.0" maxSpeed="35" accel="1.5" decel="3.5" sigma="0.5" tau="1.5" 
+           lcSpeedGain="0.7" lcCooperative="1.0" lcStrategic="0.9"/>
+    
+    <vType id="bus" vClass="bus" color="0,100,200" length="12.0" width="2.5" height="3.2" 
+           minGap="3.0" maxSpeed="30" accel="1.2" decel="3.5" sigma="0.5" tau="1.8"/>
+    
+    <vType id="emergency_police" vClass="emergency" color="0,0,255" length="5.5" width="2.0" height="1.8" 
+           minGap="2.0" maxSpeed="70" accel="4.0" decel="6.0" sigma="0.2" tau="0.5" 
+           lcSpeedGain="3.0" lcCooperative="0.1" lcStrategic="2.0"/>
+    
+    <vType id="emergency_ambulance" vClass="emergency" color="255,0,0" length="6.5" width="2.3" height="2.5" 
+           minGap="2.0" maxSpeed="65" accel="3.5" decel="5.5" sigma="0.2" tau="0.5" 
+           lcSpeedGain="2.5" lcCooperative="0.1" lcStrategic="2.0"/>
+    
+    <vType id="emergency_fire" vClass="emergency" color="255,50,0" length="8.0" width="2.5" height="3.5" 
+           minGap="2.5" maxSpeed="60" accel="3.0" decel="5.0" sigma="0.2" tau="0.6" 
+           lcSpeedGain="2.0" lcCooperative="0.1" lcStrategic="1.8"/>
+    
+    <!-- Malicious Vehicles (for fake report generation) -->
+    <vType id="malicious_reporter" vClass="passenger" color="255,0,255" length="4.5" width="1.8" height="1.5" 
+           minGap="2.5" maxSpeed="50" accel="2.6" decel="4.5" sigma="0.5" tau="1.0"/>
+    
+    <!-- Route Definitions -->
+    <!-- Full Highway Eastbound -->
+    <route id="route_full_east" edges="hw_0_1 hw_1_2 hw_2_3 hw_3_4 hw_4_5 hw_5_6 hw_6_7 hw_7_8 hw_8_9 hw_9_10"/>
+    
+    <!-- Full Highway Westbound -->
+    <route id="route_full_west" edges="hw_10_9 hw_9_8 hw_8_7 hw_7_6 hw_6_5 hw_5_4 hw_4_3 hw_3_2 hw_2_1 hw_1_0"/>
+    
+    <!-- Partial Routes (Highway Segments) -->
+    <route id="route_segment_1" edges="hw_0_1 hw_1_2 hw_2_3 hw_3_4 hw_4_5"/>
+    <route id="route_segment_2" edges="hw_5_6 hw_6_7 hw_7_8 hw_8_9 hw_9_10"/>
+    <route id="route_segment_3" edges="hw_2_3 hw_3_4 hw_4_5 hw_5_6 hw_6_7"/>
+    
+    <!-- Emergency Response Routes -->
+    <route id="route_police_response" edges="police_to_hw hw_3_4 hw_4_5"/>
+    <route id="route_ambulance_response" edges="hospital_to_hw hw_7_6 hw_6_5"/>
+    <route id="route_traffic_patrol" edges="traffic_to_hw hw_5_6 hw_6_7 hw_7_8"/>
+    
+    <!-- Vehicle Flows - Rush Hour Traffic (0-300s) -->
+    <flow id="flow_cars_rush_east" type="car_normal" route="route_full_east" 
+          begin="0" end="300" number="150" departLane="best" departSpeed="max"/>
+    
+    <flow id="flow_cars_rush_west" type="car_normal" route="route_full_west" 
+          begin="0" end="300" number="150" departLane="best" departSpeed="max"/>
+    
+    <!-- Aggressive Drivers -->
+    <flow id="flow_aggressive_east" type="car_aggressive" route="route_full_east" 
+          begin="0" end="600" number="40" departLane="best" departSpeed="max"/>
+    
+    <!-- Cautious Drivers -->
+    <flow id="flow_cautious_west" type="car_cautious" route="route_full_west" 
+          begin="0" end="600" number="30" departLane="best" departSpeed="max"/>
+    
+    <!-- Truck Traffic -->
+    <flow id="flow_trucks_heavy" type="truck_heavy" route="route_full_east" 
+          begin="0" end="800" number="25" departLane="best" departSpeed="max"/>
+    
+    <flow id="flow_trucks_medium" type="truck_medium" route="route_segment_1" 
+          begin="0" end="800" number="20" departLane="best" departSpeed="max"/>
+    
+    <!-- Normal Traffic Flow (300-1000s) -->
+    <flow id="flow_normal_continuous" type="car_normal" route="route_full_east" 
+          begin="300" end="1000" probability="0.15" departLane="best" departSpeed="max"/>
+    
+    <!-- Malicious Vehicles (Fake Reporters) - 10% of traffic -->
+    <flow id="flow_malicious_fake_reporters" type="malicious_reporter" route="route_full_east" 
+          begin="100" end="900" number="30" departLane="random" departSpeed="max">
+        <param key="is_malicious" value="true"/>
+        <param key="fake_report_probability" value="0.3"/>
+    </flow>
+    
+    <!-- Individual Vehicles with Specific Behaviors -->
+    
+    <!-- Incident Generators (vehicles that will cause real incidents) -->
+    <vehicle id="incident_car_1" type="car_normal" route="route_full_east" depart="200" departLane="2" departSpeed="30">
+        <param key="will_breakdown" value="true"/>
+        <param key="breakdown_time" value="250"/>
+        <param key="breakdown_position" value="4500"/>
+    </vehicle>
+    
+    <vehicle id="incident_car_2" type="car_aggressive" route="route_full_west" depart="400" departLane="3" departSpeed="40">
+        <param key="will_crash" value="true"/>
+        <param key="crash_time" value="450"/>
+        <param key="crash_position" value="6800"/>
+    </vehicle>
+    
+    <!-- Emergency Vehicles (Response to Incidents) -->
+    <vehicle id="police_1" type="emergency_police" route="route_police_response" depart="260" departLane="best" departSpeed="max">
+        <param key="responding_to" value="incident_car_1"/>
+    </vehicle>
+    
+    <vehicle id="ambulance_1" type="emergency_ambulance" route="route_ambulance_response" depart="460" departLane="best" departSpeed="max">
+        <param key="responding_to" value="incident_car_2"/>
+    </vehicle>
+    
+    <!-- Witness Vehicles (will report real incidents) -->
+    <vehicle id="witness_honest_1" type="car_normal" route="route_full_east" depart="245" departLane="3" departSpeed="max">
+        <param key="is_honest_reporter" value="true"/>
+    </vehicle>
+    
+    <vehicle id="witness_honest_2" type="car_cautious" route="route_full_east" depart="248" departLane="1" departSpeed="max">
+        <param key="is_honest_reporter" value="true"/>
+    </vehicle>
+    
+    <!-- Specific Malicious Vehicles with Pre-planned Fake Reports -->
+    <vehicle id="malicious_1" type="malicious_reporter" route="route_full_east" depart="150" departLane="2" departSpeed="max">
+        <param key="is_malicious" value="true"/>
+        <param key="fake_report_time" value="180"/>
+        <param key="fake_report_location" value="2000"/>
+        <param key="fake_report_type" value="accident"/>
+    </vehicle>
+    
+    <vehicle id="malicious_2" type="malicious_reporter" route="route_full_west" depart="300" departLane="1" departSpeed="max">
+        <param key="is_malicious" value="true"/>
+        <param key="fake_report_time" value="350"/>
+        <param key="fake_report_location" value="7500"/>
+        <param key="fake_report_type" value="breakdown"/>
+    </vehicle>
+    
+    <vehicle id="malicious_3" type="malicious_reporter" route="route_segment_3" depart="500" departLane="3" departSpeed="max">
+        <param key="is_malicious" value="true"/>
+        <param key="fake_report_time" value="550"/>
+        <param key="fake_report_location" value="5200"/>
+        <param key="fake_report_type" value="hazard"/>
+    </vehicle>
+    
+</routes>

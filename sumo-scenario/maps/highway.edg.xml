@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Highway Edge Definitions with Multiple Lanes -->
+<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+    
+    <!-- Main Highway - 4 lanes each direction, 120 km/h -->
+    <!-- Eastbound -->
+    <edge id="hw_0_1" from="hw_start" to="hw_1km" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    <edge id="hw_1_2" from="hw_1km" to="hw_2km" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    <edge id="hw_2_3" from="hw_2km" to="hw_3km" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    <edge id="hw_3_4" from="hw_3km" to="hw_4km" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    <edge id="hw_4_5" from="hw_4km" to="hw_5km" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    <edge id="hw_5_6" from="hw_5km" to="hw_6km" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    <edge id="hw_6_7" from="hw_6km" to="hw_7km" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    <edge id="hw_7_8" from="hw_7km" to="hw_8km" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    <edge id="hw_8_9" from="hw_8km" to="hw_9km" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    <edge id="hw_9_10" from="hw_9km" to="hw_end" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    
+    <!-- Westbound -->
+    <edge id="hw_10_9" from="hw_end" to="hw_9km" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    <edge id="hw_9_8" from="hw_9km" to="hw_8km" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    <edge id="hw_8_7" from="hw_8km" to="hw_7km" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    <edge id="hw_7_6" from="hw_7km" to="hw_6km" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    <edge id="hw_6_5" from="hw_6km" to="hw_5km" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    <edge id="hw_5_4" from="hw_5km" to="hw_4km" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    <edge id="hw_4_3" from="hw_4km" to="hw_3km" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    <edge id="hw_3_2" from="hw_3km" to="hw_2km" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    <edge id="hw_2_1" from="hw_2km" to="hw_1km" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    <edge id="hw_1_0" from="hw_1km" to="hw_start" numLanes="4" speed="33.33" priority="5" spreadType="center"/>
+    
+    <!-- On-Ramps (2 lanes, 60 km/h acceleration zones) -->
+    <edge id="onramp_2km_entry" from="onramp_2km_start" to="onramp_2km_merge" numLanes="2" speed="16.67" priority="3"/>
+    <edge id="onramp_2km_to_hw" from="onramp_2km_merge" to="hw_2km" numLanes="1" speed="25.0" priority="3"/>
+    <edge id="onramp_6km_entry" from="onramp_6km_start" to="onramp_6km_merge" numLanes="2" speed="16.67" priority="3"/>
+    <edge id="onramp_6km_to_hw" from="onramp_6km_merge" to="hw_6km" numLanes="1" speed="25.0" priority="3"/>
+    
+    <!-- Off-Ramps (2 lanes, deceleration zones) -->
+    <edge id="offramp_4km_from_hw" from="hw_4km" to="offramp_4km_split" numLanes="1" speed="25.0" priority="3"/>
+    <edge id="offramp_4km_exit" from="offramp_4km_split" to="offramp_4km_end" numLanes="2" speed="16.67" priority="3"/>
+    <edge id="offramp_8km_from_hw" from="hw_8km" to="offramp_8km_split" numLanes="1" speed="25.0" priority="3"/>
+    <edge id="offramp_8km_exit" from="offramp_8km_split" to="offramp_8km_end" numLanes="2" speed="16.67" priority="3"/>
+    
+    <!-- Emergency Service Routes -->
+    <edge id="police_to_hw" from="police_station" to="hw_3km" numLanes="2" speed="22.22" priority="4"/>
+    <edge id="hw_to_police" from="hw_3km" to="police_station" numLanes="2" speed="22.22" priority="4"/>
+    <edge id="hospital_to_hw" from="hospital" to="hw_7km" numLanes="2" speed="22.22" priority="4"/>
+    <edge id="hw_to_hospital" from="hw_7km" to="hospital" numLanes="2" speed="22.22" priority="4"/>
+    <edge id="traffic_to_hw" from="traffic_control" to="hw_5km" numLanes="2" speed="22.22" priority="4"/>
+    <edge id="hw_to_traffic" from="hw_5km" to="traffic_control" numLanes="2" speed="22.22" priority="4"/>
+    
+</edges>

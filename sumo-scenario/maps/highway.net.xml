@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-02-11T15:09:46.146989+05:30 by Eclipse SUMO netconvert v1_26_0+0143-96e13a6476d
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="highway.nod.xml"/>
+        <edge-files value="highway.edg.xml"/>
+    </input>
+
+    <output>
+        <output-file value="highway.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.remove value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+</netconvertConfiguration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,800.00" convBoundary="0.00,0.00,10000.00,1100.00" origBoundary="0.00,-800.00,10000.00,300.00" projParameter="!"/>
+
+    <edge id=":hw_1km_0" function="internal">
+        <lane id=":hw_1km_0_0" index="0" speed="33.33" length="0.10" shape="1000.00,811.20 1000.00,811.20"/>
+        <lane id=":hw_1km_0_1" index="1" speed="33.33" length="0.10" shape="1000.00,808.00 1000.00,808.00"/>
+        <lane id=":hw_1km_0_2" index="2" speed="33.33" length="0.10" shape="1000.00,804.80 1000.00,804.80"/>
+        <lane id=":hw_1km_0_3" index="3" speed="33.33" length="0.10" shape="1000.00,801.60 1000.00,801.60"/>
+    </edge>
+    <edge id=":hw_1km_4" function="internal">
+        <lane id=":hw_1km_4_0" index="0" speed="33.33" length="0.10" shape="1000.00,788.80 1000.00,788.80"/>
+        <lane id=":hw_1km_4_1" index="1" speed="33.33" length="0.10" shape="1000.00,792.00 1000.00,792.00"/>
+        <lane id=":hw_1km_4_2" index="2" speed="33.33" length="0.10" shape="1000.00,795.20 1000.00,795.20"/>
+        <lane id=":hw_1km_4_3" index="3" speed="33.33" length="0.10" shape="1000.00,798.40 1000.00,798.40"/>
+    </edge>
+    <edge id=":hw_2km_0" function="internal">
+        <lane id=":hw_2km_0_0" index="0" speed="33.33" length="21.17" shape="2017.19,811.20 1996.02,811.20"/>
+        <lane id=":hw_2km_0_1" index="1" speed="33.33" length="21.17" shape="2017.19,808.00 1996.02,808.00"/>
+        <lane id=":hw_2km_0_2" index="2" speed="33.33" length="21.17" shape="2017.19,804.80 1996.02,804.80"/>
+        <lane id=":hw_2km_0_3" index="3" speed="33.33" length="21.17" shape="2017.19,801.60 1996.02,801.60"/>
+    </edge>
+    <edge id=":hw_2km_4" function="internal">
+        <lane id=":hw_2km_4_0" index="0" speed="29.16" length="22.15" shape="2017.15,797.36 2013.38,799.04 2008.97,801.54 2003.36,803.81 1996.02,804.80"/>
+        <lane id=":hw_2km_4_1" index="1" speed="29.16" length="22.15" shape="2017.15,797.36 2013.32,798.54 2008.81,799.94 2003.18,801.11 1996.02,801.60"/>
+    </edge>
+    <edge id=":hw_2km_6" function="internal">
+        <lane id=":hw_2km_6_0" index="0" speed="4.82" length="9.00" shape="2017.15,797.36 2020.40,796.42 2021.50,795.74 2020.45,795.34 2017.24,795.20"/>
+        <lane id=":hw_2km_6_1" index="1" speed="3.66" length="4.32" shape="2017.15,797.36 2015.59,797.82 2015.06,798.14 2015.57,798.34 2017.10,798.40"/>
+    </edge>
+    <edge id=":hw_2km_8" function="internal">
+        <lane id=":hw_2km_8_0" index="0" speed="33.33" length="21.30" shape="1996.02,788.80 2017.53,788.80"/>
+        <lane id=":hw_2km_8_1" index="1" speed="33.33" length="21.30" shape="1996.02,792.00 2017.39,792.00"/>
+        <lane id=":hw_2km_8_2" index="2" speed="33.33" length="21.30" shape="1996.02,795.20 2017.24,795.20"/>
+        <lane id=":hw_2km_8_3" index="3" speed="33.33" length="21.30" shape="1996.02,798.40 2017.10,798.40"/>
+    </edge>
+    <edge id=":hw_3km_0" function="internal">
+        <lane id=":hw_3km_0_0" index="0" speed="33.33" length="20.80" shape="3010.40,811.20 2989.60,811.20"/>
+        <lane id=":hw_3km_0_1" index="1" speed="33.33" length="20.80" shape="3010.40,808.00 2989.60,808.00"/>
+        <lane id=":hw_3km_0_2" index="2" speed="33.33" length="20.80" shape="3010.40,804.80 2989.60,804.80"/>
+        <lane id=":hw_3km_0_3" index="3" speed="33.33" length="20.80" shape="3010.40,801.60 2989.60,801.60"/>
+    </edge>
+    <edge id=":hw_3km_4" function="internal">
+        <lane id=":hw_3km_4_0" index="0" speed="10.41" length="3.37" shape="3010.40,801.60 3007.11,800.88"/>
+    </edge>
+    <edge id=":hw_3km_14" function="internal">
+        <lane id=":hw_3km_14_0" index="0" speed="10.41" length="21.36" shape="3007.11,800.88 3005.15,800.45 3001.40,797.00 2999.15,791.25 2998.40,783.20"/>
+    </edge>
+    <edge id=":hw_3km_5" function="internal">
+        <lane id=":hw_3km_5_0" index="0" speed="6.51" length="9.03" shape="3004.80,783.20 3005.15,785.65 3006.20,787.40 3007.95,788.45 3010.40,788.80"/>
+        <lane id=":hw_3km_5_1" index="1" speed="7.33" length="11.73" shape="3004.80,783.20 3005.15,787.05 3006.20,789.80 3007.95,791.45 3010.40,792.00"/>
+    </edge>
+    <edge id=":hw_3km_7" function="internal">
+        <lane id=":hw_3km_7_0" index="0" speed="10.96" length="27.54" shape="3001.60,783.20 3000.85,792.65 2998.60,799.40 2994.85,803.45 2989.60,804.80"/>
+        <lane id=":hw_3km_7_1" index="1" speed="10.41" length="24.73" shape="3001.60,783.20 3000.85,791.25 2998.60,797.00 2994.85,800.45 2989.60,801.60"/>
+    </edge>
+    <edge id=":hw_3km_9" function="internal">
+        <lane id=":hw_3km_9_0" index="0" speed="6.51" length="9.03" shape="2989.60,788.80 2992.05,788.45 2993.80,787.40 2994.85,785.65 2995.20,783.20"/>
+    </edge>
+    <edge id=":hw_3km_10" function="internal">
+        <lane id=":hw_3km_10_0" index="0" speed="33.33" length="20.80" shape="2989.60,788.80 3010.40,788.80"/>
+        <lane id=":hw_3km_10_1" index="1" speed="33.33" length="20.80" shape="2989.60,792.00 3010.40,792.00"/>
+        <lane id=":hw_3km_10_2" index="2" speed="33.33" length="20.80" shape="2989.60,795.20 3010.40,795.20"/>
+        <lane id=":hw_3km_10_3" index="3" speed="33.33" length="20.80" shape="2989.60,798.40 3010.40,798.40"/>
+    </edge>
+    <edge id=":hw_4km_0" function="internal">
+        <lane id=":hw_4km_0_0" index="0" speed="6.51" length="9.03" shape="4007.20,811.20 4004.75,811.55 4003.00,812.60 4001.95,814.35 4001.60,816.80"/>
+    </edge>
+    <edge id=":hw_4km_1" function="internal">
+        <lane id=":hw_4km_1_0" index="0" speed="33.33" length="11.20" shape="4007.20,811.20 3996.00,811.20"/>
+        <lane id=":hw_4km_1_1" index="1" speed="33.33" length="11.20" shape="4007.20,808.00 3996.00,808.00"/>
+        <lane id=":hw_4km_1_2" index="2" speed="33.33" length="11.20" shape="4007.20,804.80 3996.00,804.80"/>
+        <lane id=":hw_4km_1_3" index="3" speed="33.33" length="11.20" shape="4007.20,801.60 3996.00,801.60"/>
+    </edge>
+    <edge id=":hw_4km_5" function="internal">
+        <lane id=":hw_4km_5_0" index="0" speed="33.33" length="11.20" shape="3996.00,788.80 4007.20,788.80"/>
+        <lane id=":hw_4km_5_1" index="1" speed="33.33" length="11.20" shape="3996.00,792.00 4007.20,792.00"/>
+        <lane id=":hw_4km_5_2" index="2" speed="33.33" length="11.20" shape="3996.00,795.20 4007.20,795.20"/>
+        <lane id=":hw_4km_5_3" index="3" speed="33.33" length="11.20" shape="3996.00,798.40 4007.20,798.40"/>
+    </edge>
+    <edge id=":hw_4km_9" function="internal">
+        <lane id=":hw_4km_9_0" index="0" speed="9.51" length="1.85" shape="3996.00,798.40 3997.67,799.19"/>
+    </edge>
+    <edge id=":hw_4km_10" function="internal">
+        <lane id=":hw_4km_10_0" index="0" speed="9.51" length="18.63" shape="3997.67,799.19 3998.45,799.55 4000.20,803.00 4001.25,808.75 4001.60,816.80"/>
+    </edge>
+    <edge id=":hw_5km_0" function="internal">
+        <lane id=":hw_5km_0_0" index="0" speed="33.33" length="20.80" shape="5010.40,811.20 4989.60,811.20"/>
+        <lane id=":hw_5km_0_1" index="1" speed="33.33" length="20.80" shape="5010.40,808.00 4989.60,808.00"/>
+        <lane id=":hw_5km_0_2" index="2" speed="33.33" length="20.80" shape="5010.40,804.80 4989.60,804.80"/>
+        <lane id=":hw_5km_0_3" index="3" speed="33.33" length="20.80" shape="5010.40,801.60 4989.60,801.60"/>
+    </edge>
+    <edge id=":hw_5km_4" function="internal">
+        <lane id=":hw_5km_4_0" index="0" speed="10.41" length="3.37" shape="5010.40,801.60 5007.11,800.88"/>
+    </edge>
+    <edge id=":hw_5km_14" function="internal">
+        <lane id=":hw_5km_14_0" index="0" speed="10.41" length="21.36" shape="5007.11,800.88 5005.15,800.45 5001.40,797.00 4999.15,791.25 4998.40,783.20"/>
+    </edge>
+    <edge id=":hw_5km_5" function="internal">
+        <lane id=":hw_5km_5_0" index="0" speed="6.51" length="9.03" shape="5004.80,783.20 5005.15,785.65 5006.20,787.40 5007.95,788.45 5010.40,788.80"/>
+        <lane id=":hw_5km_5_1" index="1" speed="7.33" length="11.73" shape="5004.80,783.20 5005.15,787.05 5006.20,789.80 5007.95,791.45 5010.40,792.00"/>
+    </edge>
+    <edge id=":hw_5km_7" function="internal">
+        <lane id=":hw_5km_7_0" index="0" speed="10.96" length="27.54" shape="5001.60,783.20 5000.85,792.65 4998.60,799.40 4994.85,803.45 4989.60,804.80"/>
+        <lane id=":hw_5km_7_1" index="1" speed="10.41" length="24.73" shape="5001.60,783.20 5000.85,791.25 4998.60,797.00 4994.85,800.45 4989.60,801.60"/>
+    </edge>
+    <edge id=":hw_5km_9" function="internal">
+        <lane id=":hw_5km_9_0" index="0" speed="6.51" length="9.03" shape="4989.60,788.80 4992.05,788.45 4993.80,787.40 4994.85,785.65 4995.20,783.20"/>
+    </edge>
+    <edge id=":hw_5km_10" function="internal">
+        <lane id=":hw_5km_10_0" index="0" speed="33.33" length="20.80" shape="4989.60,788.80 5010.40,788.80"/>
+        <lane id=":hw_5km_10_1" index="1" speed="33.33" length="20.80" shape="4989.60,792.00 5010.40,792.00"/>
+        <lane id=":hw_5km_10_2" index="2" speed="33.33" length="20.80" shape="4989.60,795.20 5010.40,795.20"/>
+        <lane id=":hw_5km_10_3" index="3" speed="33.33" length="20.80" shape="4989.60,798.40 5010.40,798.40"/>
+    </edge>
+    <edge id=":hw_6km_0" function="internal">
+        <lane id=":hw_6km_0_0" index="0" speed="33.33" length="21.17" shape="6017.19,811.20 5996.02,811.20"/>
+        <lane id=":hw_6km_0_1" index="1" speed="33.33" length="21.17" shape="6017.19,808.00 5996.02,808.00"/>
+        <lane id=":hw_6km_0_2" index="2" speed="33.33" length="21.17" shape="6017.19,804.80 5996.02,804.80"/>
+        <lane id=":hw_6km_0_3" index="3" speed="33.33" length="21.17" shape="6017.19,801.60 5996.02,801.60"/>
+    </edge>
+    <edge id=":hw_6km_4" function="internal">
+        <lane id=":hw_6km_4_0" index="0" speed="29.16" length="22.15" shape="6017.15,797.36 6013.38,799.04 6008.97,801.54 6003.36,803.81 5996.02,804.80"/>
+        <lane id=":hw_6km_4_1" index="1" speed="29.16" length="22.15" shape="6017.15,797.36 6013.32,798.54 6008.81,799.94 6003.18,801.11 5996.02,801.60"/>
+    </edge>
+    <edge id=":hw_6km_6" function="internal">
+        <lane id=":hw_6km_6_0" index="0" speed="4.82" length="9.00" shape="6017.15,797.36 6020.40,796.42 6021.50,795.74 6020.45,795.34 6017.24,795.20"/>
+        <lane id=":hw_6km_6_1" index="1" speed="3.66" length="4.32" shape="6017.15,797.36 6015.59,797.82 6015.06,798.14 6015.57,798.34 6017.10,798.40"/>
+    </edge>
+    <edge id=":hw_6km_8" function="internal">
+        <lane id=":hw_6km_8_0" index="0" speed="33.33" length="21.30" shape="5996.02,788.80 6017.53,788.80"/>
+        <lane id=":hw_6km_8_1" index="1" speed="33.33" length="21.30" shape="5996.02,792.00 6017.39,792.00"/>
+        <lane id=":hw_6km_8_2" index="2" speed="33.33" length="21.30" shape="5996.02,795.20 6017.24,795.20"/>
+        <lane id=":hw_6km_8_3" index="3" speed="33.33" length="21.30" shape="5996.02,798.40 6017.10,798.40"/>
+    </edge>
+    <edge id=":hw_7km_0" function="internal">
+        <lane id=":hw_7km_0_0" index="0" speed="33.33" length="20.80" shape="7010.40,811.20 6989.60,811.20"/>
+        <lane id=":hw_7km_0_1" index="1" speed="33.33" length="20.80" shape="7010.40,808.00 6989.60,808.00"/>
+        <lane id=":hw_7km_0_2" index="2" speed="33.33" length="20.80" shape="7010.40,804.80 6989.60,804.80"/>
+        <lane id=":hw_7km_0_3" index="3" speed="33.33" length="20.80" shape="7010.40,801.60 6989.60,801.60"/>
+    </edge>
+    <edge id=":hw_7km_4" function="internal">
+        <lane id=":hw_7km_4_0" index="0" speed="10.41" length="3.37" shape="7010.40,801.60 7007.11,800.88"/>
+    </edge>
+    <edge id=":hw_7km_14" function="internal">
+        <lane id=":hw_7km_14_0" index="0" speed="10.41" length="21.36" shape="7007.11,800.88 7005.15,800.45 7001.40,797.00 6999.15,791.25 6998.40,783.20"/>
+    </edge>
+    <edge id=":hw_7km_5" function="internal">
+        <lane id=":hw_7km_5_0" index="0" speed="6.51" length="9.03" shape="7004.80,783.20 7005.15,785.65 7006.20,787.40 7007.95,788.45 7010.40,788.80"/>
+        <lane id=":hw_7km_5_1" index="1" speed="7.33" length="11.73" shape="7004.80,783.20 7005.15,787.05 7006.20,789.80 7007.95,791.45 7010.40,792.00"/>
+    </edge>
+    <edge id=":hw_7km_7" function="internal">
+        <lane id=":hw_7km_7_0" index="0" speed="10.96" length="27.54" shape="7001.60,783.20 7000.85,792.65 6998.60,799.40 6994.85,803.45 6989.60,804.80"/>
+        <lane id=":hw_7km_7_1" index="1" speed="10.41" length="24.73" shape="7001.60,783.20 7000.85,791.25 6998.60,797.00 6994.85,800.45 6989.60,801.60"/>
+    </edge>
+    <edge id=":hw_7km_9" function="internal">
+        <lane id=":hw_7km_9_0" index="0" speed="6.51" length="9.03" shape="6989.60,788.80 6992.05,788.45 6993.80,787.40 6994.85,785.65 6995.20,783.20"/>
+    </edge>
+    <edge id=":hw_7km_10" function="internal">
+        <lane id=":hw_7km_10_0" index="0" speed="33.33" length="20.80" shape="6989.60,788.80 7010.40,788.80"/>
+        <lane id=":hw_7km_10_1" index="1" speed="33.33" length="20.80" shape="6989.60,792.00 7010.40,792.00"/>
+        <lane id=":hw_7km_10_2" index="2" speed="33.33" length="20.80" shape="6989.60,795.20 7010.40,795.20"/>
+        <lane id=":hw_7km_10_3" index="3" speed="33.33" length="20.80" shape="6989.60,798.40 7010.40,798.40"/>
+    </edge>
+    <edge id=":hw_8km_0" function="internal">
+        <lane id=":hw_8km_0_0" index="0" speed="6.51" length="9.03" shape="8007.20,811.20 8004.75,811.55 8003.00,812.60 8001.95,814.35 8001.60,816.80"/>
+    </edge>
+    <edge id=":hw_8km_1" function="internal">
+        <lane id=":hw_8km_1_0" index="0" speed="33.33" length="11.20" shape="8007.20,811.20 7996.00,811.20"/>
+        <lane id=":hw_8km_1_1" index="1" speed="33.33" length="11.20" shape="8007.20,808.00 7996.00,808.00"/>
+        <lane id=":hw_8km_1_2" index="2" speed="33.33" length="11.20" shape="8007.20,804.80 7996.00,804.80"/>
+        <lane id=":hw_8km_1_3" index="3" speed="33.33" length="11.20" shape="8007.20,801.60 7996.00,801.60"/>
+    </edge>
+    <edge id=":hw_8km_5" function="internal">
+        <lane id=":hw_8km_5_0" index="0" speed="33.33" length="11.20" shape="7996.00,788.80 8007.20,788.80"/>
+        <lane id=":hw_8km_5_1" index="1" speed="33.33" length="11.20" shape="7996.00,792.00 8007.20,792.00"/>
+        <lane id=":hw_8km_5_2" index="2" speed="33.33" length="11.20" shape="7996.00,795.20 8007.20,795.20"/>
+        <lane id=":hw_8km_5_3" index="3" speed="33.33" length="11.20" shape="7996.00,798.40 8007.20,798.40"/>
+    </edge>
+    <edge id=":hw_8km_9" function="internal">
+        <lane id=":hw_8km_9_0" index="0" speed="9.51" length="1.85" shape="7996.00,798.40 7997.67,799.19"/>
+    </edge>
+    <edge id=":hw_8km_10" function="internal">
+        <lane id=":hw_8km_10_0" index="0" speed="9.51" length="18.63" shape="7997.67,799.19 7998.45,799.55 8000.20,803.00 8001.25,808.75 8001.60,816.80"/>
+    </edge>
+    <edge id=":hw_9km_0" function="internal">
+        <lane id=":hw_9km_0_0" index="0" speed="33.33" length="0.10" shape="9000.00,811.20 9000.04,811.20"/>
+        <lane id=":hw_9km_0_1" index="1" speed="33.33" length="0.10" shape="9000.00,808.00 9000.04,808.00"/>
+        <lane id=":hw_9km_0_2" index="2" speed="33.33" length="0.10" shape="9000.00,804.80 9000.04,804.80"/>
+        <lane id=":hw_9km_0_3" index="3" speed="33.33" length="0.10" shape="9000.00,801.60 9000.04,801.60"/>
+    </edge>
+    <edge id=":hw_9km_4" function="internal">
+        <lane id=":hw_9km_4_0" index="0" speed="33.33" length="0.10" shape="9000.04,788.80 9000.00,788.80"/>
+        <lane id=":hw_9km_4_1" index="1" speed="33.33" length="0.10" shape="9000.04,792.00 9000.00,792.00"/>
+        <lane id=":hw_9km_4_2" index="2" speed="33.33" length="0.10" shape="9000.04,795.20 9000.00,795.20"/>
+        <lane id=":hw_9km_4_3" index="3" speed="33.33" length="0.10" shape="9000.04,798.40 9000.00,798.40"/>
+    </edge>
+    <edge id=":offramp_4km_split_0" function="internal">
+        <lane id=":offramp_4km_split_0_0" index="0" speed="7.61" length="4.91" shape="4001.60,842.26 4001.63,843.44 4001.79,844.25 4002.17,844.99 4002.89,845.93"/>
+        <lane id=":offramp_4km_split_0_1" index="1" speed="9.03" length="4.91" shape="4001.60,842.26 4000.39,847.92"/>
+    </edge>
+    <edge id=":offramp_8km_split_0" function="internal">
+        <lane id=":offramp_8km_split_0_0" index="0" speed="7.61" length="4.91" shape="8001.60,842.26 8001.63,843.44 8001.79,844.25 8002.17,844.99 8002.89,845.93"/>
+        <lane id=":offramp_8km_split_0_1" index="1" speed="9.03" length="4.91" shape="8001.60,842.26 8000.39,847.92"/>
+    </edge>
+    <edge id=":onramp_2km_merge_0" function="internal">
+        <lane id=":onramp_2km_merge_0_0" index="0" speed="5.78" length="9.16" shape="2198.75,745.88 2200.13,748.19 2200.22,750.07 2199.01,751.52 2196.51,752.52"/>
+    </edge>
+    <edge id=":onramp_6km_merge_0" function="internal">
+        <lane id=":onramp_6km_merge_0_0" index="0" speed="5.78" length="9.16" shape="6198.75,745.88 6200.13,748.19 6200.22,750.07 6199.01,751.52 6196.51,752.52"/>
+    </edge>
+
+    <edge id="hospital_to_hw" from="hospital" to="hw_7km" priority="4">
+        <lane id="hospital_to_hw_0" index="0" speed="22.22" length="783.20" shape="7004.80,0.00 7004.80,783.20"/>
+        <lane id="hospital_to_hw_1" index="1" speed="22.22" length="783.20" shape="7001.60,0.00 7001.60,783.20"/>
+    </edge>
+    <edge id="hw_0_1" from="hw_start" to="hw_1km" priority="5" spreadType="center" shape="-0.04,793.60 1000.00,793.60">
+        <lane id="hw_0_1_0" index="0" speed="33.33" length="1000.04" shape="-0.04,788.80 1000.00,788.80"/>
+        <lane id="hw_0_1_1" index="1" speed="33.33" length="1000.04" shape="-0.04,792.00 1000.00,792.00"/>
+        <lane id="hw_0_1_2" index="2" speed="33.33" length="1000.04" shape="-0.04,795.20 1000.00,795.20"/>
+        <lane id="hw_0_1_3" index="3" speed="33.33" length="1000.04" shape="-0.04,798.40 1000.00,798.40"/>
+    </edge>
+    <edge id="hw_10_9" from="hw_end" to="hw_9km" priority="5" spreadType="center" shape="10000.04,806.40 9000.00,806.40">
+        <lane id="hw_10_9_0" index="0" speed="33.33" length="1000.04" shape="10000.04,811.20 9000.00,811.20"/>
+        <lane id="hw_10_9_1" index="1" speed="33.33" length="1000.04" shape="10000.04,808.00 9000.00,808.00"/>
+        <lane id="hw_10_9_2" index="2" speed="33.33" length="1000.04" shape="10000.04,804.80 9000.00,804.80"/>
+        <lane id="hw_10_9_3" index="3" speed="33.33" length="1000.04" shape="10000.04,801.60 9000.00,801.60"/>
+    </edge>
+    <edge id="hw_1_0" from="hw_1km" to="hw_start" priority="5" spreadType="center" shape="1000.00,806.40 -0.04,806.40">
+        <lane id="hw_1_0_0" index="0" speed="33.33" length="1000.04" shape="1000.00,811.20 -0.04,811.20"/>
+        <lane id="hw_1_0_1" index="1" speed="33.33" length="1000.04" shape="1000.00,808.00 -0.04,808.00"/>
+        <lane id="hw_1_0_2" index="2" speed="33.33" length="1000.04" shape="1000.00,804.80 -0.04,804.80"/>
+        <lane id="hw_1_0_3" index="3" speed="33.33" length="1000.04" shape="1000.00,801.60 -0.04,801.60"/>
+    </edge>
+    <edge id="hw_1_2" from="hw_1km" to="hw_2km" priority="5" spreadType="center" shape="1000.00,793.60 2000.04,793.60">
+        <lane id="hw_1_2_0" index="0" speed="33.33" length="996.02" shape="1000.00,788.80 1996.02,788.80"/>
+        <lane id="hw_1_2_1" index="1" speed="33.33" length="996.02" shape="1000.00,792.00 1996.02,792.00"/>
+        <lane id="hw_1_2_2" index="2" speed="33.33" length="996.02" shape="1000.00,795.20 1996.02,795.20"/>
+        <lane id="hw_1_2_3" index="3" speed="33.33" length="996.02" shape="1000.00,798.40 1996.02,798.40"/>
+    </edge>
+    <edge id="hw_2_1" from="hw_2km" to="hw_1km" priority="5" spreadType="center" shape="2000.04,806.40 1000.00,806.40">
+        <lane id="hw_2_1_0" index="0" speed="33.33" length="996.02" shape="1996.02,811.20 1000.00,811.20"/>
+        <lane id="hw_2_1_1" index="1" speed="33.33" length="996.02" shape="1996.02,808.00 1000.00,808.00"/>
+        <lane id="hw_2_1_2" index="2" speed="33.33" length="996.02" shape="1996.02,804.80 1000.00,804.80"/>
+        <lane id="hw_2_1_3" index="3" speed="33.33" length="996.02" shape="1996.02,801.60 1000.00,801.60"/>
+    </edge>
+    <edge id="hw_2_3" from="hw_2km" to="hw_3km" priority="5" spreadType="center" shape="2000.00,793.60 3000.04,793.60">
+        <lane id="hw_2_3_0" index="0" speed="33.33" length="972.28" shape="2017.53,788.80 2989.60,788.80"/>
+        <lane id="hw_2_3_1" index="1" speed="33.33" length="972.28" shape="2017.39,792.00 2989.60,792.00"/>
+        <lane id="hw_2_3_2" index="2" speed="33.33" length="972.28" shape="2017.24,795.20 2989.60,795.20"/>
+        <lane id="hw_2_3_3" index="3" speed="33.33" length="972.28" shape="2017.10,798.40 2989.60,798.40"/>
+    </edge>
+    <edge id="hw_3_2" from="hw_3km" to="hw_2km" priority="5" spreadType="center" shape="3000.04,806.40 2000.00,806.40">
+        <lane id="hw_3_2_0" index="0" speed="33.33" length="972.41" shape="2989.60,811.20 2017.19,811.20"/>
+        <lane id="hw_3_2_1" index="1" speed="33.33" length="972.41" shape="2989.60,808.00 2017.19,808.00"/>
+        <lane id="hw_3_2_2" index="2" speed="33.33" length="972.41" shape="2989.60,804.80 2017.19,804.80"/>
+        <lane id="hw_3_2_3" index="3" speed="33.33" length="972.41" shape="2989.60,801.60 2017.19,801.60"/>
+    </edge>
+    <edge id="hw_3_4" from="hw_3km" to="hw_4km" priority="5" spreadType="center" shape="3000.00,793.60 4000.04,793.60">
+        <lane id="hw_3_4_0" index="0" speed="33.33" length="985.60" shape="3010.40,788.80 3996.00,788.80"/>
+        <lane id="hw_3_4_1" index="1" speed="33.33" length="985.60" shape="3010.40,792.00 3996.00,792.00"/>
+        <lane id="hw_3_4_2" index="2" speed="33.33" length="985.60" shape="3010.40,795.20 3996.00,795.20"/>
+        <lane id="hw_3_4_3" index="3" speed="33.33" length="985.60" shape="3010.40,798.40 3996.00,798.40"/>
+    </edge>
+    <edge id="hw_4_3" from="hw_4km" to="hw_3km" priority="5" spreadType="center" shape="4000.04,806.40 3000.00,806.40">
+        <lane id="hw_4_3_0" index="0" speed="33.33" length="985.60" shape="3996.00,811.20 3010.40,811.20"/>
+        <lane id="hw_4_3_1" index="1" speed="33.33" length="985.60" shape="3996.00,808.00 3010.40,808.00"/>
+        <lane id="hw_4_3_2" index="2" speed="33.33" length="985.60" shape="3996.00,804.80 3010.40,804.80"/>
+        <lane id="hw_4_3_3" index="3" speed="33.33" length="985.60" shape="3996.00,801.60 3010.40,801.60"/>
+    </edge>
+    <edge id="hw_4_5" from="hw_4km" to="hw_5km" priority="5" spreadType="center" shape="4000.00,793.60 5000.04,793.60">
+        <lane id="hw_4_5_0" index="0" speed="33.33" length="982.40" shape="4007.20,788.80 4989.60,788.80"/>
+        <lane id="hw_4_5_1" index="1" speed="33.33" length="982.40" shape="4007.20,792.00 4989.60,792.00"/>
+        <lane id="hw_4_5_2" index="2" speed="33.33" length="982.40" shape="4007.20,795.20 4989.60,795.20"/>
+        <lane id="hw_4_5_3" index="3" speed="33.33" length="982.40" shape="4007.20,798.40 4989.60,798.40"/>
+    </edge>
+    <edge id="hw_5_4" from="hw_5km" to="hw_4km" priority="5" spreadType="center" shape="5000.04,806.40 4000.00,806.40">
+        <lane id="hw_5_4_0" index="0" speed="33.33" length="982.40" shape="4989.60,811.20 4007.20,811.20"/>
+        <lane id="hw_5_4_1" index="1" speed="33.33" length="982.40" shape="4989.60,808.00 4007.20,808.00"/>
+        <lane id="hw_5_4_2" index="2" speed="33.33" length="982.40" shape="4989.60,804.80 4007.20,804.80"/>
+        <lane id="hw_5_4_3" index="3" speed="33.33" length="982.40" shape="4989.60,801.60 4007.20,801.60"/>
+    </edge>
+    <edge id="hw_5_6" from="hw_5km" to="hw_6km" priority="5" spreadType="center" shape="5000.00,793.60 6000.04,793.60">
+        <lane id="hw_5_6_0" index="0" speed="33.33" length="985.62" shape="5010.40,788.80 5996.02,788.80"/>
+        <lane id="hw_5_6_1" index="1" speed="33.33" length="985.62" shape="5010.40,792.00 5996.02,792.00"/>
+        <lane id="hw_5_6_2" index="2" speed="33.33" length="985.62" shape="5010.40,795.20 5996.02,795.20"/>
+        <lane id="hw_5_6_3" index="3" speed="33.33" length="985.62" shape="5010.40,798.40 5996.02,798.40"/>
+    </edge>
+    <edge id="hw_6_5" from="hw_6km" to="hw_5km" priority="5" spreadType="center" shape="6000.04,806.40 5000.00,806.40">
+        <lane id="hw_6_5_0" index="0" speed="33.33" length="985.62" shape="5996.02,811.20 5010.40,811.20"/>
+        <lane id="hw_6_5_1" index="1" speed="33.33" length="985.62" shape="5996.02,808.00 5010.40,808.00"/>
+        <lane id="hw_6_5_2" index="2" speed="33.33" length="985.62" shape="5996.02,804.80 5010.40,804.80"/>
+        <lane id="hw_6_5_3" index="3" speed="33.33" length="985.62" shape="5996.02,801.60 5010.40,801.60"/>
+    </edge>
+    <edge id="hw_6_7" from="hw_6km" to="hw_7km" priority="5" spreadType="center" shape="6000.00,793.60 7000.04,793.60">
+        <lane id="hw_6_7_0" index="0" speed="33.33" length="972.28" shape="6017.53,788.80 6989.60,788.80"/>
+        <lane id="hw_6_7_1" index="1" speed="33.33" length="972.28" shape="6017.39,792.00 6989.60,792.00"/>
+        <lane id="hw_6_7_2" index="2" speed="33.33" length="972.28" shape="6017.24,795.20 6989.60,795.20"/>
+        <lane id="hw_6_7_3" index="3" speed="33.33" length="972.28" shape="6017.10,798.40 6989.60,798.40"/>
+    </edge>
+    <edge id="hw_7_6" from="hw_7km" to="hw_6km" priority="5" spreadType="center" shape="7000.04,806.40 6000.00,806.40">
+        <lane id="hw_7_6_0" index="0" speed="33.33" length="972.41" shape="6989.60,811.20 6017.19,811.20"/>
+        <lane id="hw_7_6_1" index="1" speed="33.33" length="972.41" shape="6989.60,808.00 6017.19,808.00"/>
+        <lane id="hw_7_6_2" index="2" speed="33.33" length="972.41" shape="6989.60,804.80 6017.19,804.80"/>
+        <lane id="hw_7_6_3" index="3" speed="33.33" length="972.41" shape="6989.60,801.60 6017.19,801.60"/>
+    </edge>
+    <edge id="hw_7_8" from="hw_7km" to="hw_8km" priority="5" spreadType="center" shape="7000.00,793.60 8000.04,793.60">
+        <lane id="hw_7_8_0" index="0" speed="33.33" length="985.60" shape="7010.40,788.80 7996.00,788.80"/>
+        <lane id="hw_7_8_1" index="1" speed="33.33" length="985.60" shape="7010.40,792.00 7996.00,792.00"/>
+        <lane id="hw_7_8_2" index="2" speed="33.33" length="985.60" shape="7010.40,795.20 7996.00,795.20"/>
+        <lane id="hw_7_8_3" index="3" speed="33.33" length="985.60" shape="7010.40,798.40 7996.00,798.40"/>
+    </edge>
+    <edge id="hw_8_7" from="hw_8km" to="hw_7km" priority="5" spreadType="center" shape="8000.04,806.40 7000.00,806.40">
+        <lane id="hw_8_7_0" index="0" speed="33.33" length="985.60" shape="7996.00,811.20 7010.40,811.20"/>
+        <lane id="hw_8_7_1" index="1" speed="33.33" length="985.60" shape="7996.00,808.00 7010.40,808.00"/>
+        <lane id="hw_8_7_2" index="2" speed="33.33" length="985.60" shape="7996.00,804.80 7010.40,804.80"/>
+        <lane id="hw_8_7_3" index="3" speed="33.33" length="985.60" shape="7996.00,801.60 7010.40,801.60"/>
+    </edge>
+    <edge id="hw_8_9" from="hw_8km" to="hw_9km" priority="5" spreadType="center" shape="8000.00,793.60 9000.04,793.60">
+        <lane id="hw_8_9_0" index="0" speed="33.33" length="992.84" shape="8007.20,788.80 9000.04,788.80"/>
+        <lane id="hw_8_9_1" index="1" speed="33.33" length="992.84" shape="8007.20,792.00 9000.04,792.00"/>
+        <lane id="hw_8_9_2" index="2" speed="33.33" length="992.84" shape="8007.20,795.20 9000.04,795.20"/>
+        <lane id="hw_8_9_3" index="3" speed="33.33" length="992.84" shape="8007.20,798.40 9000.04,798.40"/>
+    </edge>
+    <edge id="hw_9_10" from="hw_9km" to="hw_end" priority="5" spreadType="center" shape="9000.00,793.60 10000.04,793.60">
+        <lane id="hw_9_10_0" index="0" speed="33.33" length="1000.04" shape="9000.00,788.80 10000.04,788.80"/>
+        <lane id="hw_9_10_1" index="1" speed="33.33" length="1000.04" shape="9000.00,792.00 10000.04,792.00"/>
+        <lane id="hw_9_10_2" index="2" speed="33.33" length="1000.04" shape="9000.00,795.20 10000.04,795.20"/>
+        <lane id="hw_9_10_3" index="3" speed="33.33" length="1000.04" shape="9000.00,798.40 10000.04,798.40"/>
+    </edge>
+    <edge id="hw_9_8" from="hw_9km" to="hw_8km" priority="5" spreadType="center" shape="9000.04,806.40 8000.00,806.40">
+        <lane id="hw_9_8_0" index="0" speed="33.33" length="992.84" shape="9000.04,811.20 8007.20,811.20"/>
+        <lane id="hw_9_8_1" index="1" speed="33.33" length="992.84" shape="9000.04,808.00 8007.20,808.00"/>
+        <lane id="hw_9_8_2" index="2" speed="33.33" length="992.84" shape="9000.04,804.80 8007.20,804.80"/>
+        <lane id="hw_9_8_3" index="3" speed="33.33" length="992.84" shape="9000.04,801.60 8007.20,801.60"/>
+    </edge>
+    <edge id="hw_to_hospital" from="hw_7km" to="hospital" priority="4">
+        <lane id="hw_to_hospital_0" index="0" speed="22.22" length="783.20" shape="6995.20,783.20 6995.20,0.00"/>
+        <lane id="hw_to_hospital_1" index="1" speed="22.22" length="783.20" shape="6998.40,783.20 6998.40,0.00"/>
+    </edge>
+    <edge id="hw_to_police" from="hw_3km" to="police_station" priority="4">
+        <lane id="hw_to_police_0" index="0" speed="22.22" length="783.20" shape="2995.20,783.20 2995.20,0.00"/>
+        <lane id="hw_to_police_1" index="1" speed="22.22" length="783.20" shape="2998.40,783.20 2998.40,0.00"/>
+    </edge>
+    <edge id="hw_to_traffic" from="hw_5km" to="traffic_control" priority="4">
+        <lane id="hw_to_traffic_0" index="0" speed="22.22" length="783.20" shape="4995.20,783.20 4995.20,0.00"/>
+        <lane id="hw_to_traffic_1" index="1" speed="22.22" length="783.20" shape="4998.40,783.20 4998.40,0.00"/>
+    </edge>
+    <edge id="offramp_4km_exit" from="offramp_4km_split" to="offramp_4km_end" priority="3">
+        <lane id="offramp_4km_exit_0" index="0" speed="16.67" length="321.53" shape="4002.89,845.93 4203.75,1097.00"/>
+        <lane id="offramp_4km_exit_1" index="1" speed="16.67" length="321.53" shape="4000.39,847.92 4201.25,1099.00"/>
+    </edge>
+    <edge id="offramp_4km_from_hw" from="hw_4km" to="offramp_4km_split" priority="3">
+        <lane id="offramp_4km_from_hw_0" index="0" speed="25.00" length="25.46" shape="4001.60,816.80 4001.60,842.26"/>
+    </edge>
+    <edge id="offramp_8km_exit" from="offramp_8km_split" to="offramp_8km_end" priority="3">
+        <lane id="offramp_8km_exit_0" index="0" speed="16.67" length="321.53" shape="8002.89,845.93 8203.75,1097.00"/>
+        <lane id="offramp_8km_exit_1" index="1" speed="16.67" length="321.53" shape="8000.39,847.92 8201.25,1099.00"/>
+    </edge>
+    <edge id="offramp_8km_from_hw" from="hw_8km" to="offramp_8km_split" priority="3">
+        <lane id="offramp_8km_from_hw_0" index="0" speed="25.00" length="25.46" shape="8001.60,816.80 8001.60,842.26"/>
+    </edge>
+    <edge id="onramp_2km_entry" from="onramp_2km_start" to="onramp_2km_merge" priority="3">
+        <lane id="onramp_2km_entry_0" index="0" speed="16.67" length="316.16" shape="2003.75,497.00 2201.25,743.88"/>
+        <lane id="onramp_2km_entry_1" index="1" speed="16.67" length="316.16" shape="2001.25,499.00 2198.75,745.88"/>
+    </edge>
+    <edge id="onramp_2km_to_hw" from="onramp_2km_merge" to="hw_2km" priority="3">
+        <lane id="onramp_2km_to_hw_0" index="0" speed="25.00" length="184.88" shape="2196.51,752.52 2017.15,797.36"/>
+    </edge>
+    <edge id="onramp_6km_entry" from="onramp_6km_start" to="onramp_6km_merge" priority="3">
+        <lane id="onramp_6km_entry_0" index="0" speed="16.67" length="316.16" shape="6003.75,497.00 6201.25,743.88"/>
+        <lane id="onramp_6km_entry_1" index="1" speed="16.67" length="316.16" shape="6001.25,499.00 6198.75,745.88"/>
+    </edge>
+    <edge id="onramp_6km_to_hw" from="onramp_6km_merge" to="hw_6km" priority="3">
+        <lane id="onramp_6km_to_hw_0" index="0" speed="25.00" length="184.88" shape="6196.51,752.52 6017.15,797.36"/>
+    </edge>
+    <edge id="police_to_hw" from="police_station" to="hw_3km" priority="4">
+        <lane id="police_to_hw_0" index="0" speed="22.22" length="783.20" shape="3004.80,0.00 3004.80,783.20"/>
+        <lane id="police_to_hw_1" index="1" speed="22.22" length="783.20" shape="3001.60,0.00 3001.60,783.20"/>
+    </edge>
+    <edge id="traffic_to_hw" from="traffic_control" to="hw_5km" priority="4">
+        <lane id="traffic_to_hw_0" index="0" speed="22.22" length="783.20" shape="5004.80,0.00 5004.80,783.20"/>
+        <lane id="traffic_to_hw_1" index="1" speed="22.22" length="783.20" shape="5001.60,0.00 5001.60,783.20"/>
+    </edge>
+
+    <junction id="hospital" type="dead_end" x="7000.00" y="0.00" incLanes="hw_to_hospital_0 hw_to_hospital_1" intLanes="" shape="7000.00,0.00 6993.60,0.00 7000.00,0.00"/>
+    <junction id="hw_1km" type="priority" x="1000.00" y="800.00" incLanes="hw_2_1_0 hw_2_1_1 hw_2_1_2 hw_2_1_3 hw_0_1_0 hw_0_1_1 hw_0_1_2 hw_0_1_3" intLanes=":hw_1km_0_0 :hw_1km_0_1 :hw_1km_0_2 :hw_1km_0_3 :hw_1km_4_0 :hw_1km_4_1 :hw_1km_4_2 :hw_1km_4_3" shape="1000.00,812.80 1000.00,787.20 1000.00,812.80">
+        <request index="0" response="00000000" foes="00000000" cont="0"/>
+        <request index="1" response="00000000" foes="00000000" cont="0"/>
+        <request index="2" response="00000000" foes="00000000" cont="0"/>
+        <request index="3" response="00000000" foes="00000000" cont="0"/>
+        <request index="4" response="00000000" foes="00000000" cont="0"/>
+        <request index="5" response="00000000" foes="00000000" cont="0"/>
+        <request index="6" response="00000000" foes="00000000" cont="0"/>
+        <request index="7" response="00000000" foes="00000000" cont="0"/>
+    </junction>
+    <junction id="hw_2km" type="priority" x="2000.00" y="800.00" incLanes="hw_3_2_0 hw_3_2_1 hw_3_2_2 hw_3_2_3 onramp_2km_to_hw_0 hw_1_2_0 hw_1_2_1 hw_1_2_2 hw_1_2_3" intLanes=":hw_2km_0_0 :hw_2km_0_1 :hw_2km_0_2 :hw_2km_0_3 :hw_2km_4_0 :hw_2km_4_1 :hw_2km_6_0 :hw_2km_6_1 :hw_2km_8_0 :hw_2km_8_1 :hw_2km_8_2 :hw_2km_8_3" shape="2017.19,812.80 2017.19,800.00 2017.07,799.03 2017.60,787.20 1996.02,787.20 1996.02,812.80">
+        <request index="0"  response="000000000000" foes="000000110000" cont="0"/>
+        <request index="1"  response="000000000000" foes="000000110000" cont="0"/>
+        <request index="2"  response="000000000000" foes="000000110000" cont="0"/>
+        <request index="3"  response="000000000000" foes="000000110000" cont="0"/>
+        <request index="4"  response="000000001111" foes="000000001111" cont="0"/>
+        <request index="5"  response="000000001111" foes="000000001111" cont="0"/>
+        <request index="6"  response="111100000000" foes="111100000000" cont="0"/>
+        <request index="7"  response="111100000000" foes="111100000000" cont="0"/>
+        <request index="8"  response="000000000000" foes="000011000000" cont="0"/>
+        <request index="9"  response="000000000000" foes="000011000000" cont="0"/>
+        <request index="10" response="000000000000" foes="000011000000" cont="0"/>
+        <request index="11" response="000000000000" foes="000011000000" cont="0"/>
+    </junction>
+    <junction id="hw_3km" type="priority" x="3000.00" y="800.00" incLanes="hw_4_3_0 hw_4_3_1 hw_4_3_2 hw_4_3_3 police_to_hw_0 police_to_hw_1 hw_2_3_0 hw_2_3_1 hw_2_3_2 hw_2_3_3" intLanes=":hw_3km_0_0 :hw_3km_0_1 :hw_3km_0_2 :hw_3km_0_3 :hw_3km_14_0 :hw_3km_5_0 :hw_3km_5_1 :hw_3km_7_0 :hw_3km_7_1 :hw_3km_9_0 :hw_3km_10_0 :hw_3km_10_1 :hw_3km_10_2 :hw_3km_10_3" shape="3010.40,812.80 3010.40,787.20 3008.18,786.76 3007.40,786.20 3006.84,785.42 3006.51,784.42 3006.40,783.20 2993.60,783.20 2993.16,785.42 2992.60,786.20 2991.82,786.76 2990.82,787.09 2989.60,787.20 2989.60,812.80">
+        <request index="0"  response="00000000000000" foes="00000110000000" cont="0"/>
+        <request index="1"  response="00000000000000" foes="00000110000000" cont="0"/>
+        <request index="2"  response="00000000000000" foes="00000110000000" cont="0"/>
+        <request index="3"  response="00000000000000" foes="00000110000000" cont="0"/>
+        <request index="4"  response="11110000000000" foes="11110110000000" cont="1"/>
+        <request index="5"  response="11110000000000" foes="11110000000000" cont="0"/>
+        <request index="6"  response="11110000000000" foes="11110000000000" cont="0"/>
+        <request index="7"  response="11110000011111" foes="11110000011111" cont="0"/>
+        <request index="8"  response="11110000011111" foes="11110000011111" cont="0"/>
+        <request index="9"  response="00000000000000" foes="00000000000000" cont="0"/>
+        <request index="10" response="00000000000000" foes="00000111110000" cont="0"/>
+        <request index="11" response="00000000000000" foes="00000111110000" cont="0"/>
+        <request index="12" response="00000000000000" foes="00000111110000" cont="0"/>
+        <request index="13" response="00000000000000" foes="00000111110000" cont="0"/>
+    </junction>
+    <junction id="hw_4km" type="priority" x="4000.00" y="800.00" incLanes="hw_5_4_0 hw_5_4_1 hw_5_4_2 hw_5_4_3 hw_3_4_0 hw_3_4_1 hw_3_4_2 hw_3_4_3" intLanes=":hw_4km_0_0 :hw_4km_1_0 :hw_4km_1_1 :hw_4km_1_2 :hw_4km_1_3 :hw_4km_5_0 :hw_4km_5_1 :hw_4km_5_2 :hw_4km_5_3 :hw_4km_10_0" shape="4000.00,816.80 4003.20,816.80 4003.64,814.58 4004.20,813.80 4004.98,813.24 4005.98,812.91 4007.20,812.80 4007.20,787.20 3996.00,787.20 3996.00,812.80 3998.22,813.24 3999.00,813.80 3999.56,814.58 3999.89,815.58">
+        <request index="0" response="0000000000" foes="1000000000" cont="0"/>
+        <request index="1" response="0000000000" foes="1000000000" cont="0"/>
+        <request index="2" response="0000000000" foes="1000000000" cont="0"/>
+        <request index="3" response="0000000000" foes="1000000000" cont="0"/>
+        <request index="4" response="0000000000" foes="1000000000" cont="0"/>
+        <request index="5" response="0000000000" foes="0000000000" cont="0"/>
+        <request index="6" response="0000000000" foes="0000000000" cont="0"/>
+        <request index="7" response="0000000000" foes="0000000000" cont="0"/>
+        <request index="8" response="0000000000" foes="0000000000" cont="0"/>
+        <request index="9" response="0000011111" foes="0000011111" cont="1"/>
+    </junction>
+    <junction id="hw_5km" type="priority" x="5000.00" y="800.00" incLanes="hw_6_5_0 hw_6_5_1 hw_6_5_2 hw_6_5_3 traffic_to_hw_0 traffic_to_hw_1 hw_4_5_0 hw_4_5_1 hw_4_5_2 hw_4_5_3" intLanes=":hw_5km_0_0 :hw_5km_0_1 :hw_5km_0_2 :hw_5km_0_3 :hw_5km_14_0 :hw_5km_5_0 :hw_5km_5_1 :hw_5km_7_0 :hw_5km_7_1 :hw_5km_9_0 :hw_5km_10_0 :hw_5km_10_1 :hw_5km_10_2 :hw_5km_10_3" shape="5010.40,812.80 5010.40,787.20 5008.18,786.76 5007.40,786.20 5006.84,785.42 5006.51,784.42 5006.40,783.20 4993.60,783.20 4993.16,785.42 4992.60,786.20 4991.82,786.76 4990.82,787.09 4989.60,787.20 4989.60,812.80">
+        <request index="0"  response="00000000000000" foes="00000110000000" cont="0"/>
+        <request index="1"  response="00000000000000" foes="00000110000000" cont="0"/>
+        <request index="2"  response="00000000000000" foes="00000110000000" cont="0"/>
+        <request index="3"  response="00000000000000" foes="00000110000000" cont="0"/>
+        <request index="4"  response="11110000000000" foes="11110110000000" cont="1"/>
+        <request index="5"  response="11110000000000" foes="11110000000000" cont="0"/>
+        <request index="6"  response="11110000000000" foes="11110000000000" cont="0"/>
+        <request index="7"  response="11110000011111" foes="11110000011111" cont="0"/>
+        <request index="8"  response="11110000011111" foes="11110000011111" cont="0"/>
+        <request index="9"  response="00000000000000" foes="00000000000000" cont="0"/>
+        <request index="10" response="00000000000000" foes="00000111110000" cont="0"/>
+        <request index="11" response="00000000000000" foes="00000111110000" cont="0"/>
+        <request index="12" response="00000000000000" foes="00000111110000" cont="0"/>
+        <request index="13" response="00000000000000" foes="00000111110000" cont="0"/>
+    </junction>
+    <junction id="hw_6km" type="priority" x="6000.00" y="800.00" incLanes="hw_7_6_0 hw_7_6_1 hw_7_6_2 hw_7_6_3 onramp_6km_to_hw_0 hw_5_6_0 hw_5_6_1 hw_5_6_2 hw_5_6_3" intLanes=":hw_6km_0_0 :hw_6km_0_1 :hw_6km_0_2 :hw_6km_0_3 :hw_6km_4_0 :hw_6km_4_1 :hw_6km_6_0 :hw_6km_6_1 :hw_6km_8_0 :hw_6km_8_1 :hw_6km_8_2 :hw_6km_8_3" shape="6017.19,812.80 6017.19,800.00 6017.07,799.03 6017.60,787.20 5996.02,787.20 5996.02,812.80">
+        <request index="0"  response="000000000000" foes="000000110000" cont="0"/>
+        <request index="1"  response="000000000000" foes="000000110000" cont="0"/>
+        <request index="2"  response="000000000000" foes="000000110000" cont="0"/>
+        <request index="3"  response="000000000000" foes="000000110000" cont="0"/>
+        <request index="4"  response="000000001111" foes="000000001111" cont="0"/>
+        <request index="5"  response="000000001111" foes="000000001111" cont="0"/>
+        <request index="6"  response="111100000000" foes="111100000000" cont="0"/>
+        <request index="7"  response="111100000000" foes="111100000000" cont="0"/>
+        <request index="8"  response="000000000000" foes="000011000000" cont="0"/>
+        <request index="9"  response="000000000000" foes="000011000000" cont="0"/>
+        <request index="10" response="000000000000" foes="000011000000" cont="0"/>
+        <request index="11" response="000000000000" foes="000011000000" cont="0"/>
+    </junction>
+    <junction id="hw_7km" type="priority" x="7000.00" y="800.00" incLanes="hw_8_7_0 hw_8_7_1 hw_8_7_2 hw_8_7_3 hospital_to_hw_0 hospital_to_hw_1 hw_6_7_0 hw_6_7_1 hw_6_7_2 hw_6_7_3" intLanes=":hw_7km_0_0 :hw_7km_0_1 :hw_7km_0_2 :hw_7km_0_3 :hw_7km_14_0 :hw_7km_5_0 :hw_7km_5_1 :hw_7km_7_0 :hw_7km_7_1 :hw_7km_9_0 :hw_7km_10_0 :hw_7km_10_1 :hw_7km_10_2 :hw_7km_10_3" shape="7010.40,812.80 7010.40,787.20 7008.18,786.76 7007.40,786.20 7006.84,785.42 7006.51,784.42 7006.40,783.20 6993.60,783.20 6993.16,785.42 6992.60,786.20 6991.82,786.76 6990.82,787.09 6989.60,787.20 6989.60,812.80">
+        <request index="0"  response="00000000000000" foes="00000110000000" cont="0"/>
+        <request index="1"  response="00000000000000" foes="00000110000000" cont="0"/>
+        <request index="2"  response="00000000000000" foes="00000110000000" cont="0"/>
+        <request index="3"  response="00000000000000" foes="00000110000000" cont="0"/>
+        <request index="4"  response="11110000000000" foes="11110110000000" cont="1"/>
+        <request index="5"  response="11110000000000" foes="11110000000000" cont="0"/>
+        <request index="6"  response="11110000000000" foes="11110000000000" cont="0"/>
+        <request index="7"  response="11110000011111" foes="11110000011111" cont="0"/>
+        <request index="8"  response="11110000011111" foes="11110000011111" cont="0"/>
+        <request index="9"  response="00000000000000" foes="00000000000000" cont="0"/>
+        <request index="10" response="00000000000000" foes="00000111110000" cont="0"/>
+        <request index="11" response="00000000000000" foes="00000111110000" cont="0"/>
+        <request index="12" response="00000000000000" foes="00000111110000" cont="0"/>
+        <request index="13" response="00000000000000" foes="00000111110000" cont="0"/>
+    </junction>
+    <junction id="hw_8km" type="priority" x="8000.00" y="800.00" incLanes="hw_9_8_0 hw_9_8_1 hw_9_8_2 hw_9_8_3 hw_7_8_0 hw_7_8_1 hw_7_8_2 hw_7_8_3" intLanes=":hw_8km_0_0 :hw_8km_1_0 :hw_8km_1_1 :hw_8km_1_2 :hw_8km_1_3 :hw_8km_5_0 :hw_8km_5_1 :hw_8km_5_2 :hw_8km_5_3 :hw_8km_10_0" shape="8000.00,816.80 8003.20,816.80 8003.64,814.58 8004.20,813.80 8004.98,813.24 8005.98,812.91 8007.20,812.80 8007.20,787.20 7996.00,787.20 7996.00,812.80 7998.22,813.24 7999.00,813.80 7999.56,814.58 7999.89,815.58">
+        <request index="0" response="0000000000" foes="1000000000" cont="0"/>
+        <request index="1" response="0000000000" foes="1000000000" cont="0"/>
+        <request index="2" response="0000000000" foes="1000000000" cont="0"/>
+        <request index="3" response="0000000000" foes="1000000000" cont="0"/>
+        <request index="4" response="0000000000" foes="1000000000" cont="0"/>
+        <request index="5" response="0000000000" foes="0000000000" cont="0"/>
+        <request index="6" response="0000000000" foes="0000000000" cont="0"/>
+        <request index="7" response="0000000000" foes="0000000000" cont="0"/>
+        <request index="8" response="0000000000" foes="0000000000" cont="0"/>
+        <request index="9" response="0000011111" foes="0000011111" cont="1"/>
+    </junction>
+    <junction id="hw_9km" type="priority" x="9000.00" y="800.00" incLanes="hw_10_9_0 hw_10_9_1 hw_10_9_2 hw_10_9_3 hw_8_9_0 hw_8_9_1 hw_8_9_2 hw_8_9_3" intLanes=":hw_9km_0_0 :hw_9km_0_1 :hw_9km_0_2 :hw_9km_0_3 :hw_9km_4_0 :hw_9km_4_1 :hw_9km_4_2 :hw_9km_4_3" shape="9000.02,812.80 9000.02,787.20 9000.02,812.80">
+        <request index="0" response="00000000" foes="00000000" cont="0"/>
+        <request index="1" response="00000000" foes="00000000" cont="0"/>
+        <request index="2" response="00000000" foes="00000000" cont="0"/>
+        <request index="3" response="00000000" foes="00000000" cont="0"/>
+        <request index="4" response="00000000" foes="00000000" cont="0"/>
+        <request index="5" response="00000000" foes="00000000" cont="0"/>
+        <request index="6" response="00000000" foes="00000000" cont="0"/>
+        <request index="7" response="00000000" foes="00000000" cont="0"/>
+    </junction>
+    <junction id="hw_end" type="dead_end" x="10000.00" y="800.00" incLanes="hw_9_10_0 hw_9_10_1 hw_9_10_2 hw_9_10_3" intLanes="" shape="10000.00,800.00 10000.00,787.20 10000.00,800.00"/>
+    <junction id="hw_start" type="dead_end" x="0.00" y="800.00" incLanes="hw_1_0_0 hw_1_0_1 hw_1_0_2 hw_1_0_3" intLanes="" shape="-0.00,800.00 -0.00,812.80 -0.00,800.00"/>
+    <junction id="offramp_4km_end" type="dead_end" x="4200.00" y="1100.00" incLanes="offramp_4km_exit_0 offramp_4km_exit_1" intLanes="" shape="4205.00,1096.00 4200.00,1100.00"/>
+    <junction id="offramp_4km_split" type="priority" x="4000.00" y="850.00" incLanes="offramp_4km_from_hw_0" intLanes=":offramp_4km_split_0_0 :offramp_4km_split_0_1" shape="3999.14,848.92 4004.14,844.93 4003.50,844.06 4003.34,843.71 4003.25,843.33 4003.21,842.87 4003.20,842.26 4000.00,842.26">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="offramp_8km_end" type="dead_end" x="8200.00" y="1100.00" incLanes="offramp_8km_exit_0 offramp_8km_exit_1" intLanes="" shape="8205.00,1096.00 8200.00,1100.00"/>
+    <junction id="offramp_8km_split" type="priority" x="8000.00" y="850.00" incLanes="offramp_8km_from_hw_0" intLanes=":offramp_8km_split_0_0 :offramp_8km_split_0_1" shape="7999.14,848.92 8004.14,844.93 8003.50,844.06 8003.34,843.71 8003.25,843.33 8003.21,842.87 8003.20,842.26 8000.00,842.26">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="onramp_2km_merge" type="priority" x="2200.00" y="750.00" incLanes="onramp_2km_entry_0 onramp_2km_entry_1" intLanes=":onramp_2km_merge_0_0" shape="2202.50,742.88 2197.50,746.88 2198.46,748.72 2198.41,749.46 2198.00,750.08 2197.24,750.59 2196.12,750.97 2196.90,754.07 2200.42,752.92 2202.91,751.48 2204.36,749.76 2204.78,747.75 2204.16,745.46">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="onramp_2km_start" type="dead_end" x="2000.00" y="500.00" incLanes="" intLanes="" shape="2000.00,500.00 2005.00,496.00"/>
+    <junction id="onramp_6km_merge" type="priority" x="6200.00" y="750.00" incLanes="onramp_6km_entry_0 onramp_6km_entry_1" intLanes=":onramp_6km_merge_0_0" shape="6202.50,742.88 6197.50,746.88 6198.46,748.72 6198.41,749.46 6198.00,750.08 6197.24,750.59 6196.12,750.97 6196.90,754.07 6200.42,752.92 6202.91,751.48 6204.36,749.76 6204.78,747.75 6204.16,745.46">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="onramp_6km_start" type="dead_end" x="6000.00" y="500.00" incLanes="" intLanes="" shape="6000.00,500.00 6005.00,496.00"/>
+    <junction id="police_station" type="dead_end" x="3000.00" y="0.00" incLanes="hw_to_police_0 hw_to_police_1" intLanes="" shape="3000.00,0.00 2993.60,0.00 3000.00,0.00"/>
+    <junction id="traffic_control" type="dead_end" x="5000.00" y="0.00" incLanes="hw_to_traffic_0 hw_to_traffic_1" intLanes="" shape="5000.00,0.00 4993.60,0.00 5000.00,0.00"/>
+
+    <junction id=":hw_3km_14_0" type="internal" x="3007.11" y="800.88" incLanes=":hw_3km_4_0 hw_2_3_0 hw_2_3_1 hw_2_3_2 hw_2_3_3" intLanes=":hw_3km_7_0 :hw_3km_7_1 :hw_3km_10_0 :hw_3km_10_1 :hw_3km_10_2 :hw_3km_10_3"/>
+    <junction id=":hw_4km_10_0" type="internal" x="3997.67" y="799.19" incLanes=":hw_4km_9_0 hw_5_4_0 hw_5_4_1 hw_5_4_2 hw_5_4_3" intLanes=":hw_4km_0_0 :hw_4km_1_0 :hw_4km_1_1 :hw_4km_1_2 :hw_4km_1_3"/>
+    <junction id=":hw_5km_14_0" type="internal" x="5007.11" y="800.88" incLanes=":hw_5km_4_0 hw_4_5_0 hw_4_5_1 hw_4_5_2 hw_4_5_3" intLanes=":hw_5km_7_0 :hw_5km_7_1 :hw_5km_10_0 :hw_5km_10_1 :hw_5km_10_2 :hw_5km_10_3"/>
+    <junction id=":hw_7km_14_0" type="internal" x="7007.11" y="800.88" incLanes=":hw_7km_4_0 hw_6_7_0 hw_6_7_1 hw_6_7_2 hw_6_7_3" intLanes=":hw_7km_7_0 :hw_7km_7_1 :hw_7km_10_0 :hw_7km_10_1 :hw_7km_10_2 :hw_7km_10_3"/>
+    <junction id=":hw_8km_10_0" type="internal" x="7997.67" y="799.19" incLanes=":hw_8km_9_0 hw_9_8_0 hw_9_8_1 hw_9_8_2 hw_9_8_3" intLanes=":hw_8km_0_0 :hw_8km_1_0 :hw_8km_1_1 :hw_8km_1_2 :hw_8km_1_3"/>
+
+    <connection from="hospital_to_hw" to="hw_7_8" fromLane="0" toLane="0" via=":hw_7km_5_0" dir="r" state="m"/>
+    <connection from="hospital_to_hw" to="hw_7_8" fromLane="0" toLane="1" via=":hw_7km_5_1" dir="r" state="m"/>
+    <connection from="hospital_to_hw" to="hw_7_6" fromLane="1" toLane="2" via=":hw_7km_7_0" dir="l" state="m"/>
+    <connection from="hospital_to_hw" to="hw_7_6" fromLane="1" toLane="3" via=":hw_7km_7_1" dir="l" state="m"/>
+    <connection from="hw_0_1" to="hw_1_2" fromLane="0" toLane="0" via=":hw_1km_4_0" dir="s" state="M"/>
+    <connection from="hw_0_1" to="hw_1_2" fromLane="1" toLane="1" via=":hw_1km_4_1" dir="s" state="M"/>
+    <connection from="hw_0_1" to="hw_1_2" fromLane="2" toLane="2" via=":hw_1km_4_2" dir="s" state="M"/>
+    <connection from="hw_0_1" to="hw_1_2" fromLane="3" toLane="3" via=":hw_1km_4_3" dir="s" state="M"/>
+    <connection from="hw_10_9" to="hw_9_8" fromLane="0" toLane="0" via=":hw_9km_0_0" dir="s" state="M"/>
+    <connection from="hw_10_9" to="hw_9_8" fromLane="1" toLane="1" via=":hw_9km_0_1" dir="s" state="M"/>
+    <connection from="hw_10_9" to="hw_9_8" fromLane="2" toLane="2" via=":hw_9km_0_2" dir="s" state="M"/>
+    <connection from="hw_10_9" to="hw_9_8" fromLane="3" toLane="3" via=":hw_9km_0_3" dir="s" state="M"/>
+    <connection from="hw_1_2" to="hw_2_3" fromLane="0" toLane="0" via=":hw_2km_8_0" dir="s" state="M"/>
+    <connection from="hw_1_2" to="hw_2_3" fromLane="1" toLane="1" via=":hw_2km_8_1" dir="s" state="M"/>
+    <connection from="hw_1_2" to="hw_2_3" fromLane="2" toLane="2" via=":hw_2km_8_2" dir="s" state="M"/>
+    <connection from="hw_1_2" to="hw_2_3" fromLane="3" toLane="3" via=":hw_2km_8_3" dir="s" state="M"/>
+    <connection from="hw_2_1" to="hw_1_0" fromLane="0" toLane="0" via=":hw_1km_0_0" dir="s" state="M"/>
+    <connection from="hw_2_1" to="hw_1_0" fromLane="1" toLane="1" via=":hw_1km_0_1" dir="s" state="M"/>
+    <connection from="hw_2_1" to="hw_1_0" fromLane="2" toLane="2" via=":hw_1km_0_2" dir="s" state="M"/>
+    <connection from="hw_2_1" to="hw_1_0" fromLane="3" toLane="3" via=":hw_1km_0_3" dir="s" state="M"/>
+    <connection from="hw_2_3" to="hw_to_police" fromLane="0" toLane="0" via=":hw_3km_9_0" dir="r" state="M"/>
+    <connection from="hw_2_3" to="hw_3_4" fromLane="0" toLane="0" via=":hw_3km_10_0" dir="s" state="M"/>
+    <connection from="hw_2_3" to="hw_3_4" fromLane="1" toLane="1" via=":hw_3km_10_1" dir="s" state="M"/>
+    <connection from="hw_2_3" to="hw_3_4" fromLane="2" toLane="2" via=":hw_3km_10_2" dir="s" state="M"/>
+    <connection from="hw_2_3" to="hw_3_4" fromLane="3" toLane="3" via=":hw_3km_10_3" dir="s" state="M"/>
+    <connection from="hw_3_2" to="hw_2_1" fromLane="0" toLane="0" via=":hw_2km_0_0" dir="s" state="M"/>
+    <connection from="hw_3_2" to="hw_2_1" fromLane="1" toLane="1" via=":hw_2km_0_1" dir="s" state="M"/>
+    <connection from="hw_3_2" to="hw_2_1" fromLane="2" toLane="2" via=":hw_2km_0_2" dir="s" state="M"/>
+    <connection from="hw_3_2" to="hw_2_1" fromLane="3" toLane="3" via=":hw_2km_0_3" dir="s" state="M"/>
+    <connection from="hw_3_4" to="hw_4_5" fromLane="0" toLane="0" via=":hw_4km_5_0" dir="s" state="M"/>
+    <connection from="hw_3_4" to="hw_4_5" fromLane="1" toLane="1" via=":hw_4km_5_1" dir="s" state="M"/>
+    <connection from="hw_3_4" to="hw_4_5" fromLane="2" toLane="2" via=":hw_4km_5_2" dir="s" state="M"/>
+    <connection from="hw_3_4" to="hw_4_5" fromLane="3" toLane="3" via=":hw_4km_5_3" dir="s" state="M"/>
+    <connection from="hw_3_4" to="offramp_4km_from_hw" fromLane="3" toLane="0" via=":hw_4km_9_0" dir="l" state="m"/>
+    <connection from="hw_4_3" to="hw_3_2" fromLane="0" toLane="0" via=":hw_3km_0_0" dir="s" state="M"/>
+    <connection from="hw_4_3" to="hw_3_2" fromLane="1" toLane="1" via=":hw_3km_0_1" dir="s" state="M"/>
+    <connection from="hw_4_3" to="hw_3_2" fromLane="2" toLane="2" via=":hw_3km_0_2" dir="s" state="M"/>
+    <connection from="hw_4_3" to="hw_3_2" fromLane="3" toLane="3" via=":hw_3km_0_3" dir="s" state="M"/>
+    <connection from="hw_4_3" to="hw_to_police" fromLane="3" toLane="1" via=":hw_3km_4_0" dir="l" state="m"/>
+    <connection from="hw_4_5" to="hw_to_traffic" fromLane="0" toLane="0" via=":hw_5km_9_0" dir="r" state="M"/>
+    <connection from="hw_4_5" to="hw_5_6" fromLane="0" toLane="0" via=":hw_5km_10_0" dir="s" state="M"/>
+    <connection from="hw_4_5" to="hw_5_6" fromLane="1" toLane="1" via=":hw_5km_10_1" dir="s" state="M"/>
+    <connection from="hw_4_5" to="hw_5_6" fromLane="2" toLane="2" via=":hw_5km_10_2" dir="s" state="M"/>
+    <connection from="hw_4_5" to="hw_5_6" fromLane="3" toLane="3" via=":hw_5km_10_3" dir="s" state="M"/>
+    <connection from="hw_5_4" to="offramp_4km_from_hw" fromLane="0" toLane="0" via=":hw_4km_0_0" dir="r" state="M"/>
+    <connection from="hw_5_4" to="hw_4_3" fromLane="0" toLane="0" via=":hw_4km_1_0" dir="s" state="M"/>
+    <connection from="hw_5_4" to="hw_4_3" fromLane="1" toLane="1" via=":hw_4km_1_1" dir="s" state="M"/>
+    <connection from="hw_5_4" to="hw_4_3" fromLane="2" toLane="2" via=":hw_4km_1_2" dir="s" state="M"/>
+    <connection from="hw_5_4" to="hw_4_3" fromLane="3" toLane="3" via=":hw_4km_1_3" dir="s" state="M"/>
+    <connection from="hw_5_6" to="hw_6_7" fromLane="0" toLane="0" via=":hw_6km_8_0" dir="s" state="M"/>
+    <connection from="hw_5_6" to="hw_6_7" fromLane="1" toLane="1" via=":hw_6km_8_1" dir="s" state="M"/>
+    <connection from="hw_5_6" to="hw_6_7" fromLane="2" toLane="2" via=":hw_6km_8_2" dir="s" state="M"/>
+    <connection from="hw_5_6" to="hw_6_7" fromLane="3" toLane="3" via=":hw_6km_8_3" dir="s" state="M"/>
+    <connection from="hw_6_5" to="hw_5_4" fromLane="0" toLane="0" via=":hw_5km_0_0" dir="s" state="M"/>
+    <connection from="hw_6_5" to="hw_5_4" fromLane="1" toLane="1" via=":hw_5km_0_1" dir="s" state="M"/>
+    <connection from="hw_6_5" to="hw_5_4" fromLane="2" toLane="2" via=":hw_5km_0_2" dir="s" state="M"/>
+    <connection from="hw_6_5" to="hw_5_4" fromLane="3" toLane="3" via=":hw_5km_0_3" dir="s" state="M"/>
+    <connection from="hw_6_5" to="hw_to_traffic" fromLane="3" toLane="1" via=":hw_5km_4_0" dir="l" state="m"/>
+    <connection from="hw_6_7" to="hw_to_hospital" fromLane="0" toLane="0" via=":hw_7km_9_0" dir="r" state="M"/>
+    <connection from="hw_6_7" to="hw_7_8" fromLane="0" toLane="0" via=":hw_7km_10_0" dir="s" state="M"/>
+    <connection from="hw_6_7" to="hw_7_8" fromLane="1" toLane="1" via=":hw_7km_10_1" dir="s" state="M"/>
+    <connection from="hw_6_7" to="hw_7_8" fromLane="2" toLane="2" via=":hw_7km_10_2" dir="s" state="M"/>
+    <connection from="hw_6_7" to="hw_7_8" fromLane="3" toLane="3" via=":hw_7km_10_3" dir="s" state="M"/>
+    <connection from="hw_7_6" to="hw_6_5" fromLane="0" toLane="0" via=":hw_6km_0_0" dir="s" state="M"/>
+    <connection from="hw_7_6" to="hw_6_5" fromLane="1" toLane="1" via=":hw_6km_0_1" dir="s" state="M"/>
+    <connection from="hw_7_6" to="hw_6_5" fromLane="2" toLane="2" via=":hw_6km_0_2" dir="s" state="M"/>
+    <connection from="hw_7_6" to="hw_6_5" fromLane="3" toLane="3" via=":hw_6km_0_3" dir="s" state="M"/>
+    <connection from="hw_7_8" to="hw_8_9" fromLane="0" toLane="0" via=":hw_8km_5_0" dir="s" state="M"/>
+    <connection from="hw_7_8" to="hw_8_9" fromLane="1" toLane="1" via=":hw_8km_5_1" dir="s" state="M"/>
+    <connection from="hw_7_8" to="hw_8_9" fromLane="2" toLane="2" via=":hw_8km_5_2" dir="s" state="M"/>
+    <connection from="hw_7_8" to="hw_8_9" fromLane="3" toLane="3" via=":hw_8km_5_3" dir="s" state="M"/>
+    <connection from="hw_7_8" to="offramp_8km_from_hw" fromLane="3" toLane="0" via=":hw_8km_9_0" dir="l" state="m"/>
+    <connection from="hw_8_7" to="hw_7_6" fromLane="0" toLane="0" via=":hw_7km_0_0" dir="s" state="M"/>
+    <connection from="hw_8_7" to="hw_7_6" fromLane="1" toLane="1" via=":hw_7km_0_1" dir="s" state="M"/>
+    <connection from="hw_8_7" to="hw_7_6" fromLane="2" toLane="2" via=":hw_7km_0_2" dir="s" state="M"/>
+    <connection from="hw_8_7" to="hw_7_6" fromLane="3" toLane="3" via=":hw_7km_0_3" dir="s" state="M"/>
+    <connection from="hw_8_7" to="hw_to_hospital" fromLane="3" toLane="1" via=":hw_7km_4_0" dir="l" state="m"/>
+    <connection from="hw_8_9" to="hw_9_10" fromLane="0" toLane="0" via=":hw_9km_4_0" dir="s" state="M"/>
+    <connection from="hw_8_9" to="hw_9_10" fromLane="1" toLane="1" via=":hw_9km_4_1" dir="s" state="M"/>
+    <connection from="hw_8_9" to="hw_9_10" fromLane="2" toLane="2" via=":hw_9km_4_2" dir="s" state="M"/>
+    <connection from="hw_8_9" to="hw_9_10" fromLane="3" toLane="3" via=":hw_9km_4_3" dir="s" state="M"/>
+    <connection from="hw_9_8" to="offramp_8km_from_hw" fromLane="0" toLane="0" via=":hw_8km_0_0" dir="r" state="M"/>
+    <connection from="hw_9_8" to="hw_8_7" fromLane="0" toLane="0" via=":hw_8km_1_0" dir="s" state="M"/>
+    <connection from="hw_9_8" to="hw_8_7" fromLane="1" toLane="1" via=":hw_8km_1_1" dir="s" state="M"/>
+    <connection from="hw_9_8" to="hw_8_7" fromLane="2" toLane="2" via=":hw_8km_1_2" dir="s" state="M"/>
+    <connection from="hw_9_8" to="hw_8_7" fromLane="3" toLane="3" via=":hw_8km_1_3" dir="s" state="M"/>
+    <connection from="offramp_4km_from_hw" to="offramp_4km_exit" fromLane="0" toLane="0" via=":offramp_4km_split_0_0" dir="s" state="M"/>
+    <connection from="offramp_4km_from_hw" to="offramp_4km_exit" fromLane="0" toLane="1" via=":offramp_4km_split_0_1" dir="s" state="M"/>
+    <connection from="offramp_8km_from_hw" to="offramp_8km_exit" fromLane="0" toLane="0" via=":offramp_8km_split_0_0" dir="s" state="M"/>
+    <connection from="offramp_8km_from_hw" to="offramp_8km_exit" fromLane="0" toLane="1" via=":offramp_8km_split_0_1" dir="s" state="M"/>
+    <connection from="onramp_2km_entry" to="onramp_2km_to_hw" fromLane="1" toLane="0" via=":onramp_2km_merge_0_0" dir="l" state="M"/>
+    <connection from="onramp_2km_to_hw" to="hw_2_1" fromLane="0" toLane="2" via=":hw_2km_4_0" dir="s" state="m"/>
+    <connection from="onramp_2km_to_hw" to="hw_2_1" fromLane="0" toLane="3" via=":hw_2km_4_1" dir="s" state="m"/>
+    <connection from="onramp_2km_to_hw" to="hw_2_3" fromLane="0" toLane="2" via=":hw_2km_6_0" dir="r" state="m"/>
+    <connection from="onramp_2km_to_hw" to="hw_2_3" fromLane="0" toLane="3" via=":hw_2km_6_1" dir="r" state="m"/>
+    <connection from="onramp_6km_entry" to="onramp_6km_to_hw" fromLane="1" toLane="0" via=":onramp_6km_merge_0_0" dir="l" state="M"/>
+    <connection from="onramp_6km_to_hw" to="hw_6_5" fromLane="0" toLane="2" via=":hw_6km_4_0" dir="s" state="m"/>
+    <connection from="onramp_6km_to_hw" to="hw_6_5" fromLane="0" toLane="3" via=":hw_6km_4_1" dir="s" state="m"/>
+    <connection from="onramp_6km_to_hw" to="hw_6_7" fromLane="0" toLane="2" via=":hw_6km_6_0" dir="r" state="m"/>
+    <connection from="onramp_6km_to_hw" to="hw_6_7" fromLane="0" toLane="3" via=":hw_6km_6_1" dir="r" state="m"/>
+    <connection from="police_to_hw" to="hw_3_4" fromLane="0" toLane="0" via=":hw_3km_5_0" dir="r" state="m"/>
+    <connection from="police_to_hw" to="hw_3_4" fromLane="0" toLane="1" via=":hw_3km_5_1" dir="r" state="m"/>
+    <connection from="police_to_hw" to="hw_3_2" fromLane="1" toLane="2" via=":hw_3km_7_0" dir="l" state="m"/>
+    <connection from="police_to_hw" to="hw_3_2" fromLane="1" toLane="3" via=":hw_3km_7_1" dir="l" state="m"/>
+    <connection from="traffic_to_hw" to="hw_5_6" fromLane="0" toLane="0" via=":hw_5km_5_0" dir="r" state="m"/>
+    <connection from="traffic_to_hw" to="hw_5_6" fromLane="0" toLane="1" via=":hw_5km_5_1" dir="r" state="m"/>
+    <connection from="traffic_to_hw" to="hw_5_4" fromLane="1" toLane="2" via=":hw_5km_7_0" dir="l" state="m"/>
+    <connection from="traffic_to_hw" to="hw_5_4" fromLane="1" toLane="3" via=":hw_5km_7_1" dir="l" state="m"/>
+
+    <connection from=":hw_1km_0" to="hw_1_0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":hw_1km_0" to="hw_1_0" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":hw_1km_0" to="hw_1_0" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_1km_0" to="hw_1_0" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":hw_1km_4" to="hw_1_2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":hw_1km_4" to="hw_1_2" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":hw_1km_4" to="hw_1_2" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_1km_4" to="hw_1_2" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":hw_2km_0" to="hw_2_1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":hw_2km_0" to="hw_2_1" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":hw_2km_0" to="hw_2_1" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_2km_0" to="hw_2_1" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":hw_2km_4" to="hw_2_1" fromLane="0" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_2km_4" to="hw_2_1" fromLane="1" toLane="3" dir="s" state="M"/>
+    <connection from=":hw_2km_6" to="hw_2_3" fromLane="0" toLane="2" dir="r" state="M"/>
+    <connection from=":hw_2km_6" to="hw_2_3" fromLane="1" toLane="3" dir="r" state="M"/>
+    <connection from=":hw_2km_8" to="hw_2_3" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":hw_2km_8" to="hw_2_3" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":hw_2km_8" to="hw_2_3" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_2km_8" to="hw_2_3" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":hw_3km_0" to="hw_3_2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":hw_3km_0" to="hw_3_2" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":hw_3km_0" to="hw_3_2" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_3km_0" to="hw_3_2" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":hw_3km_4" to="hw_to_police" fromLane="0" toLane="1" via=":hw_3km_14_0" dir="l" state="m"/>
+    <connection from=":hw_3km_14" to="hw_to_police" fromLane="0" toLane="1" dir="l" state="M"/>
+    <connection from=":hw_3km_5" to="hw_3_4" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":hw_3km_5" to="hw_3_4" fromLane="1" toLane="1" dir="r" state="M"/>
+    <connection from=":hw_3km_7" to="hw_3_2" fromLane="0" toLane="2" dir="l" state="M"/>
+    <connection from=":hw_3km_7" to="hw_3_2" fromLane="1" toLane="3" dir="l" state="M"/>
+    <connection from=":hw_3km_9" to="hw_to_police" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":hw_3km_10" to="hw_3_4" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":hw_3km_10" to="hw_3_4" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":hw_3km_10" to="hw_3_4" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_3km_10" to="hw_3_4" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":hw_4km_0" to="offramp_4km_from_hw" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":hw_4km_1" to="hw_4_3" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":hw_4km_1" to="hw_4_3" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":hw_4km_1" to="hw_4_3" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_4km_1" to="hw_4_3" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":hw_4km_5" to="hw_4_5" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":hw_4km_5" to="hw_4_5" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":hw_4km_5" to="hw_4_5" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_4km_5" to="hw_4_5" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":hw_4km_9" to="offramp_4km_from_hw" fromLane="0" toLane="0" via=":hw_4km_10_0" dir="l" state="m"/>
+    <connection from=":hw_4km_10" to="offramp_4km_from_hw" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":hw_5km_0" to="hw_5_4" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":hw_5km_0" to="hw_5_4" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":hw_5km_0" to="hw_5_4" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_5km_0" to="hw_5_4" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":hw_5km_4" to="hw_to_traffic" fromLane="0" toLane="1" via=":hw_5km_14_0" dir="l" state="m"/>
+    <connection from=":hw_5km_14" to="hw_to_traffic" fromLane="0" toLane="1" dir="l" state="M"/>
+    <connection from=":hw_5km_5" to="hw_5_6" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":hw_5km_5" to="hw_5_6" fromLane="1" toLane="1" dir="r" state="M"/>
+    <connection from=":hw_5km_7" to="hw_5_4" fromLane="0" toLane="2" dir="l" state="M"/>
+    <connection from=":hw_5km_7" to="hw_5_4" fromLane="1" toLane="3" dir="l" state="M"/>
+    <connection from=":hw_5km_9" to="hw_to_traffic" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":hw_5km_10" to="hw_5_6" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":hw_5km_10" to="hw_5_6" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":hw_5km_10" to="hw_5_6" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_5km_10" to="hw_5_6" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":hw_6km_0" to="hw_6_5" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":hw_6km_0" to="hw_6_5" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":hw_6km_0" to="hw_6_5" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_6km_0" to="hw_6_5" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":hw_6km_4" to="hw_6_5" fromLane="0" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_6km_4" to="hw_6_5" fromLane="1" toLane="3" dir="s" state="M"/>
+    <connection from=":hw_6km_6" to="hw_6_7" fromLane="0" toLane="2" dir="r" state="M"/>
+    <connection from=":hw_6km_6" to="hw_6_7" fromLane="1" toLane="3" dir="r" state="M"/>
+    <connection from=":hw_6km_8" to="hw_6_7" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":hw_6km_8" to="hw_6_7" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":hw_6km_8" to="hw_6_7" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_6km_8" to="hw_6_7" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":hw_7km_0" to="hw_7_6" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":hw_7km_0" to="hw_7_6" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":hw_7km_0" to="hw_7_6" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_7km_0" to="hw_7_6" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":hw_7km_4" to="hw_to_hospital" fromLane="0" toLane="1" via=":hw_7km_14_0" dir="l" state="m"/>
+    <connection from=":hw_7km_14" to="hw_to_hospital" fromLane="0" toLane="1" dir="l" state="M"/>
+    <connection from=":hw_7km_5" to="hw_7_8" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":hw_7km_5" to="hw_7_8" fromLane="1" toLane="1" dir="r" state="M"/>
+    <connection from=":hw_7km_7" to="hw_7_6" fromLane="0" toLane="2" dir="l" state="M"/>
+    <connection from=":hw_7km_7" to="hw_7_6" fromLane="1" toLane="3" dir="l" state="M"/>
+    <connection from=":hw_7km_9" to="hw_to_hospital" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":hw_7km_10" to="hw_7_8" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":hw_7km_10" to="hw_7_8" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":hw_7km_10" to="hw_7_8" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_7km_10" to="hw_7_8" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":hw_8km_0" to="offramp_8km_from_hw" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":hw_8km_1" to="hw_8_7" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":hw_8km_1" to="hw_8_7" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":hw_8km_1" to="hw_8_7" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_8km_1" to="hw_8_7" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":hw_8km_5" to="hw_8_9" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":hw_8km_5" to="hw_8_9" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":hw_8km_5" to="hw_8_9" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_8km_5" to="hw_8_9" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":hw_8km_9" to="offramp_8km_from_hw" fromLane="0" toLane="0" via=":hw_8km_10_0" dir="l" state="m"/>
+    <connection from=":hw_8km_10" to="offramp_8km_from_hw" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":hw_9km_0" to="hw_9_8" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":hw_9km_0" to="hw_9_8" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":hw_9km_0" to="hw_9_8" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_9km_0" to="hw_9_8" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":hw_9km_4" to="hw_9_10" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":hw_9km_4" to="hw_9_10" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":hw_9km_4" to="hw_9_10" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":hw_9km_4" to="hw_9_10" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":offramp_4km_split_0" to="offramp_4km_exit" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":offramp_4km_split_0" to="offramp_4km_exit" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":offramp_8km_split_0" to="offramp_8km_exit" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":offramp_8km_split_0" to="offramp_8km_exit" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":onramp_2km_merge_0" to="onramp_2km_to_hw" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":onramp_6km_merge_0" to="onramp_6km_to_hw" fromLane="0" toLane="0" dir="l" state="M"/>
+
+</net>

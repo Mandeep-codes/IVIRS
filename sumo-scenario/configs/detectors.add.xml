@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+
+    <inductionLoop id="loop_1km" lane="hw_0_1_0" pos="500" freq="60" file="results/detector_hw_1km.xml"/>
+    <inductionLoop id="loop_2km" lane="hw_1_2_0" pos="500" freq="60" file="results/detector_hw_2km.xml"/>
+    <inductionLoop id="loop_3km" lane="hw_2_3_0" pos="500" freq="60" file="results/detector_hw_3km.xml"/>
+    <inductionLoop id="loop_4km" lane="hw_3_4_0" pos="500" freq="60" file="results/detector_hw_4km.xml"/>
+    <inductionLoop id="loop_5km" lane="hw_4_5_0" pos="500" freq="60" file="results/detector_hw_5km.xml"/>
+    <inductionLoop id="loop_6km" lane="hw_5_6_0" pos="500" freq="60" file="results/detector_hw_6km.xml"/>
+    <inductionLoop id="loop_7km" lane="hw_6_7_0" pos="500" freq="60" file="results/detector_hw_7km.xml"/>
+    <inductionLoop id="loop_8km" lane="hw_7_8_0" pos="500" freq="60" file="results/detector_hw_8km.xml"/>
+    <inductionLoop id="loop_9km" lane="hw_8_9_0" pos="500" freq="60" file="results/detector_hw_9km.xml"/>
+
+    <laneAreaDetector id="area_det_2km" lane="hw_1_2_0" pos="800" length="100" freq="60" file="results/detector_hw_2km_area.xml"/>
+    <laneAreaDetector id="area_det_5km" lane="hw_4_5_0" pos="800" length="100" freq="60" file="results/detector_hw_5km_area.xml"/>
+    <laneAreaDetector id="area_det_8km" lane="hw_7_8_0" pos="800" length="100" freq="60" file="results/detector_hw_8km_area.xml"/>
+
+    <laneAreaDetector id="ml_det_incident_zone_0" lane="hw_4_5_0" pos="200" length="500" freq="60" file="results/incident_zone_0.xml"/>
+    <laneAreaDetector id="ml_det_incident_zone_1" lane="hw_4_5_1" pos="200" length="500" freq="60" file="results/incident_zone_1.xml"/>
+
+</additional>

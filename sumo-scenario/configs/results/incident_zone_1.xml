@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-02-11T16:18:15.850941+05:30 by Eclipse SUMO GUI v1_26_0+0143-96e13a6476d
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="/Users/mandeep/Downloads/IVIRS-Project/scripts/../sumo-scenario/maps/highway.net.xml"/>
+        <route-files value="/Users/mandeep/Downloads/IVIRS-Project/scripts/../sumo-scenario/routes/traffic.rou.xml"/>
+        <additional-files value="/Users/mandeep/Downloads/IVIRS-Project/scripts/../sumo-scenario/configs/rsu_locations.add.xml,/Users/mandeep/Downloads/IVIRS-Project/scripts/../sumo-scenario/configs/detectors.add.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="1000"/>
+        <step-length value="0.1"/>
+    </time>
+
+    <processing>
+        <lateral-resolution value="0.8"/>
+        <collision.action value="warn"/>
+        <collision.mingap-factor value="0"/>
+        <time-to-teleport value="-1"/>
+        <max-depart-delay value="300"/>
+    </processing>
+
+    <routing>
+        <routing-algorithm value="dijkstra"/>
+        <device.rerouting.probability value="0.3"/>
+        <device.rerouting.period value="60"/>
+        <device.rerouting.adaptation-steps value="180"/>
+    </routing>
+
+    <report>
+        <verbose value="true"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="false"/>
+    </report>
+
+    <emissions>
+        <device.emissions.probability value="1.0"/>
+    </emissions>
+
+    <traci_server>
+        <remote-port value="49722"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="/Users/mandeep/Downloads/IVIRS-Project/scripts/../sumo-scenario/configs/viewsettings.xml"/>
+        <quit-on-end value="true"/>
+        <start value="true"/>
+        <delay value="100"/>
+        <window-size value="1920,1080"/>
+        <window-pos value="50,50"/>
+        <tracker-interval value="1"/>
+    </gui_only>
+
+</sumoConfiguration>
+-->
+
+<detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e2_file.xsd">
+   <interval begin="0.00" end="60.00" id="ml_det_incident_zone_1" sampledSeconds="0.00" nVehEntered="0" nVehLeft="0" nVehSeen="0" meanSpeed="-1.00" meanTimeLoss="-1.00" meanOccupancy="0.00" maxOccupancy="0.00" meanMaxJamLengthInVehicles="0.00" meanMaxJamLengthInMeters="0.00" maxJamLengthInVehicles="0" maxJamLengthInMeters="0.00" jamLengthInVehiclesSum="0" jamLengthInMetersSum="0.00" meanHaltingDuration="0.00" maxHaltingDuration="0.00" haltingDurationSum="0.00" meanIntervalHaltingDuration="0.00" maxIntervalHaltingDuration="0.00" intervalHaltingDurationSum="0.00" startedHalts="0.00" meanVehicleNumber="0.00" maxVehicleNumber="0" />
+   <interval begin="60.00" end="97.50" id="ml_det_incident_zone_1" sampledSeconds="0.00" nVehEntered="0" nVehLeft="0" nVehSeen="0" meanSpeed="-1.00" meanTimeLoss="-1.00" meanOccupancy="0.00" maxOccupancy="0.00" meanMaxJamLengthInVehicles="0.00" meanMaxJamLengthInMeters="0.00" maxJamLengthInVehicles="0" maxJamLengthInMeters="0.00" jamLengthInVehiclesSum="0" jamLengthInMetersSum="0.00" meanHaltingDuration="0.00" maxHaltingDuration="0.00" haltingDurationSum="0.00" meanIntervalHaltingDuration="0.00" maxIntervalHaltingDuration="0.00" intervalHaltingDurationSum="0.00" startedHalts="0.00" meanVehicleNumber="0.00" maxVehicleNumber="0" />
+</detector>

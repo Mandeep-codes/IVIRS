@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    
+    <poi id="RSU_0" x="0.0" y="-50.0" color="0,255,0" type="rsu" layer="100" width="30" height="30">
+        <param key="coverage_radius" value="500"/>
+        <param key="id_num" value="0"/>
+    </poi>
+    
+    <poi id="RSU_1" x="2000.0" y="-50.0" color="0,255,0" type="rsu" layer="100" width="30" height="30">
+        <param key="coverage_radius" value="500"/>
+        <param key="id_num" value="1"/>
+    </poi>
+    
+    <poi id="RSU_2" x="4000.0" y="-50.0" color="0,255,0" type="rsu" layer="100" width="30" height="30">
+        <param key="coverage_radius" value="500"/>
+        <param key="id_num" value="2"/>
+    </poi>
+    
+    <poi id="RSU_3" x="6000.0" y="-50.0" color="0,255,0" type="rsu" layer="100" width="30" height="30">
+        <param key="coverage_radius" value="500"/>
+        <param key="id_num" value="3"/>
+    </poi>
+    
+    <poi id="RSU_4" x="8000.0" y="-50.0" color="0,255,0" type="rsu" layer="100" width="30" height="30">
+        <param key="coverage_radius" value="500"/>
+        <param key="id_num" value="4"/>
+    </poi>
+    
+    <poi id="RSU_5" x="10000.0" y="-50.0" color="0,255,0" type="rsu" layer="100" width="30" height="30">
+        <param key="coverage_radius" value="500"/>
+        <param key="id_num" value="5"/>
+    </poi>
+    
+    <poi id="POLICE_STATION" x="3000.0" y="-800.0" color="0,0,255" type="police" layer="100" width="50" height="50">
+        <param key="capacity" value="10"/>
+    </poi>
+    
+    <poi id="HOSPITAL" x="7000.0" y="-800.0" color="255,0,0" type="hospital" layer="100" width="50" height="50">
+        <param key="capacity" value="5"/>
+    </poi>
+    
+    <poi id="TRAFFIC_CONTROL" x="5000.0" y="-800.0" color="255,165,0" type="traffic_control" layer="100" width="50" height="50">
+        <param key="monitoring_range" value="10000"/>
+    </poi>
+    
+    <poly id="coverage_rsu_0" color="0,255,0,50" fill="1" layer="0" type="coverage" shape="-500,-550 500,-550 500,450 -500,450">
+        <param key="rsu_id" value="0"/>
+    </poly>
+    
+    <poly id="coverage_rsu_1" color="0,255,0,50" fill="1" layer="0" type="coverage" shape="1500,-550 2500,-550 2500,450 1500,450">
+        <param key="rsu_id" value="1"/>
+    </poly>
+    
+    <poly id="coverage_rsu_2" color="0,255,0,50" fill="1" layer="0" type="coverage" shape="3500,-550 4500,-550 4500,450 3500,450">
+        <param key="rsu_id" value="2"/>
+    </poly>
+    
+    <poly id="coverage_rsu_3" color="0,255,0,50" fill="1" layer="0" type="coverage" shape="5500,-550 6500,-550 6500,450 5500,450">
+        <param key="rsu_id" value="3"/>
+    </poly>
+    
+    <poly id="coverage_rsu_4" color="0,255,0,50" fill="1" layer="0" type="coverage" shape="7500,-550 8500,-550 8500,450 7500,450">
+        <param key="rsu_id" value="4"/>
+    </poly>
+    
+    <poly id="coverage_rsu_5" color="0,255,0,50" fill="1" layer="0" type="coverage" shape="9500,-550 10500,-550 10500,450 9500,450">
+        <param key="rsu_id" value="5"/>
+    </poly>
+    
+</additional>

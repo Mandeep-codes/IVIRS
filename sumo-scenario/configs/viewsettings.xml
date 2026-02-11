@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewsettings>
+    <scheme name="realistic_3d">
+        <!-- 3D Settings -->
+        <opengl antialiase="1" dither="1"/>
+        
+        <!-- Background -->
+        <background backgroundColor="135,206,235" showGrid="1" gridXSize="100" gridYSize="100"/>
+        
+        <!-- Vehicles - 3D Models -->
+        <vehicles vehicleMode="0" vehicleQuality="4" minVehicleSize="1" vehicleExaggeration="1.0" 
+                  showBlinker="1" drawMinGap="1" drawBrakeGap="1" showBTRange="0" 
+                  showRouteIndex="0" scaleLength="1" drawReversed="0" 
+                  showParkingInfo="1" showChargingInfo="1"/>
+        
+        <!-- Vehicle Coloring -->
+        <vehicleColorer name="by speed" threshold="0,3.0,10.0,20.0,30.0,120.0"/>
+        
+        <!-- Edges/Roads - Realistic Textures -->
+        <edges laneEdgeMode="0" scaleWidth="1" laneShowBorders="1" showLinkDecals="1" 
+               showLinkRules="1" showRails="1" hideConnectors="0" widthExaggeration="1" 
+               minSize="0" showDirection="0" showSublanes="1" spreadSuperposed="1"/>
+        
+        <!-- Edge Coloring -->
+        <edgeColorer name="by speed (streetwise)" threshold="0,16.67,25.0,33.33,50.0,120.0"/>
+        
+        <!-- Junctions -->
+        <junctions showLane2Lane="0" drawLinkTLIndex="0" drawLinkJunctionIndex="0" 
+                   junctionMode="0" junctionSize="1" minSize="3" exaggeration="1" 
+                   drawCrossingsAndWalking="1" showInternalEdge="0"/>
+        
+        <!-- Additional Structures -->
+        <additionals addMode="0" minAddSize="1" addExaggeration="1" addName="1" 
+                     poiDetail="4" poiSize="20" poiExaggeration="1" poiName="1"/>
+        
+        <!-- POI (Points of Interest) -->
+        <poiColorer name="given poi color"/>
+        
+        <!-- Poly (Polygons) -->
+        <polyColorer name="given polygon color"/>
+        
+        <!-- Legend -->
+        <legend showSizeLegend="1" showColorLegend="1"/>
+        
+        <!-- 3D Buildings and Environment -->
+        <scheme3D name="3d">
+            <buildings value="1"/>
+            <threeD value="1"/>
+        </scheme3D>
+        
+        <!-- Viewport -->
+        <viewport zoom="150" x="5000" y="0" angle="0"/>
+        
+        <!-- Delay (for smooth animation) -->
+        <delay value="100"/>
+        
+    </scheme>
+    
+    <!-- Incident Visualization Scheme -->
+    <scheme name="incident_detection">
+        <background backgroundColor="30,30,30"/>
+        <vehicles vehicleMode="0" vehicleQuality="4" vehicleExaggeration="1.2"/>
+        <vehicleColorer name="by selection"/>
+        <edges laneShowBorders="1" showLinkDecals="1"/>
+        <edgeColorer name="by selection"/>
+        <additionals addMode="0" addExaggeration="1.5" addName="1"/>
+        <viewport zoom="200" x="5000" y="0" angle="0"/>
+    </scheme>
+    
+    <!-- Traffic Density Scheme -->
+    <scheme name="traffic_density">
+        <background backgroundColor="255,255,255"/>
+        <vehicles vehicleMode="0" vehicleQuality="3" vehicleExaggeration="1.0"/>
+        <vehicleColorer name="by waiting time" threshold="0,30,60,120,300,600"/>
+        <edges laneShowBorders="1"/>
+        <edgeColorer name="by loaded weight (lanewise)" threshold="0,10,50,100,200,500"/>
+        <viewport zoom="100" x="5000" y="0"/>
+    </scheme>
+</viewsettings>

@@ -1,0 +1,30 @@
+Academic Research License
+
+Copyright (c) 2025 IVIRS Project
+
+Permission is hereby granted to use this software for academic and research 
+purposes only, subject to the following conditions:
+
+1. The software may be used, modified, and distributed for academic research,
+   educational purposes, and non-commercial applications.
+
+2. Any publications or presentations using this software should acknowledge
+   the IVIRS project and cite appropriately.
+
+3. Commercial use requires explicit permission from the original authors.
+
+4. The software is provided "as is", without warranty of any kind, express or
+   implied, including but not limited to the warranties of merchantability,
+   fitness for a particular purpose and noninfringement.
+
+5. In no event shall the authors or copyright holders be liable for any claim,
+   damages or other liability, whether in an action of contract, tort or
+   otherwise, arising from, out of or in connection with the software or the
+   use or other dealings in the software.
+
+For commercial licensing inquiries, please contact the project maintainers.
+
+This project incorporates components from:
+- Eclipse SUMO (EPL 2.0)
+- scikit-learn (BSD License)
+- Matplotlib (PSF License)
