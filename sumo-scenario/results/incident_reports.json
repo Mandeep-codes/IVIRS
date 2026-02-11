@@ -1,11 +1,4415 @@
 {
-  "all_reports": [],
+  "all_reports": [
+    {
+      "vehicle_id": "veh_96",
+      "report_type": "breakdown",
+      "location": [
+        1143.307222366582,
+        -44.47225294389459
+      ],
+      "timestamp": 659.0907868317688,
+      "is_fake": true,
+      "trust_score": 0.10656722146072149
+    },
+    {
+      "vehicle_id": "veh_85",
+      "report_type": "accident",
+      "location": [
+        8902.099909123925,
+        0.8963021661489421
+      ],
+      "timestamp": 251.9254538326199,
+      "is_fake": false,
+      "trust_score": 0.9873078598119794
+    },
+    {
+      "vehicle_id": "veh_98",
+      "report_type": "breakdown",
+      "location": [
+        678.2655875109878,
+        2.633176506061929
+      ],
+      "timestamp": 581.1083382167252,
+      "is_fake": true,
+      "trust_score": 0.36124629534410635
+    },
+    {
+      "vehicle_id": "veh_20",
+      "report_type": "breakdown",
+      "location": [
+        2254.457660908159,
+        11.298865093062027
+      ],
+      "timestamp": 983.3928534197669,
+      "is_fake": false,
+      "trust_score": 0.862881909337288
+    },
+    {
+      "vehicle_id": "veh_47",
+      "report_type": "accident",
+      "location": [
+        5905.298047200767,
+        32.18972490215441
+      ],
+      "timestamp": 866.6011296561303,
+      "is_fake": false,
+      "trust_score": 0.7774943714572998
+    },
+    {
+      "vehicle_id": "veh_14",
+      "report_type": "accident",
+      "location": [
+        3447.3414271487677,
+        48.42866427033886
+      ],
+      "timestamp": 345.53589131384024,
+      "is_fake": true,
+      "trust_score": 0.08348251448599237
+    },
+    {
+      "vehicle_id": "veh_92",
+      "report_type": "accident",
+      "location": [
+        2103.492446164711,
+        30.77165476783516
+      ],
+      "timestamp": 200.307604378826,
+      "is_fake": false,
+      "trust_score": 0.9088610781135733
+    },
+    {
+      "vehicle_id": "veh_41",
+      "report_type": "breakdown",
+      "location": [
+        3672.998273330309,
+        -27.776783879015056
+      ],
+      "timestamp": 345.43134349543624,
+      "is_fake": false,
+      "trust_score": 0.8534124343285814
+    },
+    {
+      "vehicle_id": "veh_47",
+      "report_type": "breakdown",
+      "location": [
+        6571.5659713922305,
+        9.201169848829679
+      ],
+      "timestamp": 197.7035974316279,
+      "is_fake": true,
+      "trust_score": 0.37967500115358194
+    },
+    {
+      "vehicle_id": "veh_94",
+      "report_type": "accident",
+      "location": [
+        95.08413398936044,
+        23.503699965130778
+      ],
+      "timestamp": 438.5730670170425,
+      "is_fake": false,
+      "trust_score": 0.9304545759945614
+    },
+    {
+      "vehicle_id": "veh_49",
+      "report_type": "breakdown",
+      "location": [
+        9965.037616634841,
+        49.147948698081024
+      ],
+      "timestamp": 711.1733032055249,
+      "is_fake": false,
+      "trust_score": 0.9117499459016294
+    },
+    {
+      "vehicle_id": "veh_27",
+      "report_type": "accident",
+      "location": [
+        6758.251475097571,
+        -29.888085757133187
+      ],
+      "timestamp": 904.929848200524,
+      "is_fake": false,
+      "trust_score": 0.8520506264666896
+    },
+    {
+      "vehicle_id": "veh_56",
+      "report_type": "breakdown",
+      "location": [
+        9039.172088146124,
+        24.71803915101553
+      ],
+      "timestamp": 941.2060514512971,
+      "is_fake": false,
+      "trust_score": 0.8633010651746935
+    },
+    {
+      "vehicle_id": "veh_17",
+      "report_type": "breakdown",
+      "location": [
+        9166.988916208269,
+        -17.8562359046336
+      ],
+      "timestamp": 627.2967884884937,
+      "is_fake": false,
+      "trust_score": 0.7639852361227712
+    },
+    {
+      "vehicle_id": "veh_3",
+      "report_type": "breakdown",
+      "location": [
+        6464.608972029182,
+        -35.349517611200795
+      ],
+      "timestamp": 225.53968770168552,
+      "is_fake": false,
+      "trust_score": 0.8058034013680534
+    },
+    {
+      "vehicle_id": "veh_4",
+      "report_type": "accident",
+      "location": [
+        6079.789188644874,
+        -30.320547459489834
+      ],
+      "timestamp": 178.64469291907437,
+      "is_fake": true,
+      "trust_score": 0.010336726589690804
+    },
+    {
+      "vehicle_id": "veh_93",
+      "report_type": "accident",
+      "location": [
+        2451.1271414821754,
+        23.534862590126323
+      ],
+      "timestamp": 492.58246699443356,
+      "is_fake": true,
+      "trust_score": 0.22776572610720391
+    },
+    {
+      "vehicle_id": "veh_16",
+      "report_type": "breakdown",
+      "location": [
+        8427.358875742166,
+        -49.14079044478764
+      ],
+      "timestamp": 897.3715910534116,
+      "is_fake": false,
+      "trust_score": 0.9013632041421965
+    },
+    {
+      "vehicle_id": "veh_21",
+      "report_type": "breakdown",
+      "location": [
+        1377.6542457076234,
+        -1.6639537241321634
+      ],
+      "timestamp": 291.45125239368264,
+      "is_fake": false,
+      "trust_score": 0.8456866584362094
+    },
+    {
+      "vehicle_id": "veh_8",
+      "report_type": "accident",
+      "location": [
+        1612.722491715599,
+        -13.62163089368483
+      ],
+      "timestamp": 136.77903541977133,
+      "is_fake": true,
+      "trust_score": 0.2964388153157257
+    },
+    {
+      "vehicle_id": "veh_50",
+      "report_type": "accident",
+      "location": [
+        2775.5885214424356,
+        -10.405726490246657
+      ],
+      "timestamp": 30.647745029268926,
+      "is_fake": false,
+      "trust_score": 0.7684457469076221
+    },
+    {
+      "vehicle_id": "veh_60",
+      "report_type": "accident",
+      "location": [
+        6358.256389336565,
+        7.868004095274415
+      ],
+      "timestamp": 606.0835249541874,
+      "is_fake": true,
+      "trust_score": 0.11806989444534627
+    },
+    {
+      "vehicle_id": "veh_19",
+      "report_type": "accident",
+      "location": [
+        3351.008652527082,
+        14.286034802280923
+      ],
+      "timestamp": 635.0160325576305,
+      "is_fake": false,
+      "trust_score": 0.9010627885790778
+    },
+    {
+      "vehicle_id": "veh_60",
+      "report_type": "breakdown",
+      "location": [
+        7615.40477332989,
+        -8.264686007622913
+      ],
+      "timestamp": 475.19044119297513,
+      "is_fake": false,
+      "trust_score": 0.9940908957984008
+    },
+    {
+      "vehicle_id": "veh_3",
+      "report_type": "breakdown",
+      "location": [
+        2473.2738380982323,
+        -40.52401652027184
+      ],
+      "timestamp": 605.142708759655,
+      "is_fake": false,
+      "trust_score": 0.7150982348293671
+    },
+    {
+      "vehicle_id": "veh_93",
+      "report_type": "accident",
+      "location": [
+        4516.072870454723,
+        28.324921567826223
+      ],
+      "timestamp": 921.3856968662719,
+      "is_fake": false,
+      "trust_score": 0.816558636040639
+    },
+    {
+      "vehicle_id": "veh_85",
+      "report_type": "breakdown",
+      "location": [
+        6031.6386760579235,
+        -10.000195631847511
+      ],
+      "timestamp": 292.33929659487325,
+      "is_fake": false,
+      "trust_score": 0.7933001664220448
+    },
+    {
+      "vehicle_id": "veh_90",
+      "report_type": "accident",
+      "location": [
+        2292.638040377598,
+        -33.730138910550096
+      ],
+      "timestamp": 32.30774011981008,
+      "is_fake": true,
+      "trust_score": 0.1710124917640785
+    },
+    {
+      "vehicle_id": "veh_59",
+      "report_type": "accident",
+      "location": [
+        6381.144720812213,
+        -37.96843335058332
+      ],
+      "timestamp": 476.0713256936405,
+      "is_fake": true,
+      "trust_score": 0.09392822914149478
+    },
+    {
+      "vehicle_id": "veh_85",
+      "report_type": "accident",
+      "location": [
+        9452.040787130323,
+        47.29742810533436
+      ],
+      "timestamp": 213.7823964609753,
+      "is_fake": false,
+      "trust_score": 0.8320677590506641
+    },
+    {
+      "vehicle_id": "veh_55",
+      "report_type": "breakdown",
+      "location": [
+        811.4171670620917,
+        44.529784542373136
+      ],
+      "timestamp": 631.1112303284464,
+      "is_fake": false,
+      "trust_score": 0.8959010297044383
+    },
+    {
+      "vehicle_id": "veh_17",
+      "report_type": "breakdown",
+      "location": [
+        6780.199884605879,
+        49.82165387383951
+      ],
+      "timestamp": 909.1548394218568,
+      "is_fake": false,
+      "trust_score": 0.7656507389369698
+    },
+    {
+      "vehicle_id": "veh_98",
+      "report_type": "breakdown",
+      "location": [
+        7768.577914324456,
+        -22.114101706275534
+      ],
+      "timestamp": 138.50480597141657,
+      "is_fake": false,
+      "trust_score": 0.9159062478379636
+    },
+    {
+      "vehicle_id": "veh_56",
+      "report_type": "breakdown",
+      "location": [
+        6981.246084538247,
+        -15.51949685027094
+      ],
+      "timestamp": 117.326040250603,
+      "is_fake": false,
+      "trust_score": 0.7573631379698448
+    },
+    {
+      "vehicle_id": "veh_39",
+      "report_type": "breakdown",
+      "location": [
+        6253.876277955284,
+        -28.696496039455067
+      ],
+      "timestamp": 446.36051661470333,
+      "is_fake": true,
+      "trust_score": 0.3417697957540522
+    },
+    {
+      "vehicle_id": "veh_7",
+      "report_type": "accident",
+      "location": [
+        2485.3218757378604,
+        -34.16401260525749
+      ],
+      "timestamp": 664.1742454094939,
+      "is_fake": false,
+      "trust_score": 0.8021047712895056
+    },
+    {
+      "vehicle_id": "veh_1",
+      "report_type": "breakdown",
+      "location": [
+        6697.555513819945,
+        -11.461998596474047
+      ],
+      "timestamp": 418.2524949520092,
+      "is_fake": false,
+      "trust_score": 0.997484628560627
+    },
+    {
+      "vehicle_id": "veh_51",
+      "report_type": "accident",
+      "location": [
+        8545.526543171383,
+        8.342790997491157
+      ],
+      "timestamp": 830.1727377571182,
+      "is_fake": true,
+      "trust_score": 0.3934922236611967
+    },
+    {
+      "vehicle_id": "veh_51",
+      "report_type": "breakdown",
+      "location": [
+        5615.377097841594,
+        44.818171271644815
+      ],
+      "timestamp": 276.0801794843054,
+      "is_fake": false,
+      "trust_score": 0.8608132319668993
+    },
+    {
+      "vehicle_id": "veh_95",
+      "report_type": "breakdown",
+      "location": [
+        1826.4123049182547,
+        -6.601784167884276
+      ],
+      "timestamp": 342.1189597599473,
+      "is_fake": true,
+      "trust_score": 0.3097941124524204
+    },
+    {
+      "vehicle_id": "veh_77",
+      "report_type": "accident",
+      "location": [
+        3147.907136825706,
+        -13.85632645671533
+      ],
+      "timestamp": 572.4404676263807,
+      "is_fake": true,
+      "trust_score": 0.11818482385125827
+    },
+    {
+      "vehicle_id": "veh_34",
+      "report_type": "accident",
+      "location": [
+        1354.1153191394228,
+        32.880445210342
+      ],
+      "timestamp": 304.0373253736387,
+      "is_fake": false,
+      "trust_score": 0.8934572090098217
+    },
+    {
+      "vehicle_id": "veh_31",
+      "report_type": "breakdown",
+      "location": [
+        4901.691387615438,
+        15.075097455566151
+      ],
+      "timestamp": 415.8869114318354,
+      "is_fake": true,
+      "trust_score": 0.3837253631883403
+    },
+    {
+      "vehicle_id": "veh_45",
+      "report_type": "accident",
+      "location": [
+        4783.55154426922,
+        43.41247354583295
+      ],
+      "timestamp": 379.717470437736,
+      "is_fake": true,
+      "trust_score": 0.381045673973359
+    },
+    {
+      "vehicle_id": "veh_37",
+      "report_type": "accident",
+      "location": [
+        2145.243803757104,
+        40.699868656233775
+      ],
+      "timestamp": 220.14763307806507,
+      "is_fake": false,
+      "trust_score": 0.9048740367126108
+    },
+    {
+      "vehicle_id": "veh_36",
+      "report_type": "breakdown",
+      "location": [
+        9851.050014112434,
+        -8.726749339312178
+      ],
+      "timestamp": 462.9811045480986,
+      "is_fake": false,
+      "trust_score": 0.9206490387020271
+    },
+    {
+      "vehicle_id": "veh_75",
+      "report_type": "accident",
+      "location": [
+        3035.7835347328964,
+        10.526195225601121
+      ],
+      "timestamp": 531.2182307250823,
+      "is_fake": false,
+      "trust_score": 0.9072835454863077
+    },
+    {
+      "vehicle_id": "veh_45",
+      "report_type": "accident",
+      "location": [
+        4001.546948598145,
+        -15.273141965389549
+      ],
+      "timestamp": 299.2291246636257,
+      "is_fake": true,
+      "trust_score": 0.05488244838171084
+    },
+    {
+      "vehicle_id": "veh_22",
+      "report_type": "accident",
+      "location": [
+        5096.024581652372,
+        47.948164059395694
+      ],
+      "timestamp": 38.88358985519069,
+      "is_fake": true,
+      "trust_score": 0.12222887583519829
+    },
+    {
+      "vehicle_id": "veh_92",
+      "report_type": "accident",
+      "location": [
+        1677.0493304346867,
+        -45.37658200418746
+      ],
+      "timestamp": 200.0674499957097,
+      "is_fake": false,
+      "trust_score": 0.8593261438894485
+    },
+    {
+      "vehicle_id": "veh_99",
+      "report_type": "breakdown",
+      "location": [
+        5212.521324431457,
+        -34.525421679873446
+      ],
+      "timestamp": 306.5078634996258,
+      "is_fake": true,
+      "trust_score": 0.17219214621622916
+    },
+    {
+      "vehicle_id": "veh_36",
+      "report_type": "breakdown",
+      "location": [
+        9800.77872174934,
+        -12.638063779705156
+      ],
+      "timestamp": 103.7752933893078,
+      "is_fake": false,
+      "trust_score": 0.7674081978297127
+    },
+    {
+      "vehicle_id": "veh_23",
+      "report_type": "accident",
+      "location": [
+        6604.591809888294,
+        11.440393261025747
+      ],
+      "timestamp": 501.88122720455584,
+      "is_fake": false,
+      "trust_score": 0.7711000799572257
+    },
+    {
+      "vehicle_id": "veh_62",
+      "report_type": "accident",
+      "location": [
+        9212.841953108657,
+        -7.18875187151243
+      ],
+      "timestamp": 802.588626126168,
+      "is_fake": true,
+      "trust_score": 0.0749271273111265
+    },
+    {
+      "vehicle_id": "veh_91",
+      "report_type": "accident",
+      "location": [
+        7529.896803845892,
+        23.255473720937886
+      ],
+      "timestamp": 804.2409878382417,
+      "is_fake": false,
+      "trust_score": 0.8676011875002043
+    },
+    {
+      "vehicle_id": "veh_69",
+      "report_type": "breakdown",
+      "location": [
+        5367.932331646635,
+        49.830870852402114
+      ],
+      "timestamp": 322.12993603503105,
+      "is_fake": true,
+      "trust_score": 0.35130570843227776
+    },
+    {
+      "vehicle_id": "veh_35",
+      "report_type": "accident",
+      "location": [
+        2194.8217577640116,
+        -7.416273008378326
+      ],
+      "timestamp": 621.2376637604712,
+      "is_fake": false,
+      "trust_score": 0.9097183316141311
+    },
+    {
+      "vehicle_id": "veh_8",
+      "report_type": "breakdown",
+      "location": [
+        9870.564514514956,
+        -23.44414296792381
+      ],
+      "timestamp": 945.2696889089009,
+      "is_fake": false,
+      "trust_score": 0.7043015012323313
+    },
+    {
+      "vehicle_id": "veh_84",
+      "report_type": "breakdown",
+      "location": [
+        3282.263631873037,
+        -6.62650942571409
+      ],
+      "timestamp": 947.5253583929099,
+      "is_fake": false,
+      "trust_score": 0.8029098918304913
+    },
+    {
+      "vehicle_id": "veh_24",
+      "report_type": "accident",
+      "location": [
+        5598.011744118678,
+        1.9006702342217139
+      ],
+      "timestamp": 938.3973351382325,
+      "is_fake": true,
+      "trust_score": 0.3705266327490641
+    },
+    {
+      "vehicle_id": "veh_59",
+      "report_type": "breakdown",
+      "location": [
+        6570.899845454199,
+        -45.52536186266792
+      ],
+      "timestamp": 623.797439957358,
+      "is_fake": false,
+      "trust_score": 0.7618512658059413
+    },
+    {
+      "vehicle_id": "veh_99",
+      "report_type": "accident",
+      "location": [
+        9739.468109198715,
+        23.484281082156073
+      ],
+      "timestamp": 724.1081539723705,
+      "is_fake": false,
+      "trust_score": 0.7629164712233687
+    },
+    {
+      "vehicle_id": "veh_2",
+      "report_type": "breakdown",
+      "location": [
+        9417.284958690749,
+        -42.963217497732686
+      ],
+      "timestamp": 279.85092320520823,
+      "is_fake": false,
+      "trust_score": 0.9424569234045463
+    },
+    {
+      "vehicle_id": "veh_63",
+      "report_type": "breakdown",
+      "location": [
+        1051.4256811934397,
+        20.469393032230272
+      ],
+      "timestamp": 629.2093204600724,
+      "is_fake": false,
+      "trust_score": 0.778667180326031
+    },
+    {
+      "vehicle_id": "veh_24",
+      "report_type": "breakdown",
+      "location": [
+        4490.271370287019,
+        21.536639588189132
+      ],
+      "timestamp": 458.1146852471053,
+      "is_fake": false,
+      "trust_score": 0.8710908220965341
+    },
+    {
+      "vehicle_id": "veh_59",
+      "report_type": "breakdown",
+      "location": [
+        7390.192452730144,
+        -11.799300997432823
+      ],
+      "timestamp": 932.3984691706878,
+      "is_fake": true,
+      "trust_score": 0.04355222344656955
+    },
+    {
+      "vehicle_id": "veh_83",
+      "report_type": "accident",
+      "location": [
+        1693.1077760709502,
+        -45.60268566139989
+      ],
+      "timestamp": 36.43013977644727,
+      "is_fake": true,
+      "trust_score": 0.13225078613443758
+    },
+    {
+      "vehicle_id": "veh_95",
+      "report_type": "breakdown",
+      "location": [
+        7641.12730295302,
+        20.529839417029393
+      ],
+      "timestamp": 749.2699332181434,
+      "is_fake": false,
+      "trust_score": 0.9506222799271202
+    },
+    {
+      "vehicle_id": "veh_90",
+      "report_type": "accident",
+      "location": [
+        1100.5402523304087,
+        29.42031177453221
+      ],
+      "timestamp": 783.0678999537957,
+      "is_fake": false,
+      "trust_score": 0.7454957478584533
+    },
+    {
+      "vehicle_id": "veh_68",
+      "report_type": "accident",
+      "location": [
+        698.0094393193737,
+        13.490280188345139
+      ],
+      "timestamp": 181.44197733533883,
+      "is_fake": false,
+      "trust_score": 0.9825485035081318
+    },
+    {
+      "vehicle_id": "veh_22",
+      "report_type": "accident",
+      "location": [
+        1157.1075740049796,
+        -48.32473370382003
+      ],
+      "timestamp": 310.96808444246625,
+      "is_fake": false,
+      "trust_score": 0.7711184893976656
+    },
+    {
+      "vehicle_id": "veh_64",
+      "report_type": "accident",
+      "location": [
+        5881.059943562692,
+        -44.0137662228425
+      ],
+      "timestamp": 133.5348445688056,
+      "is_fake": false,
+      "trust_score": 0.9574023415792987
+    },
+    {
+      "vehicle_id": "veh_25",
+      "report_type": "accident",
+      "location": [
+        2165.12445111106,
+        -28.981125742513857
+      ],
+      "timestamp": 744.310105375344,
+      "is_fake": false,
+      "trust_score": 0.8444000752094187
+    },
+    {
+      "vehicle_id": "veh_86",
+      "report_type": "accident",
+      "location": [
+        1730.2813981397592,
+        -21.817689647927484
+      ],
+      "timestamp": 463.9225799905412,
+      "is_fake": true,
+      "trust_score": 0.30889959759161356
+    },
+    {
+      "vehicle_id": "veh_52",
+      "report_type": "breakdown",
+      "location": [
+        8855.3653906251,
+        10.844141069506819
+      ],
+      "timestamp": 386.79413023782894,
+      "is_fake": true,
+      "trust_score": 0.341971479088299
+    },
+    {
+      "vehicle_id": "veh_8",
+      "report_type": "breakdown",
+      "location": [
+        1680.4578674618576,
+        0.4997077159828436
+      ],
+      "timestamp": 207.29842116677455,
+      "is_fake": false,
+      "trust_score": 0.9996487692103977
+    },
+    {
+      "vehicle_id": "veh_89",
+      "report_type": "breakdown",
+      "location": [
+        9783.729369303896,
+        18.044865430531047
+      ],
+      "timestamp": 43.076891936953075,
+      "is_fake": false,
+      "trust_score": 0.7996733802515239
+    },
+    {
+      "vehicle_id": "veh_65",
+      "report_type": "breakdown",
+      "location": [
+        9228.802544008075,
+        -43.790212390872206
+      ],
+      "timestamp": 398.1720714059435,
+      "is_fake": false,
+      "trust_score": 0.8676253222111909
+    },
+    {
+      "vehicle_id": "veh_65",
+      "report_type": "breakdown",
+      "location": [
+        6168.010220727568,
+        18.708261889108613
+      ],
+      "timestamp": 564.4955621498275,
+      "is_fake": false,
+      "trust_score": 0.7359212234067177
+    },
+    {
+      "vehicle_id": "veh_5",
+      "report_type": "breakdown",
+      "location": [
+        9181.808896745293,
+        -19.120363983405664
+      ],
+      "timestamp": 603.6052882278856,
+      "is_fake": true,
+      "trust_score": 0.23184698121426758
+    },
+    {
+      "vehicle_id": "veh_59",
+      "report_type": "accident",
+      "location": [
+        5757.349124635083,
+        -44.38077985544568
+      ],
+      "timestamp": 924.498272313956,
+      "is_fake": true,
+      "trust_score": 0.20504635946068422
+    },
+    {
+      "vehicle_id": "veh_47",
+      "report_type": "breakdown",
+      "location": [
+        1058.8670690725764,
+        -8.32512171764089
+      ],
+      "timestamp": 796.0665732281536,
+      "is_fake": false,
+      "trust_score": 0.8153013699969891
+    },
+    {
+      "vehicle_id": "veh_83",
+      "report_type": "accident",
+      "location": [
+        7761.425604772287,
+        20.60696125365216
+      ],
+      "timestamp": 461.9619011697057,
+      "is_fake": false,
+      "trust_score": 0.9403414315566196
+    },
+    {
+      "vehicle_id": "veh_49",
+      "report_type": "breakdown",
+      "location": [
+        8590.558564677973,
+        -39.50638712466015
+      ],
+      "timestamp": 299.91051768731523,
+      "is_fake": true,
+      "trust_score": 0.34385291970777687
+    },
+    {
+      "vehicle_id": "veh_34",
+      "report_type": "breakdown",
+      "location": [
+        3934.96546805581,
+        30.65174553586843
+      ],
+      "timestamp": 733.035605354883,
+      "is_fake": true,
+      "trust_score": 0.12399228223406396
+    },
+    {
+      "vehicle_id": "veh_73",
+      "report_type": "accident",
+      "location": [
+        7425.412951011348,
+        -41.59647990966396
+      ],
+      "timestamp": 393.60258367772616,
+      "is_fake": false,
+      "trust_score": 0.7248901047135992
+    },
+    {
+      "vehicle_id": "veh_87",
+      "report_type": "breakdown",
+      "location": [
+        2615.9878734906615,
+        36.52205650280064
+      ],
+      "timestamp": 569.2365586528368,
+      "is_fake": true,
+      "trust_score": 0.20609398065747483
+    },
+    {
+      "vehicle_id": "veh_59",
+      "report_type": "breakdown",
+      "location": [
+        1130.342929334097,
+        -48.90276376079456
+      ],
+      "timestamp": 159.33041307039363,
+      "is_fake": false,
+      "trust_score": 0.7023378216387688
+    },
+    {
+      "vehicle_id": "veh_40",
+      "report_type": "breakdown",
+      "location": [
+        17.16638365035772,
+        -15.052176347281573
+      ],
+      "timestamp": 885.0092282660795,
+      "is_fake": false,
+      "trust_score": 0.7523044719874451
+    },
+    {
+      "vehicle_id": "veh_33",
+      "report_type": "breakdown",
+      "location": [
+        9558.562819781677,
+        43.59448004970173
+      ],
+      "timestamp": 769.2935231758925,
+      "is_fake": true,
+      "trust_score": 0.29857809274326924
+    },
+    {
+      "vehicle_id": "veh_12",
+      "report_type": "accident",
+      "location": [
+        1419.8536570782926,
+        -19.294625173654346
+      ],
+      "timestamp": 810.566034705397,
+      "is_fake": false,
+      "trust_score": 0.8747966204808951
+    },
+    {
+      "vehicle_id": "veh_12",
+      "report_type": "accident",
+      "location": [
+        5088.458342381319,
+        -37.318695252745684
+      ],
+      "timestamp": 20.212786067562604,
+      "is_fake": true,
+      "trust_score": 0.30854120287846654
+    },
+    {
+      "vehicle_id": "veh_63",
+      "report_type": "breakdown",
+      "location": [
+        447.88184777270754,
+        -41.663861310996474
+      ],
+      "timestamp": 245.84384305015527,
+      "is_fake": false,
+      "trust_score": 0.7119595619043665
+    },
+    {
+      "vehicle_id": "veh_95",
+      "report_type": "accident",
+      "location": [
+        9135.901460156,
+        -38.311971415416345
+      ],
+      "timestamp": 324.8409151411421,
+      "is_fake": false,
+      "trust_score": 0.712009350436964
+    },
+    {
+      "vehicle_id": "veh_92",
+      "report_type": "accident",
+      "location": [
+        1521.0310912715897,
+        -42.382018536557624
+      ],
+      "timestamp": 766.5613160605016,
+      "is_fake": false,
+      "trust_score": 0.8528339351361336
+    },
+    {
+      "vehicle_id": "veh_99",
+      "report_type": "accident",
+      "location": [
+        6899.8140555813525,
+        -32.87759473932046
+      ],
+      "timestamp": 740.9162691245566,
+      "is_fake": true,
+      "trust_score": 0.32826434680730193
+    },
+    {
+      "vehicle_id": "veh_91",
+      "report_type": "breakdown",
+      "location": [
+        1250.319381232786,
+        6.768451615169582
+      ],
+      "timestamp": 267.85988737432797,
+      "is_fake": false,
+      "trust_score": 0.9112683923060976
+    },
+    {
+      "vehicle_id": "veh_83",
+      "report_type": "breakdown",
+      "location": [
+        1432.6327492771086,
+        23.386478839979944
+      ],
+      "timestamp": 423.0528950358121,
+      "is_fake": false,
+      "trust_score": 0.7535419369160654
+    },
+    {
+      "vehicle_id": "veh_41",
+      "report_type": "accident",
+      "location": [
+        6568.716597485664,
+        -4.12368846140172
+      ],
+      "timestamp": 536.8810958686717,
+      "is_fake": false,
+      "trust_score": 0.7084326058469013
+    },
+    {
+      "vehicle_id": "veh_26",
+      "report_type": "accident",
+      "location": [
+        9021.23020274561,
+        41.94068414520909
+      ],
+      "timestamp": 504.3704554149723,
+      "is_fake": false,
+      "trust_score": 0.8763016172893393
+    },
+    {
+      "vehicle_id": "veh_54",
+      "report_type": "breakdown",
+      "location": [
+        5707.272255533098,
+        16.192052945769547
+      ],
+      "timestamp": 653.932813362764,
+      "is_fake": false,
+      "trust_score": 0.9697939773243456
+    },
+    {
+      "vehicle_id": "veh_10",
+      "report_type": "breakdown",
+      "location": [
+        8610.089664847377,
+        -49.218450756423096
+      ],
+      "timestamp": 713.5999217430386,
+      "is_fake": true,
+      "trust_score": 0.01004135799520043
+    },
+    {
+      "vehicle_id": "veh_68",
+      "report_type": "accident",
+      "location": [
+        8973.471042179166,
+        -30.21099648637583
+      ],
+      "timestamp": 523.8182287540254,
+      "is_fake": false,
+      "trust_score": 0.7749660027212184
+    },
+    {
+      "vehicle_id": "veh_9",
+      "report_type": "breakdown",
+      "location": [
+        5059.920756964976,
+        -15.309225493270652
+      ],
+      "timestamp": 961.2088897448734,
+      "is_fake": true,
+      "trust_score": 0.15753361431439777
+    },
+    {
+      "vehicle_id": "veh_63",
+      "report_type": "breakdown",
+      "location": [
+        3241.8203643242705,
+        45.7117281465938
+      ],
+      "timestamp": 162.9689934213825,
+      "is_fake": false,
+      "trust_score": 0.71968484559844
+    },
+    {
+      "vehicle_id": "veh_82",
+      "report_type": "breakdown",
+      "location": [
+        949.7975369359124,
+        -22.18897382302102
+      ],
+      "timestamp": 43.19105449577698,
+      "is_fake": true,
+      "trust_score": 0.36644555047163424
+    },
+    {
+      "vehicle_id": "veh_45",
+      "report_type": "breakdown",
+      "location": [
+        2689.5925305146475,
+        -9.29777116791238
+      ],
+      "timestamp": 521.6398574991317,
+      "is_fake": false,
+      "trust_score": 0.9184141330360881
+    },
+    {
+      "vehicle_id": "veh_13",
+      "report_type": "accident",
+      "location": [
+        3412.469655470557,
+        -7.435073510525513
+      ],
+      "timestamp": 722.3823876331799,
+      "is_fake": false,
+      "trust_score": 0.7677478110577336
+    },
+    {
+      "vehicle_id": "veh_51",
+      "report_type": "accident",
+      "location": [
+        2596.9922856697967,
+        -14.979035479568303
+      ],
+      "timestamp": 799.9993046709404,
+      "is_fake": true,
+      "trust_score": 0.13829413625149525
+    },
+    {
+      "vehicle_id": "veh_97",
+      "report_type": "breakdown",
+      "location": [
+        2845.0668563549543,
+        14.876249920815994
+      ],
+      "timestamp": 219.41017757425752,
+      "is_fake": false,
+      "trust_score": 0.8058588254712659
+    },
+    {
+      "vehicle_id": "veh_89",
+      "report_type": "breakdown",
+      "location": [
+        1523.5179051492776,
+        33.936664339674294
+      ],
+      "timestamp": 979.0456579026671,
+      "is_fake": true,
+      "trust_score": 0.02333019585261358
+    },
+    {
+      "vehicle_id": "veh_31",
+      "report_type": "breakdown",
+      "location": [
+        1122.2651516727967,
+        33.93227686909178
+      ],
+      "timestamp": 80.79395013460532,
+      "is_fake": true,
+      "trust_score": 0.10132633160303146
+    },
+    {
+      "vehicle_id": "veh_43",
+      "report_type": "breakdown",
+      "location": [
+        1700.0664956595447,
+        -36.15124783698867
+      ],
+      "timestamp": 647.4239595737266,
+      "is_fake": false,
+      "trust_score": 0.9650712447091512
+    },
+    {
+      "vehicle_id": "veh_45",
+      "report_type": "accident",
+      "location": [
+        6001.5988079565,
+        19.39667702823847
+      ],
+      "timestamp": 662.802063297151,
+      "is_fake": false,
+      "trust_score": 0.9646540051353363
+    },
+    {
+      "vehicle_id": "veh_12",
+      "report_type": "breakdown",
+      "location": [
+        2634.587491367697,
+        -46.97216713752028
+      ],
+      "timestamp": 189.98779627930716,
+      "is_fake": false,
+      "trust_score": 0.9604820538133749
+    },
+    {
+      "vehicle_id": "veh_25",
+      "report_type": "breakdown",
+      "location": [
+        1198.0830505967244,
+        26.671419565201347
+      ],
+      "timestamp": 405.83342517861877,
+      "is_fake": true,
+      "trust_score": 0.18052956881247925
+    },
+    {
+      "vehicle_id": "veh_58",
+      "report_type": "breakdown",
+      "location": [
+        6677.609180622728,
+        -43.80355893301044
+      ],
+      "timestamp": 297.1441526609959,
+      "is_fake": true,
+      "trust_score": 0.0711807716650461
+    },
+    {
+      "vehicle_id": "veh_52",
+      "report_type": "breakdown",
+      "location": [
+        9616.452954616787,
+        13.276394661506089
+      ],
+      "timestamp": 113.40182123383835,
+      "is_fake": false,
+      "trust_score": 0.8553524330048895
+    },
+    {
+      "vehicle_id": "veh_76",
+      "report_type": "accident",
+      "location": [
+        7904.274980490865,
+        -48.87025725603156
+      ],
+      "timestamp": 849.2477836164705,
+      "is_fake": false,
+      "trust_score": 0.9302508293638762
+    },
+    {
+      "vehicle_id": "veh_90",
+      "report_type": "accident",
+      "location": [
+        7519.159344294047,
+        2.866891544382085
+      ],
+      "timestamp": 636.7674642504309,
+      "is_fake": false,
+      "trust_score": 0.8273885261982681
+    },
+    {
+      "vehicle_id": "veh_30",
+      "report_type": "breakdown",
+      "location": [
+        5601.977083094139,
+        -34.21679937767239
+      ],
+      "timestamp": 191.84517755058016,
+      "is_fake": false,
+      "trust_score": 0.8354957676869503
+    },
+    {
+      "vehicle_id": "veh_51",
+      "report_type": "breakdown",
+      "location": [
+        3565.8284299030165,
+        39.16910886921103
+      ],
+      "timestamp": 491.2718136553174,
+      "is_fake": true,
+      "trust_score": 0.05250474844726845
+    },
+    {
+      "vehicle_id": "veh_26",
+      "report_type": "accident",
+      "location": [
+        1888.3661835126952,
+        18.35759525359245
+      ],
+      "timestamp": 22.03722025704169,
+      "is_fake": false,
+      "trust_score": 0.8947995556863969
+    },
+    {
+      "vehicle_id": "veh_32",
+      "report_type": "accident",
+      "location": [
+        7305.989199161885,
+        5.847646247472937
+      ],
+      "timestamp": 934.8803171133034,
+      "is_fake": false,
+      "trust_score": 0.877853458504996
+    },
+    {
+      "vehicle_id": "veh_54",
+      "report_type": "breakdown",
+      "location": [
+        6995.229156813565,
+        -47.8256196359389
+      ],
+      "timestamp": 613.9903729011089,
+      "is_fake": false,
+      "trust_score": 0.9355916533302477
+    },
+    {
+      "vehicle_id": "veh_62",
+      "report_type": "breakdown",
+      "location": [
+        8656.853383146015,
+        -25.463764304001003
+      ],
+      "timestamp": 447.3052318648886,
+      "is_fake": false,
+      "trust_score": 0.9157282780620118
+    },
+    {
+      "vehicle_id": "veh_90",
+      "report_type": "accident",
+      "location": [
+        7774.631249601488,
+        -2.598424911706097
+      ],
+      "timestamp": 561.3426571579414,
+      "is_fake": false,
+      "trust_score": 0.7894276288031588
+    },
+    {
+      "vehicle_id": "veh_45",
+      "report_type": "accident",
+      "location": [
+        3468.473335179105,
+        35.164618934654186
+      ],
+      "timestamp": 622.5532559897015,
+      "is_fake": false,
+      "trust_score": 0.8487776677292702
+    },
+    {
+      "vehicle_id": "veh_30",
+      "report_type": "breakdown",
+      "location": [
+        2675.543522890741,
+        4.781155158587822
+      ],
+      "timestamp": 189.30598018320345,
+      "is_fake": false,
+      "trust_score": 0.9474219630578219
+    },
+    {
+      "vehicle_id": "veh_43",
+      "report_type": "accident",
+      "location": [
+        5887.082515254951,
+        27.568887115684575
+      ],
+      "timestamp": 877.9204335988162,
+      "is_fake": false,
+      "trust_score": 0.940563147629766
+    },
+    {
+      "vehicle_id": "veh_45",
+      "report_type": "accident",
+      "location": [
+        8210.537342969348,
+        -28.911179681715204
+      ],
+      "timestamp": 84.68418511258402,
+      "is_fake": false,
+      "trust_score": 0.8726598341971191
+    },
+    {
+      "vehicle_id": "veh_13",
+      "report_type": "accident",
+      "location": [
+        3703.666997660292,
+        -30.953054221508335
+      ],
+      "timestamp": 479.67742658924215,
+      "is_fake": false,
+      "trust_score": 0.8741415407498527
+    },
+    {
+      "vehicle_id": "veh_68",
+      "report_type": "breakdown",
+      "location": [
+        5795.399670377377,
+        -41.911909419931035
+      ],
+      "timestamp": 26.31586826293897,
+      "is_fake": false,
+      "trust_score": 0.9330832008718519
+    },
+    {
+      "vehicle_id": "veh_13",
+      "report_type": "accident",
+      "location": [
+        1104.9859686352881,
+        32.045646550815604
+      ],
+      "timestamp": 218.47859316313756,
+      "is_fake": false,
+      "trust_score": 0.8499262293436227
+    },
+    {
+      "vehicle_id": "veh_68",
+      "report_type": "breakdown",
+      "location": [
+        7330.3229711951935,
+        33.790261454566306
+      ],
+      "timestamp": 406.78968768367963,
+      "is_fake": false,
+      "trust_score": 0.713562564712416
+    },
+    {
+      "vehicle_id": "veh_28",
+      "report_type": "accident",
+      "location": [
+        2682.27720603188,
+        33.3962679652312
+      ],
+      "timestamp": 469.22228324424765,
+      "is_fake": false,
+      "trust_score": 0.8952542639382727
+    },
+    {
+      "vehicle_id": "veh_59",
+      "report_type": "accident",
+      "location": [
+        4790.194280239808,
+        4.975486280117067
+      ],
+      "timestamp": 540.9224468724319,
+      "is_fake": false,
+      "trust_score": 0.9249799513623388
+    },
+    {
+      "vehicle_id": "veh_43",
+      "report_type": "accident",
+      "location": [
+        978.8467163041959,
+        -23.553325217945662
+      ],
+      "timestamp": 472.51923155301046,
+      "is_fake": true,
+      "trust_score": 0.3598067378351657
+    },
+    {
+      "vehicle_id": "veh_36",
+      "report_type": "accident",
+      "location": [
+        2565.8606480990497,
+        -8.109401291548139
+      ],
+      "timestamp": 42.43318101588744,
+      "is_fake": false,
+      "trust_score": 0.8304700711747284
+    },
+    {
+      "vehicle_id": "veh_100",
+      "report_type": "accident",
+      "location": [
+        4232.734728354908,
+        -43.57699699615707
+      ],
+      "timestamp": 870.4015370369701,
+      "is_fake": true,
+      "trust_score": 0.3123013865123086
+    },
+    {
+      "vehicle_id": "veh_20",
+      "report_type": "accident",
+      "location": [
+        9971.741059387135,
+        -9.6311243491932
+      ],
+      "timestamp": 285.35211966334896,
+      "is_fake": false,
+      "trust_score": 0.9116400603995862
+    },
+    {
+      "vehicle_id": "veh_65",
+      "report_type": "accident",
+      "location": [
+        2571.9178580566017,
+        -18.262254444588876
+      ],
+      "timestamp": 752.9861251780904,
+      "is_fake": true,
+      "trust_score": 0.29399791509820394
+    },
+    {
+      "vehicle_id": "veh_63",
+      "report_type": "breakdown",
+      "location": [
+        4094.548555576689,
+        -13.707552888013488
+      ],
+      "timestamp": 113.30605718408727,
+      "is_fake": false,
+      "trust_score": 0.9664451052572112
+    },
+    {
+      "vehicle_id": "veh_78",
+      "report_type": "breakdown",
+      "location": [
+        7357.70866213166,
+        49.18517747309804
+      ],
+      "timestamp": 640.6951540695314,
+      "is_fake": false,
+      "trust_score": 0.9741132412441993
+    },
+    {
+      "vehicle_id": "veh_96",
+      "report_type": "accident",
+      "location": [
+        4777.68087277723,
+        22.630196360355825
+      ],
+      "timestamp": 488.68441664829953,
+      "is_fake": false,
+      "trust_score": 0.7138800812557825
+    },
+    {
+      "vehicle_id": "veh_59",
+      "report_type": "accident",
+      "location": [
+        9664.813577559362,
+        -35.42718629056775
+      ],
+      "timestamp": 395.92376186048085,
+      "is_fake": false,
+      "trust_score": 0.869247751950784
+    },
+    {
+      "vehicle_id": "veh_11",
+      "report_type": "accident",
+      "location": [
+        7090.678549119376,
+        -33.128866955193935
+      ],
+      "timestamp": 879.3450198731688,
+      "is_fake": false,
+      "trust_score": 0.8336401193211105
+    },
+    {
+      "vehicle_id": "veh_36",
+      "report_type": "accident",
+      "location": [
+        2640.9826465533115,
+        -44.9506239869287
+      ],
+      "timestamp": 524.576297471912,
+      "is_fake": false,
+      "trust_score": 0.7779253388287575
+    },
+    {
+      "vehicle_id": "veh_81",
+      "report_type": "breakdown",
+      "location": [
+        4666.7638101208695,
+        -37.63339186808794
+      ],
+      "timestamp": 442.9405577399802,
+      "is_fake": true,
+      "trust_score": 0.2541866169067303
+    },
+    {
+      "vehicle_id": "veh_72",
+      "report_type": "breakdown",
+      "location": [
+        8854.1999906898,
+        16.82818390694331
+      ],
+      "timestamp": 18.693362956535786,
+      "is_fake": true,
+      "trust_score": 0.3767097308668321
+    },
+    {
+      "vehicle_id": "veh_12",
+      "report_type": "accident",
+      "location": [
+        2342.9779757245406,
+        22.954367892801386
+      ],
+      "timestamp": 834.0138862990101,
+      "is_fake": false,
+      "trust_score": 0.9989136061010719
+    },
+    {
+      "vehicle_id": "veh_26",
+      "report_type": "accident",
+      "location": [
+        9552.667130746875,
+        -36.16353683832594
+      ],
+      "timestamp": 92.36819700709597,
+      "is_fake": false,
+      "trust_score": 0.8877732155391198
+    },
+    {
+      "vehicle_id": "veh_74",
+      "report_type": "breakdown",
+      "location": [
+        4524.441735143531,
+        -1.3137789730266007
+      ],
+      "timestamp": 228.52711907961566,
+      "is_fake": false,
+      "trust_score": 0.9609578258527369
+    },
+    {
+      "vehicle_id": "veh_72",
+      "report_type": "breakdown",
+      "location": [
+        2575.6656522958065,
+        24.081691181065494
+      ],
+      "timestamp": 343.33473636066293,
+      "is_fake": false,
+      "trust_score": 0.8561261878656417
+    },
+    {
+      "vehicle_id": "veh_52",
+      "report_type": "breakdown",
+      "location": [
+        3408.4957309441997,
+        0.749773556353226
+      ],
+      "timestamp": 335.11272286987105,
+      "is_fake": true,
+      "trust_score": 0.041862062421404826
+    },
+    {
+      "vehicle_id": "veh_42",
+      "report_type": "accident",
+      "location": [
+        3727.742720532523,
+        -31.890266374858946
+      ],
+      "timestamp": 942.2547267347416,
+      "is_fake": false,
+      "trust_score": 0.9054944484140166
+    },
+    {
+      "vehicle_id": "veh_7",
+      "report_type": "breakdown",
+      "location": [
+        358.4126208520921,
+        30.98432078980065
+      ],
+      "timestamp": 4.990949757103902,
+      "is_fake": false,
+      "trust_score": 0.8411204333849771
+    },
+    {
+      "vehicle_id": "veh_90",
+      "report_type": "accident",
+      "location": [
+        1490.643632087203,
+        40.945802117015276
+      ],
+      "timestamp": 248.83872192136303,
+      "is_fake": false,
+      "trust_score": 0.9998135796062357
+    },
+    {
+      "vehicle_id": "veh_32",
+      "report_type": "breakdown",
+      "location": [
+        9652.00184971526,
+        32.907837378815856
+      ],
+      "timestamp": 68.21033541241772,
+      "is_fake": false,
+      "trust_score": 0.8802387518734522
+    },
+    {
+      "vehicle_id": "veh_1",
+      "report_type": "breakdown",
+      "location": [
+        2689.2177605719094,
+        -44.42894431017206
+      ],
+      "timestamp": 272.27393054379377,
+      "is_fake": false,
+      "trust_score": 0.7990274628776166
+    },
+    {
+      "vehicle_id": "veh_51",
+      "report_type": "breakdown",
+      "location": [
+        9602.735085385748,
+        -22.442130354266375
+      ],
+      "timestamp": 116.20529821287474,
+      "is_fake": true,
+      "trust_score": 0.37772687465160887
+    },
+    {
+      "vehicle_id": "veh_19",
+      "report_type": "breakdown",
+      "location": [
+        4580.603192605752,
+        25.385919891410907
+      ],
+      "timestamp": 784.0289300020604,
+      "is_fake": false,
+      "trust_score": 0.9479446817746953
+    },
+    {
+      "vehicle_id": "veh_93",
+      "report_type": "accident",
+      "location": [
+        8150.1702821787585,
+        4.3679424709760255
+      ],
+      "timestamp": 15.792206098364403,
+      "is_fake": true,
+      "trust_score": 0.025765144310862277
+    },
+    {
+      "vehicle_id": "veh_31",
+      "report_type": "accident",
+      "location": [
+        703.9150354047185,
+        -34.61338208150451
+      ],
+      "timestamp": 794.5426930903965,
+      "is_fake": true,
+      "trust_score": 0.18027636152723803
+    },
+    {
+      "vehicle_id": "veh_33",
+      "report_type": "accident",
+      "location": [
+        7125.8594197417815,
+        -21.014518470382846
+      ],
+      "timestamp": 407.8898292494264,
+      "is_fake": true,
+      "trust_score": 0.3484779749837923
+    },
+    {
+      "vehicle_id": "veh_70",
+      "report_type": "breakdown",
+      "location": [
+        6197.339664529489,
+        -18.918656962586788
+      ],
+      "timestamp": 298.16244784343525,
+      "is_fake": false,
+      "trust_score": 0.9909457049229946
+    },
+    {
+      "vehicle_id": "veh_93",
+      "report_type": "accident",
+      "location": [
+        5617.8730020751555,
+        47.35754515539682
+      ],
+      "timestamp": 941.6753772571169,
+      "is_fake": false,
+      "trust_score": 0.8078865046872974
+    },
+    {
+      "vehicle_id": "veh_64",
+      "report_type": "accident",
+      "location": [
+        6918.158328121755,
+        8.452731996685849
+      ],
+      "timestamp": 470.6576244709656,
+      "is_fake": false,
+      "trust_score": 0.8240976017518727
+    },
+    {
+      "vehicle_id": "veh_79",
+      "report_type": "accident",
+      "location": [
+        3986.8135570558193,
+        3.350506887765036
+      ],
+      "timestamp": 292.87839861536946,
+      "is_fake": false,
+      "trust_score": 0.8378374947970134
+    },
+    {
+      "vehicle_id": "veh_74",
+      "report_type": "breakdown",
+      "location": [
+        293.75964380452535,
+        -32.40513700772665
+      ],
+      "timestamp": 159.3754876752752,
+      "is_fake": false,
+      "trust_score": 0.8844537387967724
+    },
+    {
+      "vehicle_id": "veh_77",
+      "report_type": "breakdown",
+      "location": [
+        6769.536487252937,
+        -44.913686660761584
+      ],
+      "timestamp": 902.3591103830053,
+      "is_fake": true,
+      "trust_score": 0.3930613566464799
+    },
+    {
+      "vehicle_id": "veh_54",
+      "report_type": "accident",
+      "location": [
+        5491.431399480051,
+        34.60785081346957
+      ],
+      "timestamp": 990.835405163019,
+      "is_fake": false,
+      "trust_score": 0.7645169610586671
+    },
+    {
+      "vehicle_id": "veh_76",
+      "report_type": "breakdown",
+      "location": [
+        1300.1603634356275,
+        12.45947624895485
+      ],
+      "timestamp": 357.7576985662894,
+      "is_fake": false,
+      "trust_score": 0.7310816869384462
+    },
+    {
+      "vehicle_id": "veh_38",
+      "report_type": "accident",
+      "location": [
+        7859.853267994898,
+        -45.56323505361516
+      ],
+      "timestamp": 526.9633321398518,
+      "is_fake": false,
+      "trust_score": 0.7730140407276481
+    },
+    {
+      "vehicle_id": "veh_41",
+      "report_type": "breakdown",
+      "location": [
+        5631.473717048216,
+        1.3187191334824604
+      ],
+      "timestamp": 443.50664165986507,
+      "is_fake": true,
+      "trust_score": 0.3224028565487438
+    },
+    {
+      "vehicle_id": "veh_51",
+      "report_type": "accident",
+      "location": [
+        4556.642998552766,
+        34.73284531694631
+      ],
+      "timestamp": 22.21563800067039,
+      "is_fake": false,
+      "trust_score": 0.7957175228992072
+    },
+    {
+      "vehicle_id": "veh_96",
+      "report_type": "breakdown",
+      "location": [
+        9293.384667387421,
+        34.92190499845424
+      ],
+      "timestamp": 128.46610856855966,
+      "is_fake": false,
+      "trust_score": 0.7545431381699484
+    },
+    {
+      "vehicle_id": "veh_72",
+      "report_type": "breakdown",
+      "location": [
+        3970.939522091005,
+        -48.37315024290187
+      ],
+      "timestamp": 928.3892175526606,
+      "is_fake": false,
+      "trust_score": 0.9339576988075192
+    },
+    {
+      "vehicle_id": "veh_77",
+      "report_type": "breakdown",
+      "location": [
+        6959.358059692669,
+        -9.946098865552202
+      ],
+      "timestamp": 512.2212608824016,
+      "is_fake": false,
+      "trust_score": 0.8344841046596034
+    },
+    {
+      "vehicle_id": "veh_17",
+      "report_type": "breakdown",
+      "location": [
+        3744.332309112777,
+        -29.11281279332386
+      ],
+      "timestamp": 373.87589249286947,
+      "is_fake": true,
+      "trust_score": 0.30840183080347444
+    },
+    {
+      "vehicle_id": "veh_95",
+      "report_type": "accident",
+      "location": [
+        2293.521584163526,
+        11.460246725057566
+      ],
+      "timestamp": 578.2340012267675,
+      "is_fake": false,
+      "trust_score": 0.7788010919017396
+    },
+    {
+      "vehicle_id": "veh_75",
+      "report_type": "breakdown",
+      "location": [
+        2161.891030998849,
+        17.99166892711554
+      ],
+      "timestamp": 961.654728324004,
+      "is_fake": true,
+      "trust_score": 0.13208537856033767
+    },
+    {
+      "vehicle_id": "veh_69",
+      "report_type": "accident",
+      "location": [
+        1486.5454590813888,
+        -32.920499218900986
+      ],
+      "timestamp": 771.4108824321459,
+      "is_fake": true,
+      "trust_score": 0.12637510158843365
+    },
+    {
+      "vehicle_id": "veh_49",
+      "report_type": "accident",
+      "location": [
+        3173.5218712765977,
+        -42.04767322858688
+      ],
+      "timestamp": 876.4411838147647,
+      "is_fake": false,
+      "trust_score": 0.8608273059619773
+    },
+    {
+      "vehicle_id": "veh_32",
+      "report_type": "breakdown",
+      "location": [
+        139.87631653875178,
+        24.898312815188774
+      ],
+      "timestamp": 644.6745719714618,
+      "is_fake": false,
+      "trust_score": 0.9318793992590024
+    },
+    {
+      "vehicle_id": "veh_53",
+      "report_type": "accident",
+      "location": [
+        3848.7462897120404,
+        -37.29172224424842
+      ],
+      "timestamp": 323.464352486458,
+      "is_fake": false,
+      "trust_score": 0.9574831030867111
+    },
+    {
+      "vehicle_id": "veh_39",
+      "report_type": "breakdown",
+      "location": [
+        5268.645039295652,
+        27.16283690235612
+      ],
+      "timestamp": 476.42096530599065,
+      "is_fake": false,
+      "trust_score": 0.7180728536851925
+    },
+    {
+      "vehicle_id": "veh_91",
+      "report_type": "accident",
+      "location": [
+        9681.152838294216,
+        -23.895535125199206
+      ],
+      "timestamp": 866.8090812808022,
+      "is_fake": true,
+      "trust_score": 0.0347091562966253
+    },
+    {
+      "vehicle_id": "veh_40",
+      "report_type": "breakdown",
+      "location": [
+        4443.516805758688,
+        -29.522816811001352
+      ],
+      "timestamp": 160.64396488562804,
+      "is_fake": false,
+      "trust_score": 0.8777834278382846
+    },
+    {
+      "vehicle_id": "veh_64",
+      "report_type": "accident",
+      "location": [
+        6209.323590533358,
+        -41.06500900765013
+      ],
+      "timestamp": 10.255105972334588,
+      "is_fake": true,
+      "trust_score": 0.1630143363919344
+    },
+    {
+      "vehicle_id": "veh_16",
+      "report_type": "accident",
+      "location": [
+        7532.651821730978,
+        -27.243719759050066
+      ],
+      "timestamp": 273.30482646444676,
+      "is_fake": false,
+      "trust_score": 0.9007709072953906
+    },
+    {
+      "vehicle_id": "veh_15",
+      "report_type": "accident",
+      "location": [
+        5537.384096615527,
+        14.95220344374438
+      ],
+      "timestamp": 277.287786449129,
+      "is_fake": false,
+      "trust_score": 0.7500997083387998
+    },
+    {
+      "vehicle_id": "veh_34",
+      "report_type": "accident",
+      "location": [
+        717.1108929331871,
+        13.31778652157739
+      ],
+      "timestamp": 464.6971325067568,
+      "is_fake": false,
+      "trust_score": 0.7748430296017373
+    },
+    {
+      "vehicle_id": "veh_66",
+      "report_type": "breakdown",
+      "location": [
+        6153.4566394925605,
+        46.39455601749249
+      ],
+      "timestamp": 53.37201101962097,
+      "is_fake": true,
+      "trust_score": 0.08760266187326748
+    },
+    {
+      "vehicle_id": "veh_9",
+      "report_type": "accident",
+      "location": [
+        8169.710279635474,
+        18.193626096861138
+      ],
+      "timestamp": 58.82470168711051,
+      "is_fake": true,
+      "trust_score": 0.26852957561161767
+    },
+    {
+      "vehicle_id": "veh_39",
+      "report_type": "breakdown",
+      "location": [
+        8570.655161964416,
+        -7.240009138171786
+      ],
+      "timestamp": 762.6720982505385,
+      "is_fake": false,
+      "trust_score": 0.9492643819107045
+    },
+    {
+      "vehicle_id": "veh_69",
+      "report_type": "accident",
+      "location": [
+        8391.457375922137,
+        -42.505001352505644
+      ],
+      "timestamp": 259.8271634172582,
+      "is_fake": false,
+      "trust_score": 0.7553558217139682
+    },
+    {
+      "vehicle_id": "veh_77",
+      "report_type": "breakdown",
+      "location": [
+        425.69454990022405,
+        9.751571408013739
+      ],
+      "timestamp": 611.4544717427418,
+      "is_fake": false,
+      "trust_score": 0.8275843573980084
+    },
+    {
+      "vehicle_id": "veh_53",
+      "report_type": "breakdown",
+      "location": [
+        6807.9492645960945,
+        32.180920532539304
+      ],
+      "timestamp": 883.4236810843468,
+      "is_fake": true,
+      "trust_score": 0.39480518085831245
+    },
+    {
+      "vehicle_id": "veh_40",
+      "report_type": "breakdown",
+      "location": [
+        6494.905601849395,
+        -43.73090583251755
+      ],
+      "timestamp": 646.53512075528,
+      "is_fake": true,
+      "trust_score": 0.15278938413630372
+    }
+  ],
+  "real_incidents": [
+    {
+      "vehicle_id": "veh_85",
+      "report_type": "accident",
+      "location": [
+        8902.099909123925,
+        0.8963021661489421
+      ],
+      "timestamp": 251.9254538326199,
+      "is_fake": false,
+      "trust_score": 0.9873078598119794
+    },
+    {
+      "vehicle_id": "veh_20",
+      "report_type": "breakdown",
+      "location": [
+        2254.457660908159,
+        11.298865093062027
+      ],
+      "timestamp": 983.3928534197669,
+      "is_fake": false,
+      "trust_score": 0.862881909337288
+    },
+    {
+      "vehicle_id": "veh_47",
+      "report_type": "accident",
+      "location": [
+        5905.298047200767,
+        32.18972490215441
+      ],
+      "timestamp": 866.6011296561303,
+      "is_fake": false,
+      "trust_score": 0.7774943714572998
+    },
+    {
+      "vehicle_id": "veh_92",
+      "report_type": "accident",
+      "location": [
+        2103.492446164711,
+        30.77165476783516
+      ],
+      "timestamp": 200.307604378826,
+      "is_fake": false,
+      "trust_score": 0.9088610781135733
+    },
+    {
+      "vehicle_id": "veh_41",
+      "report_type": "breakdown",
+      "location": [
+        3672.998273330309,
+        -27.776783879015056
+      ],
+      "timestamp": 345.43134349543624,
+      "is_fake": false,
+      "trust_score": 0.8534124343285814
+    },
+    {
+      "vehicle_id": "veh_94",
+      "report_type": "accident",
+      "location": [
+        95.08413398936044,
+        23.503699965130778
+      ],
+      "timestamp": 438.5730670170425,
+      "is_fake": false,
+      "trust_score": 0.9304545759945614
+    },
+    {
+      "vehicle_id": "veh_49",
+      "report_type": "breakdown",
+      "location": [
+        9965.037616634841,
+        49.147948698081024
+      ],
+      "timestamp": 711.1733032055249,
+      "is_fake": false,
+      "trust_score": 0.9117499459016294
+    },
+    {
+      "vehicle_id": "veh_27",
+      "report_type": "accident",
+      "location": [
+        6758.251475097571,
+        -29.888085757133187
+      ],
+      "timestamp": 904.929848200524,
+      "is_fake": false,
+      "trust_score": 0.8520506264666896
+    },
+    {
+      "vehicle_id": "veh_56",
+      "report_type": "breakdown",
+      "location": [
+        9039.172088146124,
+        24.71803915101553
+      ],
+      "timestamp": 941.2060514512971,
+      "is_fake": false,
+      "trust_score": 0.8633010651746935
+    },
+    {
+      "vehicle_id": "veh_17",
+      "report_type": "breakdown",
+      "location": [
+        9166.988916208269,
+        -17.8562359046336
+      ],
+      "timestamp": 627.2967884884937,
+      "is_fake": false,
+      "trust_score": 0.7639852361227712
+    },
+    {
+      "vehicle_id": "veh_3",
+      "report_type": "breakdown",
+      "location": [
+        6464.608972029182,
+        -35.349517611200795
+      ],
+      "timestamp": 225.53968770168552,
+      "is_fake": false,
+      "trust_score": 0.8058034013680534
+    },
+    {
+      "vehicle_id": "veh_16",
+      "report_type": "breakdown",
+      "location": [
+        8427.358875742166,
+        -49.14079044478764
+      ],
+      "timestamp": 897.3715910534116,
+      "is_fake": false,
+      "trust_score": 0.9013632041421965
+    },
+    {
+      "vehicle_id": "veh_21",
+      "report_type": "breakdown",
+      "location": [
+        1377.6542457076234,
+        -1.6639537241321634
+      ],
+      "timestamp": 291.45125239368264,
+      "is_fake": false,
+      "trust_score": 0.8456866584362094
+    },
+    {
+      "vehicle_id": "veh_50",
+      "report_type": "accident",
+      "location": [
+        2775.5885214424356,
+        -10.405726490246657
+      ],
+      "timestamp": 30.647745029268926,
+      "is_fake": false,
+      "trust_score": 0.7684457469076221
+    },
+    {
+      "vehicle_id": "veh_19",
+      "report_type": "accident",
+      "location": [
+        3351.008652527082,
+        14.286034802280923
+      ],
+      "timestamp": 635.0160325576305,
+      "is_fake": false,
+      "trust_score": 0.9010627885790778
+    },
+    {
+      "vehicle_id": "veh_60",
+      "report_type": "breakdown",
+      "location": [
+        7615.40477332989,
+        -8.264686007622913
+      ],
+      "timestamp": 475.19044119297513,
+      "is_fake": false,
+      "trust_score": 0.9940908957984008
+    },
+    {
+      "vehicle_id": "veh_3",
+      "report_type": "breakdown",
+      "location": [
+        2473.2738380982323,
+        -40.52401652027184
+      ],
+      "timestamp": 605.142708759655,
+      "is_fake": false,
+      "trust_score": 0.7150982348293671
+    },
+    {
+      "vehicle_id": "veh_93",
+      "report_type": "accident",
+      "location": [
+        4516.072870454723,
+        28.324921567826223
+      ],
+      "timestamp": 921.3856968662719,
+      "is_fake": false,
+      "trust_score": 0.816558636040639
+    },
+    {
+      "vehicle_id": "veh_85",
+      "report_type": "breakdown",
+      "location": [
+        6031.6386760579235,
+        -10.000195631847511
+      ],
+      "timestamp": 292.33929659487325,
+      "is_fake": false,
+      "trust_score": 0.7933001664220448
+    },
+    {
+      "vehicle_id": "veh_85",
+      "report_type": "accident",
+      "location": [
+        9452.040787130323,
+        47.29742810533436
+      ],
+      "timestamp": 213.7823964609753,
+      "is_fake": false,
+      "trust_score": 0.8320677590506641
+    },
+    {
+      "vehicle_id": "veh_55",
+      "report_type": "breakdown",
+      "location": [
+        811.4171670620917,
+        44.529784542373136
+      ],
+      "timestamp": 631.1112303284464,
+      "is_fake": false,
+      "trust_score": 0.8959010297044383
+    },
+    {
+      "vehicle_id": "veh_17",
+      "report_type": "breakdown",
+      "location": [
+        6780.199884605879,
+        49.82165387383951
+      ],
+      "timestamp": 909.1548394218568,
+      "is_fake": false,
+      "trust_score": 0.7656507389369698
+    },
+    {
+      "vehicle_id": "veh_98",
+      "report_type": "breakdown",
+      "location": [
+        7768.577914324456,
+        -22.114101706275534
+      ],
+      "timestamp": 138.50480597141657,
+      "is_fake": false,
+      "trust_score": 0.9159062478379636
+    },
+    {
+      "vehicle_id": "veh_56",
+      "report_type": "breakdown",
+      "location": [
+        6981.246084538247,
+        -15.51949685027094
+      ],
+      "timestamp": 117.326040250603,
+      "is_fake": false,
+      "trust_score": 0.7573631379698448
+    },
+    {
+      "vehicle_id": "veh_7",
+      "report_type": "accident",
+      "location": [
+        2485.3218757378604,
+        -34.16401260525749
+      ],
+      "timestamp": 664.1742454094939,
+      "is_fake": false,
+      "trust_score": 0.8021047712895056
+    },
+    {
+      "vehicle_id": "veh_1",
+      "report_type": "breakdown",
+      "location": [
+        6697.555513819945,
+        -11.461998596474047
+      ],
+      "timestamp": 418.2524949520092,
+      "is_fake": false,
+      "trust_score": 0.997484628560627
+    },
+    {
+      "vehicle_id": "veh_51",
+      "report_type": "breakdown",
+      "location": [
+        5615.377097841594,
+        44.818171271644815
+      ],
+      "timestamp": 276.0801794843054,
+      "is_fake": false,
+      "trust_score": 0.8608132319668993
+    },
+    {
+      "vehicle_id": "veh_34",
+      "report_type": "accident",
+      "location": [
+        1354.1153191394228,
+        32.880445210342
+      ],
+      "timestamp": 304.0373253736387,
+      "is_fake": false,
+      "trust_score": 0.8934572090098217
+    },
+    {
+      "vehicle_id": "veh_37",
+      "report_type": "accident",
+      "location": [
+        2145.243803757104,
+        40.699868656233775
+      ],
+      "timestamp": 220.14763307806507,
+      "is_fake": false,
+      "trust_score": 0.9048740367126108
+    },
+    {
+      "vehicle_id": "veh_36",
+      "report_type": "breakdown",
+      "location": [
+        9851.050014112434,
+        -8.726749339312178
+      ],
+      "timestamp": 462.9811045480986,
+      "is_fake": false,
+      "trust_score": 0.9206490387020271
+    },
+    {
+      "vehicle_id": "veh_75",
+      "report_type": "accident",
+      "location": [
+        3035.7835347328964,
+        10.526195225601121
+      ],
+      "timestamp": 531.2182307250823,
+      "is_fake": false,
+      "trust_score": 0.9072835454863077
+    },
+    {
+      "vehicle_id": "veh_92",
+      "report_type": "accident",
+      "location": [
+        1677.0493304346867,
+        -45.37658200418746
+      ],
+      "timestamp": 200.0674499957097,
+      "is_fake": false,
+      "trust_score": 0.8593261438894485
+    },
+    {
+      "vehicle_id": "veh_36",
+      "report_type": "breakdown",
+      "location": [
+        9800.77872174934,
+        -12.638063779705156
+      ],
+      "timestamp": 103.7752933893078,
+      "is_fake": false,
+      "trust_score": 0.7674081978297127
+    },
+    {
+      "vehicle_id": "veh_23",
+      "report_type": "accident",
+      "location": [
+        6604.591809888294,
+        11.440393261025747
+      ],
+      "timestamp": 501.88122720455584,
+      "is_fake": false,
+      "trust_score": 0.7711000799572257
+    },
+    {
+      "vehicle_id": "veh_91",
+      "report_type": "accident",
+      "location": [
+        7529.896803845892,
+        23.255473720937886
+      ],
+      "timestamp": 804.2409878382417,
+      "is_fake": false,
+      "trust_score": 0.8676011875002043
+    },
+    {
+      "vehicle_id": "veh_35",
+      "report_type": "accident",
+      "location": [
+        2194.8217577640116,
+        -7.416273008378326
+      ],
+      "timestamp": 621.2376637604712,
+      "is_fake": false,
+      "trust_score": 0.9097183316141311
+    },
+    {
+      "vehicle_id": "veh_8",
+      "report_type": "breakdown",
+      "location": [
+        9870.564514514956,
+        -23.44414296792381
+      ],
+      "timestamp": 945.2696889089009,
+      "is_fake": false,
+      "trust_score": 0.7043015012323313
+    },
+    {
+      "vehicle_id": "veh_84",
+      "report_type": "breakdown",
+      "location": [
+        3282.263631873037,
+        -6.62650942571409
+      ],
+      "timestamp": 947.5253583929099,
+      "is_fake": false,
+      "trust_score": 0.8029098918304913
+    },
+    {
+      "vehicle_id": "veh_59",
+      "report_type": "breakdown",
+      "location": [
+        6570.899845454199,
+        -45.52536186266792
+      ],
+      "timestamp": 623.797439957358,
+      "is_fake": false,
+      "trust_score": 0.7618512658059413
+    },
+    {
+      "vehicle_id": "veh_99",
+      "report_type": "accident",
+      "location": [
+        9739.468109198715,
+        23.484281082156073
+      ],
+      "timestamp": 724.1081539723705,
+      "is_fake": false,
+      "trust_score": 0.7629164712233687
+    },
+    {
+      "vehicle_id": "veh_2",
+      "report_type": "breakdown",
+      "location": [
+        9417.284958690749,
+        -42.963217497732686
+      ],
+      "timestamp": 279.85092320520823,
+      "is_fake": false,
+      "trust_score": 0.9424569234045463
+    },
+    {
+      "vehicle_id": "veh_63",
+      "report_type": "breakdown",
+      "location": [
+        1051.4256811934397,
+        20.469393032230272
+      ],
+      "timestamp": 629.2093204600724,
+      "is_fake": false,
+      "trust_score": 0.778667180326031
+    },
+    {
+      "vehicle_id": "veh_24",
+      "report_type": "breakdown",
+      "location": [
+        4490.271370287019,
+        21.536639588189132
+      ],
+      "timestamp": 458.1146852471053,
+      "is_fake": false,
+      "trust_score": 0.8710908220965341
+    },
+    {
+      "vehicle_id": "veh_95",
+      "report_type": "breakdown",
+      "location": [
+        7641.12730295302,
+        20.529839417029393
+      ],
+      "timestamp": 749.2699332181434,
+      "is_fake": false,
+      "trust_score": 0.9506222799271202
+    },
+    {
+      "vehicle_id": "veh_90",
+      "report_type": "accident",
+      "location": [
+        1100.5402523304087,
+        29.42031177453221
+      ],
+      "timestamp": 783.0678999537957,
+      "is_fake": false,
+      "trust_score": 0.7454957478584533
+    },
+    {
+      "vehicle_id": "veh_68",
+      "report_type": "accident",
+      "location": [
+        698.0094393193737,
+        13.490280188345139
+      ],
+      "timestamp": 181.44197733533883,
+      "is_fake": false,
+      "trust_score": 0.9825485035081318
+    },
+    {
+      "vehicle_id": "veh_22",
+      "report_type": "accident",
+      "location": [
+        1157.1075740049796,
+        -48.32473370382003
+      ],
+      "timestamp": 310.96808444246625,
+      "is_fake": false,
+      "trust_score": 0.7711184893976656
+    },
+    {
+      "vehicle_id": "veh_64",
+      "report_type": "accident",
+      "location": [
+        5881.059943562692,
+        -44.0137662228425
+      ],
+      "timestamp": 133.5348445688056,
+      "is_fake": false,
+      "trust_score": 0.9574023415792987
+    },
+    {
+      "vehicle_id": "veh_25",
+      "report_type": "accident",
+      "location": [
+        2165.12445111106,
+        -28.981125742513857
+      ],
+      "timestamp": 744.310105375344,
+      "is_fake": false,
+      "trust_score": 0.8444000752094187
+    },
+    {
+      "vehicle_id": "veh_8",
+      "report_type": "breakdown",
+      "location": [
+        1680.4578674618576,
+        0.4997077159828436
+      ],
+      "timestamp": 207.29842116677455,
+      "is_fake": false,
+      "trust_score": 0.9996487692103977
+    },
+    {
+      "vehicle_id": "veh_89",
+      "report_type": "breakdown",
+      "location": [
+        9783.729369303896,
+        18.044865430531047
+      ],
+      "timestamp": 43.076891936953075,
+      "is_fake": false,
+      "trust_score": 0.7996733802515239
+    },
+    {
+      "vehicle_id": "veh_65",
+      "report_type": "breakdown",
+      "location": [
+        9228.802544008075,
+        -43.790212390872206
+      ],
+      "timestamp": 398.1720714059435,
+      "is_fake": false,
+      "trust_score": 0.8676253222111909
+    },
+    {
+      "vehicle_id": "veh_65",
+      "report_type": "breakdown",
+      "location": [
+        6168.010220727568,
+        18.708261889108613
+      ],
+      "timestamp": 564.4955621498275,
+      "is_fake": false,
+      "trust_score": 0.7359212234067177
+    },
+    {
+      "vehicle_id": "veh_47",
+      "report_type": "breakdown",
+      "location": [
+        1058.8670690725764,
+        -8.32512171764089
+      ],
+      "timestamp": 796.0665732281536,
+      "is_fake": false,
+      "trust_score": 0.8153013699969891
+    },
+    {
+      "vehicle_id": "veh_83",
+      "report_type": "accident",
+      "location": [
+        7761.425604772287,
+        20.60696125365216
+      ],
+      "timestamp": 461.9619011697057,
+      "is_fake": false,
+      "trust_score": 0.9403414315566196
+    },
+    {
+      "vehicle_id": "veh_73",
+      "report_type": "accident",
+      "location": [
+        7425.412951011348,
+        -41.59647990966396
+      ],
+      "timestamp": 393.60258367772616,
+      "is_fake": false,
+      "trust_score": 0.7248901047135992
+    },
+    {
+      "vehicle_id": "veh_59",
+      "report_type": "breakdown",
+      "location": [
+        1130.342929334097,
+        -48.90276376079456
+      ],
+      "timestamp": 159.33041307039363,
+      "is_fake": false,
+      "trust_score": 0.7023378216387688
+    },
+    {
+      "vehicle_id": "veh_40",
+      "report_type": "breakdown",
+      "location": [
+        17.16638365035772,
+        -15.052176347281573
+      ],
+      "timestamp": 885.0092282660795,
+      "is_fake": false,
+      "trust_score": 0.7523044719874451
+    },
+    {
+      "vehicle_id": "veh_12",
+      "report_type": "accident",
+      "location": [
+        1419.8536570782926,
+        -19.294625173654346
+      ],
+      "timestamp": 810.566034705397,
+      "is_fake": false,
+      "trust_score": 0.8747966204808951
+    },
+    {
+      "vehicle_id": "veh_63",
+      "report_type": "breakdown",
+      "location": [
+        447.88184777270754,
+        -41.663861310996474
+      ],
+      "timestamp": 245.84384305015527,
+      "is_fake": false,
+      "trust_score": 0.7119595619043665
+    },
+    {
+      "vehicle_id": "veh_95",
+      "report_type": "accident",
+      "location": [
+        9135.901460156,
+        -38.311971415416345
+      ],
+      "timestamp": 324.8409151411421,
+      "is_fake": false,
+      "trust_score": 0.712009350436964
+    },
+    {
+      "vehicle_id": "veh_92",
+      "report_type": "accident",
+      "location": [
+        1521.0310912715897,
+        -42.382018536557624
+      ],
+      "timestamp": 766.5613160605016,
+      "is_fake": false,
+      "trust_score": 0.8528339351361336
+    },
+    {
+      "vehicle_id": "veh_91",
+      "report_type": "breakdown",
+      "location": [
+        1250.319381232786,
+        6.768451615169582
+      ],
+      "timestamp": 267.85988737432797,
+      "is_fake": false,
+      "trust_score": 0.9112683923060976
+    },
+    {
+      "vehicle_id": "veh_83",
+      "report_type": "breakdown",
+      "location": [
+        1432.6327492771086,
+        23.386478839979944
+      ],
+      "timestamp": 423.0528950358121,
+      "is_fake": false,
+      "trust_score": 0.7535419369160654
+    },
+    {
+      "vehicle_id": "veh_41",
+      "report_type": "accident",
+      "location": [
+        6568.716597485664,
+        -4.12368846140172
+      ],
+      "timestamp": 536.8810958686717,
+      "is_fake": false,
+      "trust_score": 0.7084326058469013
+    },
+    {
+      "vehicle_id": "veh_26",
+      "report_type": "accident",
+      "location": [
+        9021.23020274561,
+        41.94068414520909
+      ],
+      "timestamp": 504.3704554149723,
+      "is_fake": false,
+      "trust_score": 0.8763016172893393
+    },
+    {
+      "vehicle_id": "veh_54",
+      "report_type": "breakdown",
+      "location": [
+        5707.272255533098,
+        16.192052945769547
+      ],
+      "timestamp": 653.932813362764,
+      "is_fake": false,
+      "trust_score": 0.9697939773243456
+    },
+    {
+      "vehicle_id": "veh_68",
+      "report_type": "accident",
+      "location": [
+        8973.471042179166,
+        -30.21099648637583
+      ],
+      "timestamp": 523.8182287540254,
+      "is_fake": false,
+      "trust_score": 0.7749660027212184
+    },
+    {
+      "vehicle_id": "veh_63",
+      "report_type": "breakdown",
+      "location": [
+        3241.8203643242705,
+        45.7117281465938
+      ],
+      "timestamp": 162.9689934213825,
+      "is_fake": false,
+      "trust_score": 0.71968484559844
+    },
+    {
+      "vehicle_id": "veh_45",
+      "report_type": "breakdown",
+      "location": [
+        2689.5925305146475,
+        -9.29777116791238
+      ],
+      "timestamp": 521.6398574991317,
+      "is_fake": false,
+      "trust_score": 0.9184141330360881
+    },
+    {
+      "vehicle_id": "veh_13",
+      "report_type": "accident",
+      "location": [
+        3412.469655470557,
+        -7.435073510525513
+      ],
+      "timestamp": 722.3823876331799,
+      "is_fake": false,
+      "trust_score": 0.7677478110577336
+    },
+    {
+      "vehicle_id": "veh_97",
+      "report_type": "breakdown",
+      "location": [
+        2845.0668563549543,
+        14.876249920815994
+      ],
+      "timestamp": 219.41017757425752,
+      "is_fake": false,
+      "trust_score": 0.8058588254712659
+    },
+    {
+      "vehicle_id": "veh_43",
+      "report_type": "breakdown",
+      "location": [
+        1700.0664956595447,
+        -36.15124783698867
+      ],
+      "timestamp": 647.4239595737266,
+      "is_fake": false,
+      "trust_score": 0.9650712447091512
+    },
+    {
+      "vehicle_id": "veh_45",
+      "report_type": "accident",
+      "location": [
+        6001.5988079565,
+        19.39667702823847
+      ],
+      "timestamp": 662.802063297151,
+      "is_fake": false,
+      "trust_score": 0.9646540051353363
+    },
+    {
+      "vehicle_id": "veh_12",
+      "report_type": "breakdown",
+      "location": [
+        2634.587491367697,
+        -46.97216713752028
+      ],
+      "timestamp": 189.98779627930716,
+      "is_fake": false,
+      "trust_score": 0.9604820538133749
+    },
+    {
+      "vehicle_id": "veh_52",
+      "report_type": "breakdown",
+      "location": [
+        9616.452954616787,
+        13.276394661506089
+      ],
+      "timestamp": 113.40182123383835,
+      "is_fake": false,
+      "trust_score": 0.8553524330048895
+    },
+    {
+      "vehicle_id": "veh_76",
+      "report_type": "accident",
+      "location": [
+        7904.274980490865,
+        -48.87025725603156
+      ],
+      "timestamp": 849.2477836164705,
+      "is_fake": false,
+      "trust_score": 0.9302508293638762
+    },
+    {
+      "vehicle_id": "veh_90",
+      "report_type": "accident",
+      "location": [
+        7519.159344294047,
+        2.866891544382085
+      ],
+      "timestamp": 636.7674642504309,
+      "is_fake": false,
+      "trust_score": 0.8273885261982681
+    },
+    {
+      "vehicle_id": "veh_30",
+      "report_type": "breakdown",
+      "location": [
+        5601.977083094139,
+        -34.21679937767239
+      ],
+      "timestamp": 191.84517755058016,
+      "is_fake": false,
+      "trust_score": 0.8354957676869503
+    },
+    {
+      "vehicle_id": "veh_26",
+      "report_type": "accident",
+      "location": [
+        1888.3661835126952,
+        18.35759525359245
+      ],
+      "timestamp": 22.03722025704169,
+      "is_fake": false,
+      "trust_score": 0.8947995556863969
+    },
+    {
+      "vehicle_id": "veh_32",
+      "report_type": "accident",
+      "location": [
+        7305.989199161885,
+        5.847646247472937
+      ],
+      "timestamp": 934.8803171133034,
+      "is_fake": false,
+      "trust_score": 0.877853458504996
+    },
+    {
+      "vehicle_id": "veh_54",
+      "report_type": "breakdown",
+      "location": [
+        6995.229156813565,
+        -47.8256196359389
+      ],
+      "timestamp": 613.9903729011089,
+      "is_fake": false,
+      "trust_score": 0.9355916533302477
+    },
+    {
+      "vehicle_id": "veh_62",
+      "report_type": "breakdown",
+      "location": [
+        8656.853383146015,
+        -25.463764304001003
+      ],
+      "timestamp": 447.3052318648886,
+      "is_fake": false,
+      "trust_score": 0.9157282780620118
+    },
+    {
+      "vehicle_id": "veh_90",
+      "report_type": "accident",
+      "location": [
+        7774.631249601488,
+        -2.598424911706097
+      ],
+      "timestamp": 561.3426571579414,
+      "is_fake": false,
+      "trust_score": 0.7894276288031588
+    },
+    {
+      "vehicle_id": "veh_45",
+      "report_type": "accident",
+      "location": [
+        3468.473335179105,
+        35.164618934654186
+      ],
+      "timestamp": 622.5532559897015,
+      "is_fake": false,
+      "trust_score": 0.8487776677292702
+    },
+    {
+      "vehicle_id": "veh_30",
+      "report_type": "breakdown",
+      "location": [
+        2675.543522890741,
+        4.781155158587822
+      ],
+      "timestamp": 189.30598018320345,
+      "is_fake": false,
+      "trust_score": 0.9474219630578219
+    },
+    {
+      "vehicle_id": "veh_43",
+      "report_type": "accident",
+      "location": [
+        5887.082515254951,
+        27.568887115684575
+      ],
+      "timestamp": 877.9204335988162,
+      "is_fake": false,
+      "trust_score": 0.940563147629766
+    },
+    {
+      "vehicle_id": "veh_45",
+      "report_type": "accident",
+      "location": [
+        8210.537342969348,
+        -28.911179681715204
+      ],
+      "timestamp": 84.68418511258402,
+      "is_fake": false,
+      "trust_score": 0.8726598341971191
+    },
+    {
+      "vehicle_id": "veh_13",
+      "report_type": "accident",
+      "location": [
+        3703.666997660292,
+        -30.953054221508335
+      ],
+      "timestamp": 479.67742658924215,
+      "is_fake": false,
+      "trust_score": 0.8741415407498527
+    },
+    {
+      "vehicle_id": "veh_68",
+      "report_type": "breakdown",
+      "location": [
+        5795.399670377377,
+        -41.911909419931035
+      ],
+      "timestamp": 26.31586826293897,
+      "is_fake": false,
+      "trust_score": 0.9330832008718519
+    },
+    {
+      "vehicle_id": "veh_13",
+      "report_type": "accident",
+      "location": [
+        1104.9859686352881,
+        32.045646550815604
+      ],
+      "timestamp": 218.47859316313756,
+      "is_fake": false,
+      "trust_score": 0.8499262293436227
+    },
+    {
+      "vehicle_id": "veh_68",
+      "report_type": "breakdown",
+      "location": [
+        7330.3229711951935,
+        33.790261454566306
+      ],
+      "timestamp": 406.78968768367963,
+      "is_fake": false,
+      "trust_score": 0.713562564712416
+    },
+    {
+      "vehicle_id": "veh_28",
+      "report_type": "accident",
+      "location": [
+        2682.27720603188,
+        33.3962679652312
+      ],
+      "timestamp": 469.22228324424765,
+      "is_fake": false,
+      "trust_score": 0.8952542639382727
+    },
+    {
+      "vehicle_id": "veh_59",
+      "report_type": "accident",
+      "location": [
+        4790.194280239808,
+        4.975486280117067
+      ],
+      "timestamp": 540.9224468724319,
+      "is_fake": false,
+      "trust_score": 0.9249799513623388
+    },
+    {
+      "vehicle_id": "veh_36",
+      "report_type": "accident",
+      "location": [
+        2565.8606480990497,
+        -8.109401291548139
+      ],
+      "timestamp": 42.43318101588744,
+      "is_fake": false,
+      "trust_score": 0.8304700711747284
+    },
+    {
+      "vehicle_id": "veh_20",
+      "report_type": "accident",
+      "location": [
+        9971.741059387135,
+        -9.6311243491932
+      ],
+      "timestamp": 285.35211966334896,
+      "is_fake": false,
+      "trust_score": 0.9116400603995862
+    },
+    {
+      "vehicle_id": "veh_63",
+      "report_type": "breakdown",
+      "location": [
+        4094.548555576689,
+        -13.707552888013488
+      ],
+      "timestamp": 113.30605718408727,
+      "is_fake": false,
+      "trust_score": 0.9664451052572112
+    },
+    {
+      "vehicle_id": "veh_78",
+      "report_type": "breakdown",
+      "location": [
+        7357.70866213166,
+        49.18517747309804
+      ],
+      "timestamp": 640.6951540695314,
+      "is_fake": false,
+      "trust_score": 0.9741132412441993
+    },
+    {
+      "vehicle_id": "veh_96",
+      "report_type": "accident",
+      "location": [
+        4777.68087277723,
+        22.630196360355825
+      ],
+      "timestamp": 488.68441664829953,
+      "is_fake": false,
+      "trust_score": 0.7138800812557825
+    },
+    {
+      "vehicle_id": "veh_59",
+      "report_type": "accident",
+      "location": [
+        9664.813577559362,
+        -35.42718629056775
+      ],
+      "timestamp": 395.92376186048085,
+      "is_fake": false,
+      "trust_score": 0.869247751950784
+    },
+    {
+      "vehicle_id": "veh_11",
+      "report_type": "accident",
+      "location": [
+        7090.678549119376,
+        -33.128866955193935
+      ],
+      "timestamp": 879.3450198731688,
+      "is_fake": false,
+      "trust_score": 0.8336401193211105
+    },
+    {
+      "vehicle_id": "veh_36",
+      "report_type": "accident",
+      "location": [
+        2640.9826465533115,
+        -44.9506239869287
+      ],
+      "timestamp": 524.576297471912,
+      "is_fake": false,
+      "trust_score": 0.7779253388287575
+    },
+    {
+      "vehicle_id": "veh_12",
+      "report_type": "accident",
+      "location": [
+        2342.9779757245406,
+        22.954367892801386
+      ],
+      "timestamp": 834.0138862990101,
+      "is_fake": false,
+      "trust_score": 0.9989136061010719
+    },
+    {
+      "vehicle_id": "veh_26",
+      "report_type": "accident",
+      "location": [
+        9552.667130746875,
+        -36.16353683832594
+      ],
+      "timestamp": 92.36819700709597,
+      "is_fake": false,
+      "trust_score": 0.8877732155391198
+    },
+    {
+      "vehicle_id": "veh_74",
+      "report_type": "breakdown",
+      "location": [
+        4524.441735143531,
+        -1.3137789730266007
+      ],
+      "timestamp": 228.52711907961566,
+      "is_fake": false,
+      "trust_score": 0.9609578258527369
+    },
+    {
+      "vehicle_id": "veh_72",
+      "report_type": "breakdown",
+      "location": [
+        2575.6656522958065,
+        24.081691181065494
+      ],
+      "timestamp": 343.33473636066293,
+      "is_fake": false,
+      "trust_score": 0.8561261878656417
+    },
+    {
+      "vehicle_id": "veh_42",
+      "report_type": "accident",
+      "location": [
+        3727.742720532523,
+        -31.890266374858946
+      ],
+      "timestamp": 942.2547267347416,
+      "is_fake": false,
+      "trust_score": 0.9054944484140166
+    },
+    {
+      "vehicle_id": "veh_7",
+      "report_type": "breakdown",
+      "location": [
+        358.4126208520921,
+        30.98432078980065
+      ],
+      "timestamp": 4.990949757103902,
+      "is_fake": false,
+      "trust_score": 0.8411204333849771
+    },
+    {
+      "vehicle_id": "veh_90",
+      "report_type": "accident",
+      "location": [
+        1490.643632087203,
+        40.945802117015276
+      ],
+      "timestamp": 248.83872192136303,
+      "is_fake": false,
+      "trust_score": 0.9998135796062357
+    },
+    {
+      "vehicle_id": "veh_32",
+      "report_type": "breakdown",
+      "location": [
+        9652.00184971526,
+        32.907837378815856
+      ],
+      "timestamp": 68.21033541241772,
+      "is_fake": false,
+      "trust_score": 0.8802387518734522
+    },
+    {
+      "vehicle_id": "veh_1",
+      "report_type": "breakdown",
+      "location": [
+        2689.2177605719094,
+        -44.42894431017206
+      ],
+      "timestamp": 272.27393054379377,
+      "is_fake": false,
+      "trust_score": 0.7990274628776166
+    },
+    {
+      "vehicle_id": "veh_19",
+      "report_type": "breakdown",
+      "location": [
+        4580.603192605752,
+        25.385919891410907
+      ],
+      "timestamp": 784.0289300020604,
+      "is_fake": false,
+      "trust_score": 0.9479446817746953
+    },
+    {
+      "vehicle_id": "veh_70",
+      "report_type": "breakdown",
+      "location": [
+        6197.339664529489,
+        -18.918656962586788
+      ],
+      "timestamp": 298.16244784343525,
+      "is_fake": false,
+      "trust_score": 0.9909457049229946
+    },
+    {
+      "vehicle_id": "veh_93",
+      "report_type": "accident",
+      "location": [
+        5617.8730020751555,
+        47.35754515539682
+      ],
+      "timestamp": 941.6753772571169,
+      "is_fake": false,
+      "trust_score": 0.8078865046872974
+    },
+    {
+      "vehicle_id": "veh_64",
+      "report_type": "accident",
+      "location": [
+        6918.158328121755,
+        8.452731996685849
+      ],
+      "timestamp": 470.6576244709656,
+      "is_fake": false,
+      "trust_score": 0.8240976017518727
+    },
+    {
+      "vehicle_id": "veh_79",
+      "report_type": "accident",
+      "location": [
+        3986.8135570558193,
+        3.350506887765036
+      ],
+      "timestamp": 292.87839861536946,
+      "is_fake": false,
+      "trust_score": 0.8378374947970134
+    },
+    {
+      "vehicle_id": "veh_74",
+      "report_type": "breakdown",
+      "location": [
+        293.75964380452535,
+        -32.40513700772665
+      ],
+      "timestamp": 159.3754876752752,
+      "is_fake": false,
+      "trust_score": 0.8844537387967724
+    },
+    {
+      "vehicle_id": "veh_54",
+      "report_type": "accident",
+      "location": [
+        5491.431399480051,
+        34.60785081346957
+      ],
+      "timestamp": 990.835405163019,
+      "is_fake": false,
+      "trust_score": 0.7645169610586671
+    },
+    {
+      "vehicle_id": "veh_76",
+      "report_type": "breakdown",
+      "location": [
+        1300.1603634356275,
+        12.45947624895485
+      ],
+      "timestamp": 357.7576985662894,
+      "is_fake": false,
+      "trust_score": 0.7310816869384462
+    },
+    {
+      "vehicle_id": "veh_38",
+      "report_type": "accident",
+      "location": [
+        7859.853267994898,
+        -45.56323505361516
+      ],
+      "timestamp": 526.9633321398518,
+      "is_fake": false,
+      "trust_score": 0.7730140407276481
+    },
+    {
+      "vehicle_id": "veh_51",
+      "report_type": "accident",
+      "location": [
+        4556.642998552766,
+        34.73284531694631
+      ],
+      "timestamp": 22.21563800067039,
+      "is_fake": false,
+      "trust_score": 0.7957175228992072
+    },
+    {
+      "vehicle_id": "veh_96",
+      "report_type": "breakdown",
+      "location": [
+        9293.384667387421,
+        34.92190499845424
+      ],
+      "timestamp": 128.46610856855966,
+      "is_fake": false,
+      "trust_score": 0.7545431381699484
+    },
+    {
+      "vehicle_id": "veh_72",
+      "report_type": "breakdown",
+      "location": [
+        3970.939522091005,
+        -48.37315024290187
+      ],
+      "timestamp": 928.3892175526606,
+      "is_fake": false,
+      "trust_score": 0.9339576988075192
+    },
+    {
+      "vehicle_id": "veh_77",
+      "report_type": "breakdown",
+      "location": [
+        6959.358059692669,
+        -9.946098865552202
+      ],
+      "timestamp": 512.2212608824016,
+      "is_fake": false,
+      "trust_score": 0.8344841046596034
+    },
+    {
+      "vehicle_id": "veh_95",
+      "report_type": "accident",
+      "location": [
+        2293.521584163526,
+        11.460246725057566
+      ],
+      "timestamp": 578.2340012267675,
+      "is_fake": false,
+      "trust_score": 0.7788010919017396
+    },
+    {
+      "vehicle_id": "veh_49",
+      "report_type": "accident",
+      "location": [
+        3173.5218712765977,
+        -42.04767322858688
+      ],
+      "timestamp": 876.4411838147647,
+      "is_fake": false,
+      "trust_score": 0.8608273059619773
+    },
+    {
+      "vehicle_id": "veh_32",
+      "report_type": "breakdown",
+      "location": [
+        139.87631653875178,
+        24.898312815188774
+      ],
+      "timestamp": 644.6745719714618,
+      "is_fake": false,
+      "trust_score": 0.9318793992590024
+    },
+    {
+      "vehicle_id": "veh_53",
+      "report_type": "accident",
+      "location": [
+        3848.7462897120404,
+        -37.29172224424842
+      ],
+      "timestamp": 323.464352486458,
+      "is_fake": false,
+      "trust_score": 0.9574831030867111
+    },
+    {
+      "vehicle_id": "veh_39",
+      "report_type": "breakdown",
+      "location": [
+        5268.645039295652,
+        27.16283690235612
+      ],
+      "timestamp": 476.42096530599065,
+      "is_fake": false,
+      "trust_score": 0.7180728536851925
+    },
+    {
+      "vehicle_id": "veh_40",
+      "report_type": "breakdown",
+      "location": [
+        4443.516805758688,
+        -29.522816811001352
+      ],
+      "timestamp": 160.64396488562804,
+      "is_fake": false,
+      "trust_score": 0.8777834278382846
+    },
+    {
+      "vehicle_id": "veh_16",
+      "report_type": "accident",
+      "location": [
+        7532.651821730978,
+        -27.243719759050066
+      ],
+      "timestamp": 273.30482646444676,
+      "is_fake": false,
+      "trust_score": 0.9007709072953906
+    },
+    {
+      "vehicle_id": "veh_15",
+      "report_type": "accident",
+      "location": [
+        5537.384096615527,
+        14.95220344374438
+      ],
+      "timestamp": 277.287786449129,
+      "is_fake": false,
+      "trust_score": 0.7500997083387998
+    },
+    {
+      "vehicle_id": "veh_34",
+      "report_type": "accident",
+      "location": [
+        717.1108929331871,
+        13.31778652157739
+      ],
+      "timestamp": 464.6971325067568,
+      "is_fake": false,
+      "trust_score": 0.7748430296017373
+    },
+    {
+      "vehicle_id": "veh_39",
+      "report_type": "breakdown",
+      "location": [
+        8570.655161964416,
+        -7.240009138171786
+      ],
+      "timestamp": 762.6720982505385,
+      "is_fake": false,
+      "trust_score": 0.9492643819107045
+    },
+    {
+      "vehicle_id": "veh_69",
+      "report_type": "accident",
+      "location": [
+        8391.457375922137,
+        -42.505001352505644
+      ],
+      "timestamp": 259.8271634172582,
+      "is_fake": false,
+      "trust_score": 0.7553558217139682
+    },
+    {
+      "vehicle_id": "veh_77",
+      "report_type": "breakdown",
+      "location": [
+        425.69454990022405,
+        9.751571408013739
+      ],
+      "timestamp": 611.4544717427418,
+      "is_fake": false,
+      "trust_score": 0.8275843573980084
+    }
+  ],
+  "fake_reports": [
+    {
+      "vehicle_id": "veh_96",
+      "report_type": "breakdown",
+      "location": [
+        1143.307222366582,
+        -44.47225294389459
+      ],
+      "timestamp": 659.0907868317688,
+      "is_fake": true,
+      "trust_score": 0.10656722146072149
+    },
+    {
+      "vehicle_id": "veh_98",
+      "report_type": "breakdown",
+      "location": [
+        678.2655875109878,
+        2.633176506061929
+      ],
+      "timestamp": 581.1083382167252,
+      "is_fake": true,
+      "trust_score": 0.36124629534410635
+    },
+    {
+      "vehicle_id": "veh_14",
+      "report_type": "accident",
+      "location": [
+        3447.3414271487677,
+        48.42866427033886
+      ],
+      "timestamp": 345.53589131384024,
+      "is_fake": true,
+      "trust_score": 0.08348251448599237
+    },
+    {
+      "vehicle_id": "veh_47",
+      "report_type": "breakdown",
+      "location": [
+        6571.5659713922305,
+        9.201169848829679
+      ],
+      "timestamp": 197.7035974316279,
+      "is_fake": true,
+      "trust_score": 0.37967500115358194
+    },
+    {
+      "vehicle_id": "veh_4",
+      "report_type": "accident",
+      "location": [
+        6079.789188644874,
+        -30.320547459489834
+      ],
+      "timestamp": 178.64469291907437,
+      "is_fake": true,
+      "trust_score": 0.010336726589690804
+    },
+    {
+      "vehicle_id": "veh_93",
+      "report_type": "accident",
+      "location": [
+        2451.1271414821754,
+        23.534862590126323
+      ],
+      "timestamp": 492.58246699443356,
+      "is_fake": true,
+      "trust_score": 0.22776572610720391
+    },
+    {
+      "vehicle_id": "veh_8",
+      "report_type": "accident",
+      "location": [
+        1612.722491715599,
+        -13.62163089368483
+      ],
+      "timestamp": 136.77903541977133,
+      "is_fake": true,
+      "trust_score": 0.2964388153157257
+    },
+    {
+      "vehicle_id": "veh_60",
+      "report_type": "accident",
+      "location": [
+        6358.256389336565,
+        7.868004095274415
+      ],
+      "timestamp": 606.0835249541874,
+      "is_fake": true,
+      "trust_score": 0.11806989444534627
+    },
+    {
+      "vehicle_id": "veh_90",
+      "report_type": "accident",
+      "location": [
+        2292.638040377598,
+        -33.730138910550096
+      ],
+      "timestamp": 32.30774011981008,
+      "is_fake": true,
+      "trust_score": 0.1710124917640785
+    },
+    {
+      "vehicle_id": "veh_59",
+      "report_type": "accident",
+      "location": [
+        6381.144720812213,
+        -37.96843335058332
+      ],
+      "timestamp": 476.0713256936405,
+      "is_fake": true,
+      "trust_score": 0.09392822914149478
+    },
+    {
+      "vehicle_id": "veh_39",
+      "report_type": "breakdown",
+      "location": [
+        6253.876277955284,
+        -28.696496039455067
+      ],
+      "timestamp": 446.36051661470333,
+      "is_fake": true,
+      "trust_score": 0.3417697957540522
+    },
+    {
+      "vehicle_id": "veh_51",
+      "report_type": "accident",
+      "location": [
+        8545.526543171383,
+        8.342790997491157
+      ],
+      "timestamp": 830.1727377571182,
+      "is_fake": true,
+      "trust_score": 0.3934922236611967
+    },
+    {
+      "vehicle_id": "veh_95",
+      "report_type": "breakdown",
+      "location": [
+        1826.4123049182547,
+        -6.601784167884276
+      ],
+      "timestamp": 342.1189597599473,
+      "is_fake": true,
+      "trust_score": 0.3097941124524204
+    },
+    {
+      "vehicle_id": "veh_77",
+      "report_type": "accident",
+      "location": [
+        3147.907136825706,
+        -13.85632645671533
+      ],
+      "timestamp": 572.4404676263807,
+      "is_fake": true,
+      "trust_score": 0.11818482385125827
+    },
+    {
+      "vehicle_id": "veh_31",
+      "report_type": "breakdown",
+      "location": [
+        4901.691387615438,
+        15.075097455566151
+      ],
+      "timestamp": 415.8869114318354,
+      "is_fake": true,
+      "trust_score": 0.3837253631883403
+    },
+    {
+      "vehicle_id": "veh_45",
+      "report_type": "accident",
+      "location": [
+        4783.55154426922,
+        43.41247354583295
+      ],
+      "timestamp": 379.717470437736,
+      "is_fake": true,
+      "trust_score": 0.381045673973359
+    },
+    {
+      "vehicle_id": "veh_45",
+      "report_type": "accident",
+      "location": [
+        4001.546948598145,
+        -15.273141965389549
+      ],
+      "timestamp": 299.2291246636257,
+      "is_fake": true,
+      "trust_score": 0.05488244838171084
+    },
+    {
+      "vehicle_id": "veh_22",
+      "report_type": "accident",
+      "location": [
+        5096.024581652372,
+        47.948164059395694
+      ],
+      "timestamp": 38.88358985519069,
+      "is_fake": true,
+      "trust_score": 0.12222887583519829
+    },
+    {
+      "vehicle_id": "veh_99",
+      "report_type": "breakdown",
+      "location": [
+        5212.521324431457,
+        -34.525421679873446
+      ],
+      "timestamp": 306.5078634996258,
+      "is_fake": true,
+      "trust_score": 0.17219214621622916
+    },
+    {
+      "vehicle_id": "veh_62",
+      "report_type": "accident",
+      "location": [
+        9212.841953108657,
+        -7.18875187151243
+      ],
+      "timestamp": 802.588626126168,
+      "is_fake": true,
+      "trust_score": 0.0749271273111265
+    },
+    {
+      "vehicle_id": "veh_69",
+      "report_type": "breakdown",
+      "location": [
+        5367.932331646635,
+        49.830870852402114
+      ],
+      "timestamp": 322.12993603503105,
+      "is_fake": true,
+      "trust_score": 0.35130570843227776
+    },
+    {
+      "vehicle_id": "veh_24",
+      "report_type": "accident",
+      "location": [
+        5598.011744118678,
+        1.9006702342217139
+      ],
+      "timestamp": 938.3973351382325,
+      "is_fake": true,
+      "trust_score": 0.3705266327490641
+    },
+    {
+      "vehicle_id": "veh_59",
+      "report_type": "breakdown",
+      "location": [
+        7390.192452730144,
+        -11.799300997432823
+      ],
+      "timestamp": 932.3984691706878,
+      "is_fake": true,
+      "trust_score": 0.04355222344656955
+    },
+    {
+      "vehicle_id": "veh_83",
+      "report_type": "accident",
+      "location": [
+        1693.1077760709502,
+        -45.60268566139989
+      ],
+      "timestamp": 36.43013977644727,
+      "is_fake": true,
+      "trust_score": 0.13225078613443758
+    },
+    {
+      "vehicle_id": "veh_86",
+      "report_type": "accident",
+      "location": [
+        1730.2813981397592,
+        -21.817689647927484
+      ],
+      "timestamp": 463.9225799905412,
+      "is_fake": true,
+      "trust_score": 0.30889959759161356
+    },
+    {
+      "vehicle_id": "veh_52",
+      "report_type": "breakdown",
+      "location": [
+        8855.3653906251,
+        10.844141069506819
+      ],
+      "timestamp": 386.79413023782894,
+      "is_fake": true,
+      "trust_score": 0.341971479088299
+    },
+    {
+      "vehicle_id": "veh_5",
+      "report_type": "breakdown",
+      "location": [
+        9181.808896745293,
+        -19.120363983405664
+      ],
+      "timestamp": 603.6052882278856,
+      "is_fake": true,
+      "trust_score": 0.23184698121426758
+    },
+    {
+      "vehicle_id": "veh_59",
+      "report_type": "accident",
+      "location": [
+        5757.349124635083,
+        -44.38077985544568
+      ],
+      "timestamp": 924.498272313956,
+      "is_fake": true,
+      "trust_score": 0.20504635946068422
+    },
+    {
+      "vehicle_id": "veh_49",
+      "report_type": "breakdown",
+      "location": [
+        8590.558564677973,
+        -39.50638712466015
+      ],
+      "timestamp": 299.91051768731523,
+      "is_fake": true,
+      "trust_score": 0.34385291970777687
+    },
+    {
+      "vehicle_id": "veh_34",
+      "report_type": "breakdown",
+      "location": [
+        3934.96546805581,
+        30.65174553586843
+      ],
+      "timestamp": 733.035605354883,
+      "is_fake": true,
+      "trust_score": 0.12399228223406396
+    },
+    {
+      "vehicle_id": "veh_87",
+      "report_type": "breakdown",
+      "location": [
+        2615.9878734906615,
+        36.52205650280064
+      ],
+      "timestamp": 569.2365586528368,
+      "is_fake": true,
+      "trust_score": 0.20609398065747483
+    },
+    {
+      "vehicle_id": "veh_33",
+      "report_type": "breakdown",
+      "location": [
+        9558.562819781677,
+        43.59448004970173
+      ],
+      "timestamp": 769.2935231758925,
+      "is_fake": true,
+      "trust_score": 0.29857809274326924
+    },
+    {
+      "vehicle_id": "veh_12",
+      "report_type": "accident",
+      "location": [
+        5088.458342381319,
+        -37.318695252745684
+      ],
+      "timestamp": 20.212786067562604,
+      "is_fake": true,
+      "trust_score": 0.30854120287846654
+    },
+    {
+      "vehicle_id": "veh_99",
+      "report_type": "accident",
+      "location": [
+        6899.8140555813525,
+        -32.87759473932046
+      ],
+      "timestamp": 740.9162691245566,
+      "is_fake": true,
+      "trust_score": 0.32826434680730193
+    },
+    {
+      "vehicle_id": "veh_10",
+      "report_type": "breakdown",
+      "location": [
+        8610.089664847377,
+        -49.218450756423096
+      ],
+      "timestamp": 713.5999217430386,
+      "is_fake": true,
+      "trust_score": 0.01004135799520043
+    },
+    {
+      "vehicle_id": "veh_9",
+      "report_type": "breakdown",
+      "location": [
+        5059.920756964976,
+        -15.309225493270652
+      ],
+      "timestamp": 961.2088897448734,
+      "is_fake": true,
+      "trust_score": 0.15753361431439777
+    },
+    {
+      "vehicle_id": "veh_82",
+      "report_type": "breakdown",
+      "location": [
+        949.7975369359124,
+        -22.18897382302102
+      ],
+      "timestamp": 43.19105449577698,
+      "is_fake": true,
+      "trust_score": 0.36644555047163424
+    },
+    {
+      "vehicle_id": "veh_51",
+      "report_type": "accident",
+      "location": [
+        2596.9922856697967,
+        -14.979035479568303
+      ],
+      "timestamp": 799.9993046709404,
+      "is_fake": true,
+      "trust_score": 0.13829413625149525
+    },
+    {
+      "vehicle_id": "veh_89",
+      "report_type": "breakdown",
+      "location": [
+        1523.5179051492776,
+        33.936664339674294
+      ],
+      "timestamp": 979.0456579026671,
+      "is_fake": true,
+      "trust_score": 0.02333019585261358
+    },
+    {
+      "vehicle_id": "veh_31",
+      "report_type": "breakdown",
+      "location": [
+        1122.2651516727967,
+        33.93227686909178
+      ],
+      "timestamp": 80.79395013460532,
+      "is_fake": true,
+      "trust_score": 0.10132633160303146
+    },
+    {
+      "vehicle_id": "veh_25",
+      "report_type": "breakdown",
+      "location": [
+        1198.0830505967244,
+        26.671419565201347
+      ],
+      "timestamp": 405.83342517861877,
+      "is_fake": true,
+      "trust_score": 0.18052956881247925
+    },
+    {
+      "vehicle_id": "veh_58",
+      "report_type": "breakdown",
+      "location": [
+        6677.609180622728,
+        -43.80355893301044
+      ],
+      "timestamp": 297.1441526609959,
+      "is_fake": true,
+      "trust_score": 0.0711807716650461
+    },
+    {
+      "vehicle_id": "veh_51",
+      "report_type": "breakdown",
+      "location": [
+        3565.8284299030165,
+        39.16910886921103
+      ],
+      "timestamp": 491.2718136553174,
+      "is_fake": true,
+      "trust_score": 0.05250474844726845
+    },
+    {
+      "vehicle_id": "veh_43",
+      "report_type": "accident",
+      "location": [
+        978.8467163041959,
+        -23.553325217945662
+      ],
+      "timestamp": 472.51923155301046,
+      "is_fake": true,
+      "trust_score": 0.3598067378351657
+    },
+    {
+      "vehicle_id": "veh_100",
+      "report_type": "accident",
+      "location": [
+        4232.734728354908,
+        -43.57699699615707
+      ],
+      "timestamp": 870.4015370369701,
+      "is_fake": true,
+      "trust_score": 0.3123013865123086
+    },
+    {
+      "vehicle_id": "veh_65",
+      "report_type": "accident",
+      "location": [
+        2571.9178580566017,
+        -18.262254444588876
+      ],
+      "timestamp": 752.9861251780904,
+      "is_fake": true,
+      "trust_score": 0.29399791509820394
+    },
+    {
+      "vehicle_id": "veh_81",
+      "report_type": "breakdown",
+      "location": [
+        4666.7638101208695,
+        -37.63339186808794
+      ],
+      "timestamp": 442.9405577399802,
+      "is_fake": true,
+      "trust_score": 0.2541866169067303
+    },
+    {
+      "vehicle_id": "veh_72",
+      "report_type": "breakdown",
+      "location": [
+        8854.1999906898,
+        16.82818390694331
+      ],
+      "timestamp": 18.693362956535786,
+      "is_fake": true,
+      "trust_score": 0.3767097308668321
+    },
+    {
+      "vehicle_id": "veh_52",
+      "report_type": "breakdown",
+      "location": [
+        3408.4957309441997,
+        0.749773556353226
+      ],
+      "timestamp": 335.11272286987105,
+      "is_fake": true,
+      "trust_score": 0.041862062421404826
+    },
+    {
+      "vehicle_id": "veh_51",
+      "report_type": "breakdown",
+      "location": [
+        9602.735085385748,
+        -22.442130354266375
+      ],
+      "timestamp": 116.20529821287474,
+      "is_fake": true,
+      "trust_score": 0.37772687465160887
+    },
+    {
+      "vehicle_id": "veh_93",
+      "report_type": "accident",
+      "location": [
+        8150.1702821787585,
+        4.3679424709760255
+      ],
+      "timestamp": 15.792206098364403,
+      "is_fake": true,
+      "trust_score": 0.025765144310862277
+    },
+    {
+      "vehicle_id": "veh_31",
+      "report_type": "accident",
+      "location": [
+        703.9150354047185,
+        -34.61338208150451
+      ],
+      "timestamp": 794.5426930903965,
+      "is_fake": true,
+      "trust_score": 0.18027636152723803
+    },
+    {
+      "vehicle_id": "veh_33",
+      "report_type": "accident",
+      "location": [
+        7125.8594197417815,
+        -21.014518470382846
+      ],
+      "timestamp": 407.8898292494264,
+      "is_fake": true,
+      "trust_score": 0.3484779749837923
+    },
+    {
+      "vehicle_id": "veh_77",
+      "report_type": "breakdown",
+      "location": [
+        6769.536487252937,
+        -44.913686660761584
+      ],
+      "timestamp": 902.3591103830053,
+      "is_fake": true,
+      "trust_score": 0.3930613566464799
+    },
+    {
+      "vehicle_id": "veh_41",
+      "report_type": "breakdown",
+      "location": [
+        5631.473717048216,
+        1.3187191334824604
+      ],
+      "timestamp": 443.50664165986507,
+      "is_fake": true,
+      "trust_score": 0.3224028565487438
+    },
+    {
+      "vehicle_id": "veh_17",
+      "report_type": "breakdown",
+      "location": [
+        3744.332309112777,
+        -29.11281279332386
+      ],
+      "timestamp": 373.87589249286947,
+      "is_fake": true,
+      "trust_score": 0.30840183080347444
+    },
+    {
+      "vehicle_id": "veh_75",
+      "report_type": "breakdown",
+      "location": [
+        2161.891030998849,
+        17.99166892711554
+      ],
+      "timestamp": 961.654728324004,
+      "is_fake": true,
+      "trust_score": 0.13208537856033767
+    },
+    {
+      "vehicle_id": "veh_69",
+      "report_type": "accident",
+      "location": [
+        1486.5454590813888,
+        -32.920499218900986
+      ],
+      "timestamp": 771.4108824321459,
+      "is_fake": true,
+      "trust_score": 0.12637510158843365
+    },
+    {
+      "vehicle_id": "veh_91",
+      "report_type": "accident",
+      "location": [
+        9681.152838294216,
+        -23.895535125199206
+      ],
+      "timestamp": 866.8090812808022,
+      "is_fake": true,
+      "trust_score": 0.0347091562966253
+    },
+    {
+      "vehicle_id": "veh_64",
+      "report_type": "accident",
+      "location": [
+        6209.323590533358,
+        -41.06500900765013
+      ],
+      "timestamp": 10.255105972334588,
+      "is_fake": true,
+      "trust_score": 0.1630143363919344
+    },
+    {
+      "vehicle_id": "veh_66",
+      "report_type": "breakdown",
+      "location": [
+        6153.4566394925605,
+        46.39455601749249
+      ],
+      "timestamp": 53.37201101962097,
+      "is_fake": true,
+      "trust_score": 0.08760266187326748
+    },
+    {
+      "vehicle_id": "veh_9",
+      "report_type": "accident",
+      "location": [
+        8169.710279635474,
+        18.193626096861138
+      ],
+      "timestamp": 58.82470168711051,
+      "is_fake": true,
+      "trust_score": 0.26852957561161767
+    },
+    {
+      "vehicle_id": "veh_53",
+      "report_type": "breakdown",
+      "location": [
+        6807.9492645960945,
+        32.180920532539304
+      ],
+      "timestamp": 883.4236810843468,
+      "is_fake": true,
+      "trust_score": 0.39480518085831245
+    },
+    {
+      "vehicle_id": "veh_40",
+      "report_type": "breakdown",
+      "location": [
+        6494.905601849395,
+        -43.73090583251755
+      ],
+      "timestamp": 646.53512075528,
+      "is_fake": true,
+      "trust_score": 0.15278938413630372
+    }
+  ],
   "statistics": {
-    "total_reports": 0,
-    "fake_reports": 0,
-    "real_incidents": 0,
-    "detected_fakes": 0,
-    "false_positives": 0,
-    "emergency_dispatches": 0
+    "total_reports": 200,
+    "fake_reports": 64,
+    "real_incidents": 136,
+    "detected_fakes": 64,
+    "emergency_dispatches": 136
   }
 }

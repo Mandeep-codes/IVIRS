@@ -1,0 +1,658 @@
+#!/usr/bin/env python3
+"""
+IVIRS SUMO-NS3 Integration Controller
+Enhanced with Emergency Dispatch and Visual Markers
+"""
+
+import os
+import sys
+import random
+import json
+import time
+import math
+from collections import defaultdict
+from datetime import datetime
+
+# Add SUMO tools to path
+if 'SUMO_HOME' in os.environ:
+    tools = os.path.join(os.environ['SUMO_HOME'], 'tools')
+    sys.path.append(tools)
+else:
+    sys.exit("Please declare environment variable 'SUMO_HOME'")
+
+import traci
+import sumolib
+
+# Import NS-3 network simulator
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'ns3-simulation'))
+try:
+    from ns3_v2x_simulation import NS3NetworkSimulator
+    NS3_AVAILABLE = True
+except ImportError:
+    NS3_AVAILABLE = False
+    print("[WARNING] NS-3 simulator not available, using simplified network model")
+
+class RSU:
+    """Roadside Unit with coverage and communication capabilities"""
+    def __init__(self, rsu_id, x, y, coverage_radius=500):
+        self.id = rsu_id
+        self.x = x
+        self.y = y
+        self.coverage_radius = coverage_radius
+        self.reports_received = []
+        self.vehicles_in_range = set()
+        
+    def is_in_range(self, veh_x, veh_y):
+        """Check if vehicle is within RSU coverage"""
+        distance = math.sqrt((veh_x - self.x)**2 + (veh_y - self.y)**2)
+        return distance <= self.coverage_radius
+    
+    def receive_report(self, report):
+        """Receive incident report from vehicle"""
+        self.reports_received.append(report)
+        return True
+
+class IncidentReport:
+    """Incident report structure"""
+    def __init__(self, vehicle_id, report_type, location, timestamp, is_fake=False):
+        self.vehicle_id = vehicle_id
+        self.report_type = report_type  # accident, breakdown, hazard
+        self.location = location  # (x, y)
+        self.timestamp = timestamp
+        self.is_fake = is_fake
+        self.witnesses = []
+        self.rsu_id = None
+        self.validated = False
+        self.trust_score = 0.5
+        
+    def to_dict(self):
+        return {
+            'vehicle_id': self.vehicle_id,
+            'report_type': self.report_type,
+            'location': self.location,
+            'timestamp': self.timestamp,
+            'is_fake': self.is_fake,
+            'witnesses': self.witnesses,
+            'rsu_id': self.rsu_id,
+            'validated': self.validated,
+            'trust_score': self.trust_score
+        }
+
+class VehicleTrustManager:
+    """Manages trust scores for vehicles"""
+    def __init__(self):
+        self.trust_scores = defaultdict(lambda: 0.5)  # Initial trust: 0.5
+        self.report_history = defaultdict(list)
+        self.behavior_history = defaultdict(list)
+        
+    def update_trust(self, vehicle_id, report_validated, report_fake):
+        """Update trust score based on report validation"""
+        current_trust = self.trust_scores[vehicle_id]
+        
+        if report_validated and not report_fake:
+            # Honest report - increase trust
+            self.trust_scores[vehicle_id] = min(1.0, current_trust + 0.1)
+        elif report_fake:
+            # Fake report - decrease trust significantly
+            self.trust_scores[vehicle_id] = max(0.0, current_trust - 0.3)
+        
+        return self.trust_scores[vehicle_id]
+    
+    def get_trust_score(self, vehicle_id):
+        return self.trust_scores[vehicle_id]
+
+class IVIRSController:
+    """Main IVIRS SUMO Controller with Emergency Dispatch"""
+    
+    def __init__(self, sumo_config, output_dir="results"):
+        self.sumo_config = sumo_config
+        self.output_dir = output_dir
+        self.step_count = 0
+        
+        # Initialize NS-3 network simulator
+        if NS3_AVAILABLE:
+            self.ns3_network = NS3NetworkSimulator()
+            print("[IVIRS] NS-3 network simulator initialized")
+        else:
+            self.ns3_network = None
+        
+        # Initialize RSUs (every 2km on highway)
+        self.rsus = {
+            0: RSU(0, 0, -50, 500),
+            1: RSU(1, 2000, -50, 500),
+            2: RSU(2, 4000, -50, 500),
+            3: RSU(3, 6000, -50, 500),
+            4: RSU(4, 8000, -50, 500),
+            5: RSU(5, 10000, -50, 500)
+        }
+        
+        # Initialize managers
+        self.trust_manager = VehicleTrustManager()
+        
+        # Tracking
+        self.all_reports = []
+        self.real_incidents = []
+        self.fake_reports = []
+        self.detected_fake_reports = []
+        self.emergency_vehicles = set()
+        self.spawned_emergency_ids = set()
+        
+        # Vehicle tracking
+        self.malicious_vehicles = set()
+        self.honest_vehicles = set()
+        self.vehicle_positions = {}
+        self.vehicle_speeds = {}
+        
+        # Statistics
+        self.stats = {
+            'total_reports': 0,
+            'fake_reports': 0,
+            'real_incidents': 0,
+            'detected_fakes': 0,
+            'false_positives': 0,
+            'emergency_dispatches': 0
+        }
+        
+        # Output files
+        self.reports_file = open(f"{output_dir}/incident_reports.json", "w")
+        self.stats_file = open(f"{output_dir}/simulation_stats.csv", "w")
+        self.stats_file.write("timestamp,total_vehicles,total_reports,fake_reports,detected_fakes,detection_accuracy\n")
+        
+    def start_simulation(self):
+        """Start SUMO simulation with TraCI"""
+        sumo_cmd = ["sumo-gui", "-c", self.sumo_config,
+                    "--start", "--quit-on-end",
+                    "--step-length", "0.1",
+                    "--collision.action", "warn",
+                    "--time-to-teleport", "-1"]
+        
+        traci.start(sumo_cmd)
+        print(f"[IVIRS] Simulation started at {datetime.now()}")
+        
+    def simulation_step(self):
+        """Execute one simulation step"""
+        traci.simulationStep()
+        self.step_count += 1
+        current_time = traci.simulation.getTime()
+        
+        # Get all vehicles
+        vehicle_ids = traci.vehicle.getIDList()
+        
+        # Update vehicle tracking
+        for veh_id in vehicle_ids:
+            pos = traci.vehicle.getPosition(veh_id)
+            speed = traci.vehicle.getSpeed(veh_id)
+            self.vehicle_positions[veh_id] = pos
+            self.vehicle_speeds[veh_id] = speed
+            
+            # Check if vehicle is malicious (from route parameters)
+            try:
+                is_malicious = traci.vehicle.getParameter(veh_id, "is_malicious")
+                if is_malicious == "true":
+                    self.malicious_vehicles.add(veh_id)
+            except:
+                pass
+            
+            # Check if vehicle is honest reporter
+            try:
+                is_honest = traci.vehicle.getParameter(veh_id, "is_honest_reporter")
+                if is_honest == "true":
+                    self.honest_vehicles.add(veh_id)
+            except:
+                pass
+        
+        # Process real incidents (breakdown, crash)
+        self.detect_real_incidents(current_time)
+        
+        # Process fake reports from malicious vehicles
+        self.generate_fake_reports(current_time)
+        
+        # Update RSU coverage
+        self.update_rsu_coverage()
+        
+        # Process reports at RSUs
+        self.process_reports_at_rsus()
+        
+        # Dispatch emergency services
+        self.dispatch_emergency_services(current_time)
+        
+        # Update statistics every 10 seconds
+        if self.step_count % 100 == 0:
+            self.update_statistics(current_time, len(vehicle_ids))
+        
+        return current_time < 1000  # Run for 1000 seconds
+    
+    def detect_real_incidents(self, current_time):
+        """Detect real incidents (breakdowns, crashes)"""
+        for veh_id in list(self.vehicle_positions.keys()):
+            try:
+                # Check for breakdown
+                breakdown = traci.vehicle.getParameter(veh_id, "will_breakdown")
+                if breakdown == "true":
+                    breakdown_time = float(traci.vehicle.getParameter(veh_id, "breakdown_time"))
+                    if abs(current_time - breakdown_time) < 0.5:
+                        self.create_real_incident(veh_id, "breakdown", current_time)
+                
+                # Check for crash
+                crash = traci.vehicle.getParameter(veh_id, "will_crash")
+                if crash == "true":
+                    crash_time = float(traci.vehicle.getParameter(veh_id, "crash_time"))
+                    if abs(current_time - crash_time) < 0.5:
+                        self.create_real_incident(veh_id, "accident", current_time)
+                        
+            except:
+                continue
+    
+    def create_real_incident(self, veh_id, incident_type, current_time):
+        """Create a real incident and generate reports from nearby honest vehicles"""
+        if veh_id not in self.vehicle_positions:
+            return
+        
+        pos = self.vehicle_positions[veh_id]
+        
+        # Create incident
+        incident = IncidentReport(veh_id, incident_type, pos, current_time, is_fake=False)
+        self.real_incidents.append(incident)
+        
+        # Make vehicle stop or slow down
+        try:
+            if incident_type == "breakdown":
+                traci.vehicle.setSpeed(veh_id, 0)
+                traci.vehicle.setColor(veh_id, (255, 0, 0))  # Red for breakdown
+            elif incident_type == "accident":
+                traci.vehicle.setSpeed(veh_id, 0)
+                traci.vehicle.setColor(veh_id, (255, 100, 0))  # Orange for accident
+        except:
+            pass
+        
+        # Nearby honest vehicles report the incident
+        for witness_id in self.honest_vehicles:
+            if witness_id in self.vehicle_positions:
+                witness_pos = self.vehicle_positions[witness_id]
+                distance = math.sqrt((pos[0]-witness_pos[0])**2 + (pos[1]-witness_pos[1])**2)
+                if distance < 200:  # Within 200m
+                    report = IncidentReport(witness_id, incident_type, pos, current_time, is_fake=False)
+                    incident.witnesses.append(witness_id)
+                    self.submit_report_to_rsu(report)
+        
+        print(f"🚨 [REAL INCIDENT] {incident_type} at {pos} by {veh_id} at time {current_time:.1f}s")
+        self.stats['real_incidents'] += 1
+    
+    def generate_fake_reports(self, current_time):
+        """Generate fake reports from malicious vehicles"""
+        for mal_veh in self.malicious_vehicles:
+            if mal_veh not in self.vehicle_positions:
+                continue
+            
+            try:
+                # Check if this vehicle should send fake report now
+                fake_time = float(traci.vehicle.getParameter(mal_veh, "fake_report_time"))
+                if abs(current_time - fake_time) < 0.5:
+                    pos = self.vehicle_positions[mal_veh]
+                    
+                    # Create fake location (offset from actual position)
+                    fake_x = pos[0] + random.uniform(-500, 500)
+                    fake_y = pos[1] + random.uniform(-200, 200)
+                    fake_location = (fake_x, fake_y)
+                    
+                    report_type = traci.vehicle.getParameter(mal_veh, "fake_report_type")
+                    
+                    # Create fake report
+                    fake_report = IncidentReport(mal_veh, report_type, fake_location, 
+                                                current_time, is_fake=True)
+                    self.fake_reports.append(fake_report)
+                    self.submit_report_to_rsu(fake_report)
+                    
+                    # Mark malicious vehicle
+                    try:
+                        traci.vehicle.setColor(mal_veh, (255, 0, 255))  # Magenta
+                    except:
+                        pass
+                    
+                    print(f"⚠️  [FAKE REPORT] {report_type} at {fake_location} by {mal_veh} at time {current_time:.1f}s")
+                    self.stats['fake_reports'] += 1
+                    
+            except:
+                continue
+    
+    def submit_report_to_rsu(self, report):
+        """Submit report to nearest RSU in range"""
+        reporter_pos = report.location
+        
+        # Simulate NS-3 V2X transmission if available
+        if self.ns3_network:
+            transmission_result = self.ns3_network.simulate_transmission(reporter_pos, report.to_dict())
+            
+            if not transmission_result['success']:
+                print(f"[NS-3] Transmission FAILED from {report.vehicle_id}: {transmission_result.get('reason', 'poor_signal')}")
+                return False
+            
+            print(f"[NS-3] Transmission SUCCESS: RSU-{transmission_result['rsu_id']}, "
+                  f"SNR={transmission_result['snr']:.1f}dB, Latency={transmission_result['latency_ms']:.2f}ms")
+        
+        # Find nearest RSU
+        nearest_rsu = None
+        min_distance = float('inf')
+        
+        for rsu_id, rsu in self.rsus.items():
+            if rsu.is_in_range(reporter_pos[0], reporter_pos[1]):
+                distance = math.sqrt((reporter_pos[0]-rsu.x)**2 + (reporter_pos[1]-rsu.y)**2)
+                if distance < min_distance:
+                    min_distance = distance
+                    nearest_rsu = rsu
+        
+        if nearest_rsu:
+            report.rsu_id = nearest_rsu.id
+            nearest_rsu.receive_report(report)
+            self.all_reports.append(report)
+            self.stats['total_reports'] += 1
+            return True
+        
+        return False
+    
+    def update_rsu_coverage(self):
+        """Update which vehicles are in range of each RSU"""
+        for rsu in self.rsus.values():
+            rsu.vehicles_in_range.clear()
+            
+        for veh_id, pos in self.vehicle_positions.items():
+            for rsu in self.rsus.values():
+                if rsu.is_in_range(pos[0], pos[1]):
+                    rsu.vehicles_in_range.add(veh_id)
+    
+    def process_reports_at_rsus(self):
+        """Process and validate reports at RSUs using ML detection"""
+        for rsu in self.rsus.values():
+            for report in rsu.reports_received[:]:  # Copy list
+                if not report.validated:
+                    # Validate using multiple factors
+                    trust_score = self.validate_report(report, rsu)
+                    report.trust_score = trust_score
+                    report.validated = True
+                    
+                    # Determine if fake (threshold: 0.3)
+                    if trust_score < 0.3:
+                        self.detected_fake_reports.append(report)
+                        self.stats['detected_fakes'] += 1
+                        
+                        # Update trust of reporter
+                        self.trust_manager.update_trust(report.vehicle_id, True, True)
+                        
+                        print(f"❌ [FAKE DETECTED] Report from {report.vehicle_id} detected as FAKE (trust: {trust_score:.2f})")
+                    else:
+                        # Update trust for valid report
+                        self.trust_manager.update_trust(report.vehicle_id, True, False)
+    
+    def validate_report(self, report, rsu):
+        """Multi-factor validation algorithm"""
+        trust_score = 0.5
+        
+        # Factor 1: Reporter's historical trust score (weight: 0.3)
+        reporter_trust = self.trust_manager.get_trust_score(report.vehicle_id)
+        trust_score += 0.3 * (reporter_trust - 0.5)
+        
+        # Factor 2: Witness validation (weight: 0.4)
+        witness_count = len(report.witnesses)
+        if witness_count >= 2:
+            trust_score += 0.4
+        elif witness_count == 1:
+            trust_score += 0.2
+        else:
+            trust_score -= 0.2
+        
+        # Factor 3: Location verification (weight: 0.2)
+        if report.vehicle_id in self.vehicle_positions:
+            actual_pos = self.vehicle_positions[report.vehicle_id]
+            reported_pos = report.location
+            distance = math.sqrt((actual_pos[0]-reported_pos[0])**2 + 
+                               (actual_pos[1]-reported_pos[1])**2)
+            
+            if distance < 100:
+                trust_score += 0.2
+            elif distance > 500:
+                trust_score -= 0.3
+        
+        # Factor 4: Proximity to other vehicles (weight: 0.1)
+        vehicles_nearby = 0
+        for veh_id, pos in self.vehicle_positions.items():
+            if veh_id != report.vehicle_id:
+                distance = math.sqrt((pos[0]-report.location[0])**2 + 
+                                   (pos[1]-report.location[1])**2)
+                if distance < 150:
+                    vehicles_nearby += 1
+        
+        if vehicles_nearby < 2:
+            trust_score -= 0.1
+        
+        # Clamp between 0 and 1
+        trust_score = max(0.0, min(1.0, trust_score))
+        
+        return trust_score
+    
+    def dispatch_emergency_services(self, current_time):
+        """Dispatch emergency vehicles to validated incidents"""
+        for report in self.all_reports:
+            if report.validated and report.trust_score >= 0.7:
+                # Only dispatch to high-trust reports
+                report_key = f"{report.vehicle_id}_{report.timestamp}"
+                if report_key not in self.emergency_vehicles:
+                    self.create_emergency_response(report, current_time)
+                    self.emergency_vehicles.add(report_key)
+    
+    def spawn_emergency_vehicle(self, incident_location, service_type, incident_id):
+        """Spawn emergency vehicle in SUMO that drives to incident location"""
+        # Determine starting location based on service type
+        if service_type == "police":
+            start_edge = "hw_3_4"
+            vtype = "emergency_police"
+            color = (0, 0, 255, 255)  # Blue
+        elif service_type == "ambulance":
+            start_edge = "hw_7_8"
+            vtype = "emergency_ambulance"
+            color = (255, 0, 0, 255)  # Red
+        else:  # traffic_control
+            start_edge = "hw_5_6"
+            vtype = "emergency_fire"
+            color = (255, 165, 0, 255)  # Orange
+        
+        # Create unique vehicle ID
+        veh_id = f"emerg_{service_type}_{incident_id}_{int(traci.simulation.getTime())}"
+        
+        # Avoid duplicate spawns
+        if veh_id in self.spawned_emergency_ids:
+            return None
+        self.spawned_emergency_ids.add(veh_id)
+        
+        # Find target edge based on incident location
+        incident_x = incident_location[0]
+        if incident_x < 1000:
+            target_edge = "hw_0_1"
+        elif incident_x < 2000:
+            target_edge = "hw_1_2"
+        elif incident_x < 3000:
+            target_edge = "hw_2_3"
+        elif incident_x < 4000:
+            target_edge = "hw_3_4"
+        elif incident_x < 5000:
+            target_edge = "hw_4_5"
+        elif incident_x < 6000:
+            target_edge = "hw_5_6"
+        elif incident_x < 7000:
+            target_edge = "hw_6_7"
+        elif incident_x < 8000:
+            target_edge = "hw_7_8"
+        elif incident_x < 9000:
+            target_edge = "hw_8_9"
+        else:
+            target_edge = "hw_9_10"
+        
+        try:
+            # Find route from start to target
+            route = traci.simulation.findRoute(start_edge, target_edge)
+            
+            if route and route.edges:
+                # Create route
+                route_id = f"route_{veh_id}"
+                traci.route.add(route_id, route.edges)
+                
+                # Add vehicle
+                traci.vehicle.add(
+                    vehID=veh_id,
+                    routeID=route_id,
+                    typeID=vtype,
+                    depart="now",
+                    departLane="best",
+                    departSpeed="max"
+                )
+                
+                # Set emergency properties
+                traci.vehicle.setColor(veh_id, color)
+                traci.vehicle.setSpeedMode(veh_id, 0)  # Ignore some rules
+                traci.vehicle.setSpeed(veh_id, 30)
+                
+                print(f"🚨 [EMERGENCY] {service_type.upper()} dispatched: {veh_id}")
+                print(f"   Route: {start_edge} → {target_edge}")
+                
+                return veh_id
+        except Exception as e:
+            print(f"[ERROR] Could not spawn {service_type}: {e}")
+        
+        return None
+    
+    def create_incident_marker(self, location, incident_type):
+        """Create visual marker at incident location"""
+        # Choose color based on type
+        if incident_type == "accident":
+            color = (255, 0, 0, 255)  # Red
+        elif incident_type == "breakdown":
+            color = (255, 165, 0, 255)  # Orange
+        else:
+            color = (255, 255, 0, 255)  # Yellow
+        
+        poi_id = f"incident_{int(traci.simulation.getTime())}_{incident_type}"
+        
+        try:
+            traci.poi.add(
+                poiID=poi_id,
+                x=location[0],
+                y=location[1],
+                color=color,
+                poiType="circle",
+                layer=200,
+                width=40,
+                height=40
+            )
+            print(f"📍 [MARKER] Created at {location} for {incident_type}")
+        except Exception as e:
+            print(f"[ERROR] Could not create marker: {e}")
+    
+    def create_emergency_response(self, report, current_time):
+        """Create emergency vehicle response with actual spawning"""
+        # Determine services
+        if report.report_type == "accident":
+            services = ["police", "ambulance"]
+        elif report.report_type == "breakdown":
+            services = ["traffic_control"]
+        else:
+            services = ["police"]
+        
+        # Create visual marker
+        self.create_incident_marker(report.location, report.report_type)
+        
+        # Dispatch services
+        for service in services:
+            veh_id = self.spawn_emergency_vehicle(
+                report.location,
+                service,
+                report.vehicle_id
+            )
+            if veh_id:
+                self.stats['emergency_dispatches'] += 1
+        
+        print(f"🚨 [DISPATCH] {len(services)} services sent to {report.location}")
+    
+    def update_statistics(self, current_time, num_vehicles):
+        """Update and log statistics"""
+        if self.stats['total_reports'] > 0:
+            detection_accuracy = (self.stats['detected_fakes'] / self.stats['fake_reports'] 
+                                if self.stats['fake_reports'] > 0 else 0)
+        else:
+            detection_accuracy = 0
+        
+        self.stats_file.write(f"{current_time:.1f},{num_vehicles},{self.stats['total_reports']},"
+                            f"{self.stats['fake_reports']},{self.stats['detected_fakes']},"
+                            f"{detection_accuracy:.3f}\n")
+        
+        print(f"\n📊 [STATS @ {current_time:.0f}s] Vehicles: {num_vehicles}, "
+              f"Reports: {self.stats['total_reports']}, "
+              f"Fake: {self.stats['fake_reports']}, "
+              f"Detected: {self.stats['detected_fakes']}, "
+              f"Accuracy: {detection_accuracy:.2%}\n")
+    
+    def finalize_simulation(self):
+        """Finalize and save all data"""
+        # Save NS-3 network statistics
+        if self.ns3_network:
+            self.ns3_network.save_results(f"{self.output_dir}/../ns3-simulation/results/network_metrics.json")
+        
+        # Save all reports
+        reports_data = {
+            'all_reports': [r.to_dict() for r in self.all_reports],
+            'real_incidents': [r.to_dict() for r in self.real_incidents],
+            'fake_reports': [r.to_dict() for r in self.fake_reports],
+            'detected_fake_reports': [r.to_dict() for r in self.detected_fake_reports],
+            'statistics': self.stats
+        }
+        
+        json.dump(reports_data, self.reports_file, indent=2)
+        self.reports_file.close()
+        self.stats_file.close()
+        
+        # Calculate final metrics
+        if self.stats['fake_reports'] > 0:
+            detection_rate = self.stats['detected_fakes'] / self.stats['fake_reports']
+            precision = self.stats['detected_fakes'] / max(1, self.stats['detected_fakes'] + self.stats['false_positives'])
+        else:
+            detection_rate = 0
+            precision = 0
+        
+        print("\n" + "="*60)
+        print("SIMULATION COMPLETED")
+        print("="*60)
+        print(f"Total Reports: {self.stats['total_reports']}")
+        print(f"Real Incidents: {self.stats['real_incidents']}")
+        print(f"Fake Reports: {self.stats['fake_reports']}")
+        print(f"Detected Fake Reports: {self.stats['detected_fakes']}")
+        print(f"Detection Rate: {detection_rate:.2%}")
+        print(f"Precision: {precision:.2%}")
+        print(f"Emergency Dispatches: {self.stats['emergency_dispatches']}")
+        print("="*60)
+        
+        traci.close()
+
+def main():
+    """Main execution"""
+    # Set up paths
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    sumo_config = os.path.join(base_dir, "../sumo-scenario/simulation.sumocfg")
+    output_dir = os.path.join(base_dir, "../sumo-scenario/results")
+    
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Create controller
+    controller = IVIRSController(sumo_config, output_dir)
+    
+    # Start simulation
+    controller.start_simulation()
+    
+    # Run simulation
+    try:
+        while controller.simulation_step():
+            pass
+    except KeyboardInterrupt:
+        print("\n[IVIRS] Simulation interrupted by user")
+    finally:
+        controller.finalize_simulation()
+
+if __name__ == "__main__":
+    main()
